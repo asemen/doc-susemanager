@@ -1,0 +1,644 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="377b9df7-a96e-49f2-8cad-879241cb40c6" name="Default Changelist" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>autoinstallation</find>
+      <find>productnamne</find>
+      <find>fuchsia</find>
+      <find>draft</find>
+      <find>ref.webui.systems.autoinst.preserve</find>
+      <find>prompt.root</find>
+      <find>http</find>
+      <find>s4-sm-ssm-misc-lock</find>
+      <find>remote</find>
+      <find>s3-sm-system-details</find>
+      <find>contact</find>
+      <find>xref</find>
+      <find>&lt;&lt;</find>
+      <find>s3-sm-system-keys-multiple</find>
+      <find>ref.webui.channels.software</find>
+      <find>&lt;&lt;.*\.adoc.*&gt;&gt;</find>
+      <find>&lt;&lt;.*.*&gt;&gt;</find>
+      <find>programlisting</find>
+      <find>you might</find>
+      <find>3.2</find>
+      <find>depre</find>
+      <find>virtualization.adoc</find>
+      <find>}</find>
+      <find>you will need to create</find>
+      <find>{productanme}</find>
+      <find>uyuni-depreciated</find>
+      <find>depreciated</find>
+      <find>sp-ver</find>
+      <find>productanme</find>
+      <find>{sles}</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>screen</replace>
+      <replace>uyuni</replace>
+    </replaceStrings>
+    <dirStrings>
+      <dir>$PROJECT_DIR$/modules/reference/pages/systems</dir>
+      <dir>$PROJECT_DIR$/modules/reference</dir>
+      <dir>$PROJECT_DIR$</dir>
+      <dir>$PROJECT_DIR$/modules</dir>
+    </dirStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/branding/supplemental-ui/uyuni/partials/header-content.hbs" />
+        <option value="$PROJECT_DIR$/branding/supplemental-ui/uyuni/css/site-extra.css" />
+        <option value="$PROJECT_DIR$/branding/supplemental-ui/suma-susecom/css/site-extra.css" />
+        <option value="$PROJECT_DIR$/branding/supplemental-ui/uyuni/partials/head-meta.hbs" />
+        <option value="$PROJECT_DIR$/branding/supplemental-ui/uyuni-project/partials/footer-content.hbs" />
+        <option value="$PROJECT_DIR$/branding/supplemental-ui/uyuni-project/partials/header-content.hbs" />
+        <option value="$PROJECT_DIR$/branding/supplemental-ui/uyuni-project/css/site-extra.css" />
+        <option value="$PROJECT_DIR$/branding/supplemental-ui/uyuni/uyuni-depreciated/partials/header-content.hbs" />
+        <option value="$PROJECT_DIR$/branding/supplemental-ui/uyuni/uyuni-webui/css/site-extra.css" />
+        <option value="$PROJECT_DIR$/modules/architecture/nav-architecture-components-guide.adoc" />
+        <option value="$PROJECT_DIR$/modules/installation/nav-installation-guide.adoc" />
+        <option value="$PROJECT_DIR$/modules/reference/nav-reference-manual.adoc" />
+        <option value="$PROJECT_DIR$/modules/retail/nav-retail.adoc" />
+        <option value="$PROJECT_DIR$/modules/salt/nav-salt-guide.adoc" />
+        <option value="$PROJECT_DIR$/modules/client-configuration/pages/virt-xenkvm.adoc" />
+        <option value="$PROJECT_DIR$/modules/upgrade/nav-upgrade-guide.adoc" />
+        <option value="$USER_HOME$/workspace/api-tests/handler.txt" />
+        <option value="$USER_HOME$/workspace/api-tests/handler.xml" />
+        <option value="$PROJECT_DIR$/modules/client-configuration/pages/virtualization.adoc" />
+        <option value="$PROJECT_DIR$/branding/supplemental-ui/uyuni/uyuni-depreciated/partials/footer-content.hbs" />
+        <option value="$PROJECT_DIR$/build/uyuni/reference/systems/system-details/sd-software-channels.html" />
+        <option value="$PROJECT_DIR$/build/uyuni/reference/systems/system-details/sd-hardware.html" />
+        <option value="$PROJECT_DIR$/build/uyuni/client-configuration/clients-and-scc.html" />
+        <option value="$PROJECT_DIR$/modules/ROOT/pages/index-uyuni.adoc" />
+        <option value="$PROJECT_DIR$/modules/administration/nav-administration-guide.adoc" />
+        <option value="$PROJECT_DIR$/extensions/xref-converter.rb" />
+        <option value="$PROJECT_DIR$/branding/supplemental-ui/uyuni/uyuni-depreciated/css/site-extra.css" />
+        <option value="$PROJECT_DIR$/modules/installation/pages/install-proxy-unified.adoc" />
+        <option value="$PROJECT_DIR$/modules/reference/pages/command-line-tools.adoc" />
+        <option value="$PROJECT_DIR$/modules/administration/pages/image-management.adoc" />
+        <option value="$PROJECT_DIR$/modules/client-configuration/pages/clients-ubuntu.adoc" />
+        <option value="$PROJECT_DIR$/branding/pdf/entities.adoc" />
+        <option value="$PROJECT_DIR$/antora.yml" />
+        <option value="$PROJECT_DIR$/modules/ROOT/pages/_partials/entities.adoc" />
+        <option value="$PROJECT_DIR$/modules/installation/pages/install-ibmz.adoc" />
+        <option value="$PROJECT_DIR$/modules/administration/pages/live-patching-sles15.adoc" />
+        <option value="$PROJECT_DIR$/uyuni-site.yml" />
+        <option value="$PROJECT_DIR$/modules/administration/pages/tshoot-corruptrepo.adoc" />
+        <option value="$PROJECT_DIR$/modules/client-configuration/pages/clients-centos.adoc" />
+        <option value="$PROJECT_DIR$/modules/reference/pages/common_gfdl1.2_i.adoc" />
+        <option value="$PROJECT_DIR$/modules/retail/pages/retail-requirements.adoc" />
+        <option value="$PROJECT_DIR$/modules/retail/pages/retail-delta-images.adoc" />
+        <option value="$PROJECT_DIR$/modules/client-configuration/nav-client-config-guide.adoc" />
+        <option value="$PROJECT_DIR$/modules/reference/pages/navigation/categories-and-pages.adoc" />
+        <option value="$PROJECT_DIR$/Makefile" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/suma-site.yml" />
+        <option value="$PROJECT_DIR$/modules/client-configuration/pages/tshoot-clients.adoc" />
+        <option value="$PROJECT_DIR$/modules/client-configuration/pages/cobbler.adoc" />
+        <option value="$PROJECT_DIR$/modules/salt/pages/salt-formulas.adoc" />
+        <option value="$PROJECT_DIR$/branding/supplemental-ui/suma/suma-ghpages/partials/header-content.hbs" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="2196" />
+    <option name="y" value="235" />
+    <option name="width" value="1910" />
+    <option name="height" value="1186" />
+  </component>
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="doc-susemanager" type="b2602c69:ProjectViewProjectNode" />
+              <item name="doc-susemanager" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/modules/salt/assets/images" />
+      <recent name="$PROJECT_DIR$/extensions" />
+      <recent name="$PROJECT_DIR$/modules/reference/pages/spacecmd" />
+      <recent name="$PROJECT_DIR$/branding/base-ui/suma" />
+      <recent name="$PROJECT_DIR$/branding/supplemental-ui/uyuni" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/branding/supplemental-ui/suma" />
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/branding/default-ui/uyuni" />
+      <recent name="$PROJECT_DIR$/branding/supplemental-ui/uyuni/uyuni-depreciated/img" />
+      <recent name="$PROJECT_DIR$/branding/supplemental-ui/uyuni-project/img" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SpringUtil" SPRING_PRE_LOADER_OPTION="true" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="377b9df7-a96e-49f2-8cad-879241cb40c6" name="Default Changelist" comment="" />
+      <created>1556775412963</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1556775412963</updated>
+      <workItem from="1556775416407" duration="43020000" />
+      <workItem from="1557210513886" duration="11968000" />
+      <workItem from="1557411199053" duration="18000" />
+      <workItem from="1557411240160" duration="3673000" />
+      <workItem from="1557727928331" duration="34552000" />
+      <workItem from="1558513916141" duration="59305000" />
+      <workItem from="1559132814622" duration="83668000" />
+      <workItem from="1563780625916" duration="1104000" />
+      <workItem from="1563813293475" duration="52940000" />
+      <workItem from="1564559057374" duration="39624000" />
+      <workItem from="1565166450069" duration="1155000" />
+      <workItem from="1565168383821" duration="599000" />
+      <workItem from="1565172754020" duration="17141000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="348767000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="1920" y="27" width="2560" height="1573" extended-state="6" />
+    <layout>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18124007" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32983193" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Database Changes" order="9" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.48319328" />
+      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="make" order="3" />
+      <window_info anchor="right" id="Database" order="4" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/branding/supplemental-ui/uyuni/uyuni-webui/css/site-extra.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="501">
+          <caret line="102" column="1" lean-forward="true" selection-start-line="102" selection-start-column="1" selection-end-line="102" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/architecture/nav-architecture-components-guide.adoc">
+      <provider selected="true" editor-type-id="split-provider[text-editor;AsciiDocPreviewEditor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="486">
+            <caret line="57" column="13" lean-forward="true" selection-start-line="57" selection-start-column="13" selection-end-line="57" selection-end-column="13" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/branding/supplemental-ui/uyuni/uyuni-depreciated/partials/header-content.hbs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="17" column="21" selection-start-line="17" selection-start-column="21" selection-end-line="17" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/reference/nav-reference-manual.adoc">
+      <provider selected="true" editor-type-id="split-provider[text-editor;AsciiDocPreviewEditor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="396">
+            <caret line="223" column="39" lean-forward="true" selection-start-line="223" selection-start-column="39" selection-end-line="223" selection-end-column="39" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/retail/nav-retail.adoc">
+      <provider selected="true" editor-type-id="split-provider[text-editor;AsciiDocPreviewEditor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="481">
+            <caret line="41" column="23" selection-start-line="41" selection-start-column="23" selection-end-line="41" selection-end-column="23" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/upgrade/nav-upgrade-guide.adoc">
+      <provider selected="true" editor-type-id="split-provider[text-editor;AsciiDocPreviewEditor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="240">
+            <caret line="22" column="23" selection-start-line="22" selection-start-column="23" selection-end-line="22" selection-end-column="23" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/workspace/api-tests/handler.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="486">
+          <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/workspace/api-tests/handler-old.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="594">
+          <caret line="33" column="46" lean-forward="true" selection-start-line="33" selection-start-column="46" selection-end-line="33" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/ROOT/nav.adoc">
+      <provider selected="true" editor-type-id="split-provider[text-editor;AsciiDocPreviewEditor]">
+        <state split_layout="SPLIT">
+          <first_editor />
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/client-configuration/pages/virtualization.adoc">
+      <provider selected="true" editor-type-id="split-provider[text-editor;AsciiDocPreviewEditor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="576">
+            <caret line="29" column="4" selection-start-line="29" selection-start-column="4" selection-end-line="29" selection-end-column="4" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build/suse-manager/client-configuration/virt-xenkvm.html" />
+    <entry file="file://$PROJECT_DIR$/modules/client-configuration/pages/virt-xenkvm.adoc">
+      <provider selected="true" editor-type-id="split-provider[text-editor;AsciiDocPreviewEditor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="256">
+            <caret line="80" column="42" selection-start-line="80" selection-start-column="42" selection-end-line="80" selection-end-column="42" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.travis.yml.old">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/branding/supplemental-ui/uyuni/uyuni-depreciated/partials/footer-content.hbs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="18" selection-start-line="18" selection-end-line="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/branding/supplemental-ui/uyuni/uyuni-webui/partials/footer-content.hbs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="17" column="9" lean-forward="true" selection-start-line="17" selection-start-column="9" selection-end-line="17" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/administration/pages/tuning-changelogs.adoc">
+      <provider selected="true" editor-type-id="split-provider[text-editor;AsciiDocPreviewEditor]">
+        <state split_layout="SPLIT">
+          <first_editor />
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/extensions/xref-converter.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="6" column="5" selection-start-line="6" selection-start-column="5" selection-end-line="6" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/ROOT/pages/index-uyuni.adoc">
+      <provider selected="true" editor-type-id="split-provider[text-editor;AsciiDocPreviewEditor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="666">
+            <caret line="37" column="4" selection-start-line="37" selection-start-column="4" selection-end-line="37" selection-end-column="4" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/ROOT/pages/index-suma.adoc">
+      <provider selected="true" editor-type-id="split-provider[text-editor;AsciiDocPreviewEditor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="594">
+            <caret line="30" column="4" selection-start-line="21" selection-end-line="30" selection-end-column="4" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/administration/nav-administration-guide.adoc">
+      <provider selected="true" editor-type-id="split-provider[text-editor;AsciiDocPreviewEditor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="499">
+            <caret line="111" selection-start-line="111" selection-end-line="111" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/installation/pages/install-server-unified.adoc">
+      <provider selected="true" editor-type-id="split-provider[text-editor;AsciiDocPreviewEditor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="36">
+            <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/installation/pages/install-proxy-unified.adoc">
+      <provider selected="true" editor-type-id="split-provider[text-editor;AsciiDocPreviewEditor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="36">
+            <caret line="2" selection-start-line="2" selection-end-line="2" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/administration/pages/image-management.adoc">
+      <provider selected="true" editor-type-id="split-provider[text-editor;AsciiDocPreviewEditor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="-9366">
+            <caret line="231" column="4" selection-start-line="231" selection-start-column="4" selection-end-line="231" selection-end-column="4" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/reference/pages/command-line-tools.adoc">
+      <provider selected="true" editor-type-id="split-provider[text-editor;AsciiDocPreviewEditor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="108">
+            <caret line="6" selection-start-line="6" selection-end-line="6" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/branding/supplemental-ui/uyuni/uyuni-depreciated/css/site-extra.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="694">
+          <caret line="95" column="20" selection-start-line="95" selection-start-column="20" selection-end-line="95" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/branding/pdf/entities.adoc">
+      <provider selected="true" editor-type-id="split-provider[text-editor;AsciiDocPreviewEditor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="-595" />
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/client-configuration/pages/_partials/entities.adoc" />
+    <entry file="file://$PROJECT_DIR$/modules/architecture/pages/_partials/pdf-attributes.adoc" />
+    <entry file="file://$PROJECT_DIR$/modules/reference/pages/_partials/entities.adoc" />
+    <entry file="file://$PROJECT_DIR$/uyuni-site.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="576">
+          <caret line="77" column="31" selection-start-line="77" selection-start-column="31" selection-end-line="77" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/ROOT/pages/_partials/entities.adoc">
+      <provider selected="true" editor-type-id="split-provider[text-editor;AsciiDocPreviewEditor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="1134">
+            <caret line="63" column="12" selection-start-line="63" selection-start-column="12" selection-end-line="63" selection-end-column="12" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/client-configuration/pages/clients-ubuntu.adoc">
+      <provider selected="true" editor-type-id="split-provider[text-editor;AsciiDocPreviewEditor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="2501">
+            <caret line="178" column="4" selection-start-line="178" selection-start-column="4" selection-end-line="178" selection-end-column="4" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/administration/pages/tshoot-corruptrepo.adoc">
+      <provider selected="true" editor-type-id="split-provider[text-editor;AsciiDocPreviewEditor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="450">
+            <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/administration/pages/live-patching-sles15.adoc">
+      <provider selected="true" editor-type-id="split-provider[text-editor;AsciiDocPreviewEditor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="622">
+            <caret line="49" column="4" lean-forward="true" selection-start-line="36" selection-end-line="49" selection-end-column="4" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/installation/nav-installation-guide.adoc">
+      <provider selected="true" editor-type-id="split-provider[text-editor;AsciiDocPreviewEditor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="198">
+            <caret line="11" selection-start-line="11" selection-end-line="11" selection-end-column="32" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/antora.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-42">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/client-configuration/pages/clients-centos.adoc">
+      <provider selected="true" editor-type-id="split-provider[text-editor;AsciiDocPreviewEditor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="270">
+            <caret line="30" column="84" selection-start-line="30" selection-start-column="84" selection-end-line="30" selection-end-column="84" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/reference/pages/common_gfdl1.2_i.adoc">
+      <provider selected="true" editor-type-id="split-provider[text-editor;AsciiDocPreviewEditor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="18">
+            <caret line="1" selection-start-line="1" selection-end-line="1" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/retail/pages/retail-deploy-terminals.adoc">
+      <provider selected="true" editor-type-id="split-provider[text-editor;AsciiDocPreviewEditor]">
+        <state split_layout="SPLIT">
+          <first_editor />
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/retail/pages/retail-delta-images.adoc">
+      <provider selected="true" editor-type-id="split-provider[text-editor;AsciiDocPreviewEditor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="36">
+            <caret line="2" selection-start-line="2" selection-end-line="2" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/retail/pages/retail-requirements.adoc">
+      <provider selected="true" editor-type-id="split-provider[text-editor;AsciiDocPreviewEditor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="162">
+            <caret line="9" column="4" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="4" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/client-configuration/nav-client-config-guide.adoc">
+      <provider selected="true" editor-type-id="split-provider[text-editor;AsciiDocPreviewEditor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="306">
+            <caret line="17" column="52" selection-start-line="17" selection-start-column="52" selection-end-line="17" selection-end-column="52" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/reference/pages/navigation/categories-and-pages.adoc">
+      <provider selected="true" editor-type-id="split-provider[text-editor;AsciiDocPreviewEditor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="342">
+            <caret line="97" column="246" selection-start-line="97" selection-start-column="246" selection-end-line="97" selection-end-column="246" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/salt/nav-salt-guide.adoc">
+      <provider selected="true" editor-type-id="split-provider[text-editor;AsciiDocPreviewEditor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="184">
+            <caret line="24" column="23" selection-start-line="24" selection-start-column="23" selection-end-line="24" selection-end-column="23" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="5" column="6" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/branding/supplemental-ui/suma/susecom/js/all.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Makefile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="594">
+          <caret line="96" selection-start-line="96" selection-end-line="96" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/branding/supplemental-ui/suma/suma-ghpages/js/all.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/client-configuration/pages/tshoot-clients.adoc">
+      <provider selected="true" editor-type-id="split-provider[text-editor;AsciiDocPreviewEditor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="-245">
+            <caret line="5" column="2" selection-start-line="5" selection-start-column="2" selection-end-line="5" selection-end-column="2" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/branding/supplemental-ui/suma/suma-ghpages/partials/header-content.hbs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="6" column="7" selection-start-line="6" selection-start-column="7" selection-end-line="6" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/suma-site.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="14" column="51" selection-start-line="14" selection-start-column="51" selection-end-line="14" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
