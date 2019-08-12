@@ -106,12 +106,12 @@
         <option value="$PROJECT_DIR$/modules/client-configuration/nav-client-config-guide.adoc" />
         <option value="$PROJECT_DIR$/modules/reference/pages/navigation/categories-and-pages.adoc" />
         <option value="$PROJECT_DIR$/Makefile" />
-        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/suma-site.yml" />
         <option value="$PROJECT_DIR$/modules/client-configuration/pages/tshoot-clients.adoc" />
         <option value="$PROJECT_DIR$/modules/client-configuration/pages/cobbler.adoc" />
         <option value="$PROJECT_DIR$/modules/salt/pages/salt-formulas.adoc" />
         <option value="$PROJECT_DIR$/branding/supplemental-ui/suma/suma-ghpages/partials/header-content.hbs" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -201,12 +201,12 @@
       <workItem from="1564559057374" duration="39624000" />
       <workItem from="1565166450069" duration="1155000" />
       <workItem from="1565168383821" duration="599000" />
-      <workItem from="1565172754020" duration="17141000" />
+      <workItem from="1565172754020" duration="18564000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="348767000" />
+    <option name="totallyTimeSpent" value="350190000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1920" y="27" width="2560" height="1573" extended-state="6" />
@@ -224,7 +224,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.48319328" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.41036415" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -596,13 +596,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="5" column="6" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/branding/supplemental-ui/suma/susecom/js/all.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -637,6 +630,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="252">
           <caret line="14" column="51" selection-start-line="14" selection-start-column="51" selection-end-line="14" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="6" lean-forward="true" selection-start-column="6" selection-end-column="6" />
         </state>
       </provider>
     </entry>
