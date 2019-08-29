@@ -2,11 +2,12 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>Public Cloud :: SUSE Manager Documentation</title>
     <link rel="canonical" href="https://opensource.suse.com/doc-susemanager/suse-manager/administration/public-cloud.html">
     <meta name="generator" content="Antora 2.0.0">
     <link rel="stylesheet" href="../../_/css/site.css">
+
 <link rel="stylesheet" href="../../_/css/search.css">
 <link rel="icon" href="../../_/img/favicon.ico" type="image/x-icon">
 <link rel="stylesheet" href="../../_/css/font-styles.css">
@@ -63,11 +64,11 @@
     </div>
   </nav>
 </header>
-<div class="main-wrapper">
-<div class="navigation-container" data-component="suse-manager" data-version="master">
-  <aside class="navigation">
+<div class="body">
+<div class="nav-container" data-component="suse-manager" data-version="master">
+  <aside class="nav">
     <div class="panels">
-<div class="navigation-menu is-active" data-panel="menu">
+<div class="nav-panel-menu is-active" data-panel="menu">
   <nav class="nav-menu">
     <h3 class="title"><a href="../index-suma.html">SUSE Manager</a></h3>
 <ul class="nav-list">
@@ -84,14 +85,14 @@
   <li class="nav-item" data-depth="0">
 <ul class="nav-list">
   <li class="nav-item" data-depth="1">
-    <button class="nav-toggle"></button>
+    <button class="nav-item-toggle"></button>
     <span class="nav-text">Installation Guide</span>
 <ul class="nav-list">
   <li class="nav-item" data-depth="2">
     <a class="nav-link" href="../installation/install-intro.html">Introduction</a>
   </li>
   <li class="nav-item" data-depth="2">
-    <button class="nav-toggle"></button>
+    <button class="nav-item-toggle"></button>
     <span class="nav-text">Requirements</span>
 <ul class="nav-list">
   <li class="nav-item" data-depth="3">
@@ -109,7 +110,7 @@
 </ul>
   </li>
   <li class="nav-item" data-depth="2">
-    <button class="nav-toggle"></button>
+    <button class="nav-item-toggle"></button>
     <span class="nav-text">Installation</span>
 <ul class="nav-list">
   <li class="nav-item" data-depth="3">
@@ -127,7 +128,7 @@
 </ul>
   </li>
   <li class="nav-item" data-depth="2">
-    <button class="nav-toggle"></button>
+    <button class="nav-item-toggle"></button>
     <span class="nav-text">Setting Up</span>
 <ul class="nav-list">
   <li class="nav-item" data-depth="3">
@@ -148,12 +149,12 @@
   <li class="nav-item" data-depth="0">
 <ul class="nav-list">
   <li class="nav-item" data-depth="1">
-    <button class="nav-toggle"></button>
+    <button class="nav-item-toggle"></button>
     <a class="nav-link" href="../client-configuration/client-config-overview.html">Client Configuration Guide</a>
 <ul class="nav-list">
   <li class="nav-item" data-depth="2">
-    <button class="nav-toggle"></button>
-    <a class="nav-link" href="../client-configuration/manual-registration-overview.html">Registration Overview</a>
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../client-configuration/registration-overview.html">Registration Overview</a>
 <ul class="nav-list">
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../client-configuration/registration-webui.html">Registering with the Web UI</a>
@@ -161,10 +162,13 @@
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../client-configuration/registration-bootstrap.html">Registering with Bootstrap</a>
   </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../client-configuration/clients-and-activation-keys.html">Activation Keys</a>
+  </li>
 </ul>
   </li>
   <li class="nav-item" data-depth="2">
-    <button class="nav-toggle"></button>
+    <button class="nav-item-toggle"></button>
     <a class="nav-link" href="../client-configuration/client-proxy.html">Registering Clients on a Proxy</a>
 <ul class="nav-list">
   <li class="nav-item" data-depth="3">
@@ -176,7 +180,7 @@
 </ul>
   </li>
   <li class="nav-item" data-depth="2">
-    <button class="nav-toggle"></button>
+    <button class="nav-item-toggle"></button>
     <a class="nav-link" href="../client-configuration/autoinstallation-methods.html">Automating Client Installation</a>
 <ul class="nav-list">
   <li class="nav-item" data-depth="3">
@@ -194,7 +198,7 @@
 </ul>
   </li>
   <li class="nav-item" data-depth="2">
-    <button class="nav-toggle"></button>
+    <button class="nav-item-toggle"></button>
     <a class="nav-link" href="../client-configuration/non-suse-clients.html">Other Clients</a>
 <ul class="nav-list">
   <li class="nav-item" data-depth="3">
@@ -209,7 +213,7 @@
 </ul>
   </li>
   <li class="nav-item" data-depth="2">
-    <button class="nav-toggle"></button>
+    <button class="nav-item-toggle"></button>
     <a class="nav-link" href="../client-configuration/virtualization.html">Virtualization</a>
 <ul class="nav-list">
   <li class="nav-item" data-depth="3">
@@ -222,9 +226,6 @@
     <a class="nav-link" href="../client-configuration/virt-file.html">Virtualization with Other Hosts</a>
   </li>
 </ul>
-  </li>
-  <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="../client-configuration/clients-and-activation-keys.html">Activation Keys</a>
   </li>
   <li class="nav-item" data-depth="2">
     <a class="nav-link" href="../client-configuration/channels.html">Channels</a>
@@ -248,14 +249,11 @@
   <li class="nav-item" data-depth="0">
 <ul class="nav-list">
   <li class="nav-item" data-depth="1">
-    <button class="nav-toggle"></button>
+    <button class="nav-item-toggle"></button>
     <a class="nav-link" href="../upgrade/upgrade-overview.html">Upgrade Guide</a>
 <ul class="nav-list">
   <li class="nav-item" data-depth="2">
     <a class="nav-link" href="../upgrade/server-upgrade.html">Server Update</a>
-  </li>
-  <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="../upgrade/migrate-3x-3x.html">Server Upgrade 3.x &#8594; 3.x</a>
   </li>
   <li class="nav-item" data-depth="2">
     <a class="nav-link" href="../upgrade/migrate-3x-4x.html">Server Upgrade 3.x &#8594; 4.x</a>
@@ -282,15 +280,15 @@
   <li class="nav-item" data-depth="0">
 <ul class="nav-list">
   <li class="nav-item" data-depth="1">
-    <button class="nav-toggle"></button>
+    <button class="nav-item-toggle"></button>
     <a class="nav-link" href="../reference/intro.html">Reference Manual</a>
 <ul class="nav-list">
   <li class="nav-item" data-depth="2">
-    <button class="nav-toggle"></button>
+    <button class="nav-item-toggle"></button>
     <span class="nav-text">WebUI Reference</span>
 <ul class="nav-list">
   <li class="nav-item" data-depth="3">
-    <button class="nav-toggle"></button>
+    <button class="nav-item-toggle"></button>
     <a class="nav-link" href="../reference/navigation/navigation-menu.html">Navigation</a>
 <ul class="nav-list">
   <li class="nav-item" data-depth="4">
@@ -323,7 +321,7 @@
 </ul>
   </li>
   <li class="nav-item" data-depth="3">
-    <button class="nav-toggle"></button>
+    <button class="nav-item-toggle"></button>
     <a class="nav-link" href="../reference/home/home-menu.html">Home</a>
 <ul class="nav-list">
   <li class="nav-item" data-depth="4">
@@ -333,7 +331,7 @@
     <a class="nav-link" href="../reference/home/home-notification-messages.html">Notification Messages</a>
   </li>
   <li class="nav-item" data-depth="4">
-    <button class="nav-toggle"></button>
+    <button class="nav-item-toggle"></button>
     <a class="nav-link" href="../reference/home/user-account-menu.html">User Account Menu</a>
 <ul class="nav-list">
   <li class="nav-item" data-depth="5">
@@ -354,7 +352,7 @@
     <a class="nav-link" href="../reference/home/home-my-preferences.html">My Preferences</a>
   </li>
   <li class="nav-item" data-depth="4">
-    <button class="nav-toggle"></button>
+    <button class="nav-item-toggle"></button>
     <a class="nav-link" href="../reference/home/my-organization-menu.html">My Organization</a>
 <ul class="nav-list">
   <li class="nav-item" data-depth="5">
@@ -371,14 +369,14 @@
 </ul>
   </li>
   <li class="nav-item" data-depth="3">
-    <button class="nav-toggle"></button>
+    <button class="nav-item-toggle"></button>
     <a class="nav-link" href="../reference/systems/systems-menu.html">Systems</a>
 <ul class="nav-list">
   <li class="nav-item" data-depth="4">
     <a class="nav-link" href="../reference/systems/systems-overview.html">Systems Overview</a>
   </li>
   <li class="nav-item" data-depth="4">
-    <button class="nav-toggle"></button>
+    <button class="nav-item-toggle"></button>
     <a class="nav-link" href="../reference/systems/system-details.html">System Details</a>
 <ul class="nav-list">
   <li class="nav-item" data-depth="5">
@@ -453,7 +451,7 @@
     <a class="nav-link" href="../reference/systems/system-groups.html">System Groups</a>
   </li>
   <li class="nav-item" data-depth="4">
-    <button class="nav-toggle"></button>
+    <button class="nav-item-toggle"></button>
     <a class="nav-link" href="../reference/systems/ssm-menu.html">System Set Manager</a>
 <ul class="nav-list">
   <li class="nav-item" data-depth="5">
@@ -468,7 +466,7 @@
     <a class="nav-link" href="../reference/systems/bootstrapping.html">Bootstrapping</a>
   </li>
   <li class="nav-item" data-depth="4">
-    <button class="nav-toggle"></button>
+    <button class="nav-item-toggle"></button>
     <a class="nav-link" href="../reference/systems/visualization-menu.html">Visualization</a>
 <ul class="nav-list">
   <li class="nav-item" data-depth="5">
@@ -495,7 +493,7 @@
     <a class="nav-link" href="../reference/systems/custom-system-info.html">Custom System Info</a>
   </li>
   <li class="nav-item" data-depth="4">
-    <button class="nav-toggle"></button>
+    <button class="nav-item-toggle"></button>
     <a class="nav-link" href="../reference/systems/autoinst-menu.html">Autoinstallation</a>
 <ul class="nav-list">
   <li class="nav-item" data-depth="5">
@@ -530,7 +528,7 @@
 </ul>
   </li>
   <li class="nav-item" data-depth="3">
-    <button class="nav-toggle"></button>
+    <button class="nav-item-toggle"></button>
     <a class="nav-link" href="../reference/salt/salt-menu.html">Salt</a>
 <ul class="nav-list">
   <li class="nav-item" data-depth="4">
@@ -545,7 +543,7 @@
 </ul>
   </li>
   <li class="nav-item" data-depth="3">
-    <button class="nav-toggle"></button>
+    <button class="nav-item-toggle"></button>
     <a class="nav-link" href="../reference/images/images-menu.html">Images</a>
 <ul class="nav-list">
   <li class="nav-item" data-depth="4">
@@ -563,7 +561,7 @@
 </ul>
   </li>
   <li class="nav-item" data-depth="3">
-    <button class="nav-toggle"></button>
+    <button class="nav-item-toggle"></button>
     <a class="nav-link" href="../reference/patches/patches-menu.html">Patches</a>
 <ul class="nav-list">
   <li class="nav-item" data-depth="4">
@@ -573,7 +571,7 @@
     <a class="nav-link" href="../reference/patches/patch-details.html">Patch Details</a>
   </li>
   <li class="nav-item" data-depth="4">
-    <button class="nav-toggle"></button>
+    <button class="nav-item-toggle"></button>
     <span class="nav-text">Patch List</span>
 <ul class="nav-list">
   <li class="nav-item" data-depth="5">
@@ -588,7 +586,7 @@
     <a class="nav-link" href="../reference/patches/patches-advanced-search.html">Advanced Search</a>
   </li>
   <li class="nav-item" data-depth="4">
-    <button class="nav-toggle"></button>
+    <button class="nav-item-toggle"></button>
     <a class="nav-link" href="../reference/patches/manage-patches.html">Manage Patches</a>
 <ul class="nav-list">
   <li class="nav-item" data-depth="5">
@@ -608,14 +606,14 @@
 </ul>
   </li>
   <li class="nav-item" data-depth="3">
-    <button class="nav-toggle"></button>
+    <button class="nav-item-toggle"></button>
     <a class="nav-link" href="../reference/software/software-menu.html">Software</a>
 <ul class="nav-list">
   <li class="nav-item" data-depth="4">
     <a class="nav-link" href="../reference/software/channel-details.html">Channel Details</a>
   </li>
   <li class="nav-item" data-depth="4">
-    <button class="nav-toggle"></button>
+    <button class="nav-item-toggle"></button>
     <a class="nav-link" href="../reference/software/software-channel-list-menu.html">Channel List</a>
 <ul class="nav-list">
   <li class="nav-item" data-depth="5">
@@ -627,7 +625,7 @@
     <a class="nav-link" href="../reference/software/software-package-search.html">Package Search</a>
   </li>
   <li class="nav-item" data-depth="4">
-    <button class="nav-toggle"></button>
+    <button class="nav-item-toggle"></button>
     <a class="nav-link" href="../reference/software/software-manage-menu.html">Manage</a>
 <ul class="nav-list">
   <li class="nav-item" data-depth="5">
@@ -647,7 +645,7 @@
 </ul>
   </li>
   <li class="nav-item" data-depth="3">
-    <button class="nav-toggle"></button>
+    <button class="nav-item-toggle"></button>
     <a class="nav-link" href="../reference/clm/clm-menu.html">Content Lifecycle Management</a>
 <ul class="nav-list">
   <li class="nav-item" data-depth="4">
@@ -659,7 +657,7 @@
 </ul>
   </li>
   <li class="nav-item" data-depth="3">
-    <button class="nav-toggle"></button>
+    <button class="nav-item-toggle"></button>
     <a class="nav-link" href="../reference/audit/audit-menu.html">Audit</a>
 <ul class="nav-list">
   <li class="nav-item" data-depth="4">
@@ -672,7 +670,7 @@
     <a class="nav-link" href="../reference/audit/audit-subscription-matching.html">Subscription Matching</a>
   </li>
   <li class="nav-item" data-depth="4">
-    <button class="nav-toggle"></button>
+    <button class="nav-item-toggle"></button>
     <a class="nav-link" href="../reference/audit/openscap-menu.html">OpenSCAP</a>
 <ul class="nav-list">
   <li class="nav-item" data-depth="5">
@@ -692,7 +690,7 @@
 </ul>
   </li>
   <li class="nav-item" data-depth="3">
-    <button class="nav-toggle"></button>
+    <button class="nav-item-toggle"></button>
     <a class="nav-link" href="../reference/configuration/config-menu.html">Configuration</a>
 <ul class="nav-list">
   <li class="nav-item" data-depth="4">
@@ -702,7 +700,7 @@
     <a class="nav-link" href="../reference/configuration/config-channels.html">Channels</a>
   </li>
   <li class="nav-item" data-depth="4">
-    <button class="nav-toggle"></button>
+    <button class="nav-item-toggle"></button>
     <a class="nav-link" href="../reference/configuration/config-files-menu.html">Files</a>
 <ul class="nav-list">
   <li class="nav-item" data-depth="5">
@@ -714,7 +712,7 @@
 </ul>
   </li>
   <li class="nav-item" data-depth="4">
-    <button class="nav-toggle"></button>
+    <button class="nav-item-toggle"></button>
     <a class="nav-link" href="../reference/configuration/config-systems-menu.html">Systems</a>
 <ul class="nav-list">
   <li class="nav-item" data-depth="5">
@@ -728,7 +726,7 @@
 </ul>
   </li>
   <li class="nav-item" data-depth="3">
-    <button class="nav-toggle"></button>
+    <button class="nav-item-toggle"></button>
     <a class="nav-link" href="../reference/schedule/schedule-menu.html">Schedule</a>
 <ul class="nav-list">
   <li class="nav-item" data-depth="4">
@@ -746,14 +744,14 @@
 </ul>
   </li>
   <li class="nav-item" data-depth="3">
-    <button class="nav-toggle"></button>
+    <button class="nav-item-toggle"></button>
     <a class="nav-link" href="../reference/users/users-menu.html">Users</a>
 <ul class="nav-list">
   <li class="nav-item" data-depth="4">
     <a class="nav-link" href="../reference/users/user-details.html">User Details</a>
   </li>
   <li class="nav-item" data-depth="4">
-    <button class="nav-toggle"></button>
+    <button class="nav-item-toggle"></button>
     <a class="nav-link" href="../reference/users/users-list.html">Users List</a>
 <ul class="nav-list">
   <li class="nav-item" data-depth="5">
@@ -773,7 +771,7 @@
 </ul>
   </li>
   <li class="nav-item" data-depth="3">
-    <button class="nav-toggle"></button>
+    <button class="nav-item-toggle"></button>
     <a class="nav-link" href="../reference/admin/admin-menu.html">Admin</a>
 <ul class="nav-list">
   <li class="nav-item" data-depth="4">
@@ -786,7 +784,7 @@
     <a class="nav-link" href="../reference/admin/users.html">Users</a>
   </li>
   <li class="nav-item" data-depth="4">
-    <button class="nav-toggle"></button>
+    <button class="nav-item-toggle"></button>
     <a class="nav-link" href="../reference/admin/manager-configuration.html">Manager Configuration</a>
 <ul class="nav-list">
   <li class="nav-item" data-depth="5">
@@ -810,7 +808,7 @@
 </ul>
   </li>
   <li class="nav-item" data-depth="4">
-    <button class="nav-toggle"></button>
+    <button class="nav-item-toggle"></button>
     <a class="nav-link" href="../reference/admin/iss-configuration.html">ISS Configuration</a>
 <ul class="nav-list">
   <li class="nav-item" data-depth="5">
@@ -833,7 +831,7 @@
 </ul>
   </li>
   <li class="nav-item" data-depth="3">
-    <button class="nav-toggle"></button>
+    <button class="nav-item-toggle"></button>
     <a class="nav-link" href="../reference/help/help-menu.html">Help</a>
 <ul class="nav-list">
   <li class="nav-item" data-depth="4">
@@ -843,7 +841,7 @@
     <a class="nav-link" href="../reference/help/release-notes.html">Release Notes</a>
   </li>
   <li class="nav-item" data-depth="4">
-    <button class="nav-toggle"></button>
+    <button class="nav-item-toggle"></button>
     <a class="nav-link" href="../reference/help/api-menu.html">API</a>
 <ul class="nav-list">
   <li class="nav-item" data-depth="5">
@@ -862,7 +860,7 @@
 </ul>
   </li>
   <li class="nav-item" data-depth="2">
-    <button class="nav-toggle"></button>
+    <button class="nav-item-toggle"></button>
     <a class="nav-link" href="../reference/spacecmd-intro.html">spacecmd Reference</a>
 <ul class="nav-list">
   <li class="nav-item" data-depth="3">
@@ -878,7 +876,7 @@
     <a class="nav-link" href="../reference/spacecmd/troubleshooting-spacecmd.html">Troubleshooting</a>
   </li>
   <li class="nav-item" data-depth="3">
-    <button class="nav-toggle"></button>
+    <button class="nav-item-toggle"></button>
     <a class="nav-link" href="../reference/spacecmd/spacecmd-functions.html">spacecmd Functions</a>
 <ul class="nav-list">
   <li class="nav-item" data-depth="4">
@@ -940,7 +938,7 @@
 </ul>
   </li>
   <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="../reference/command-line-tools.html">command-line-tools.adoc</a>
+    <a class="nav-link" href="../reference/command-line-tools.html">Command Line Tools</a>
   </li>
 </ul>
   </li>
@@ -949,7 +947,7 @@
   <li class="nav-item" data-depth="0">
 <ul class="nav-list">
   <li class="nav-item" data-depth="1">
-    <button class="nav-toggle"></button>
+    <button class="nav-item-toggle"></button>
     <a class="nav-link" href="intro.html">Administration Guide</a>
 <ul class="nav-list">
   <li class="nav-item" data-depth="2">
@@ -959,7 +957,7 @@
     <a class="nav-link" href="channel-management.html">Channel Management</a>
   </li>
   <li class="nav-item" data-depth="2">
-    <button class="nav-toggle"></button>
+    <button class="nav-item-toggle"></button>
     <a class="nav-link" href="live-patching.html">Live Patching</a>
 <ul class="nav-list">
   <li class="nav-item" data-depth="3">
@@ -983,7 +981,7 @@
     <a class="nav-link" href="iss.html">Inter-Server Synchronization</a>
   </li>
   <li class="nav-item" data-depth="2">
-    <button class="nav-toggle"></button>
+    <button class="nav-item-toggle"></button>
     <span class="nav-text">Security</span>
 <ul class="nav-list">
   <li class="nav-item" data-depth="3">
@@ -1007,7 +1005,7 @@
     <a class="nav-link" href="backup-restore.html">Backing Up and Restoring</a>
   </li>
   <li class="nav-item" data-depth="2">
-    <button class="nav-toggle"></button>
+    <button class="nav-item-toggle"></button>
     <span class="nav-text">Tuning</span>
 <ul class="nav-list">
   <li class="nav-item" data-depth="3">
@@ -1016,7 +1014,7 @@
 </ul>
   </li>
   <li class="nav-item" data-depth="2">
-    <button class="nav-toggle"></button>
+    <button class="nav-item-toggle"></button>
     <span class="nav-text">Maintenance Window</span>
 <ul class="nav-list">
   <li class="nav-item" data-depth="3">
@@ -1025,7 +1023,7 @@
 </ul>
   </li>
   <li class="nav-item" data-depth="2">
-    <button class="nav-toggle"></button>
+    <button class="nav-item-toggle"></button>
     <a class="nav-link" href="tshoot-intro.html">Troubleshooting</a>
 <ul class="nav-list">
   <li class="nav-item" data-depth="3">
@@ -1064,7 +1062,7 @@
   <li class="nav-item" data-depth="0">
 <ul class="nav-list">
   <li class="nav-item" data-depth="1">
-    <button class="nav-toggle"></button>
+    <button class="nav-item-toggle"></button>
     <span class="nav-text">Salt Guide</span>
 <ul class="nav-list">
   <li class="nav-item" data-depth="2">
@@ -1086,22 +1084,25 @@
     <a class="nav-link" href="../salt/salt-file-locations.html">File Locations</a>
   </li>
   <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="../salt/salt-config-management.html">Configuration Management</a>
-  </li>
-  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
     <a class="nav-link" href="../salt/salt-formulas.html">Salt Formulas</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../salt/salt-formulas-standard.html">Standard Formulas</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../salt/salt-formulas-custom.html">Custom Formulas</a>
+  </li>
+</ul>
   </li>
   <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="../salt/salt-example-formula.html">Example Formula</a>
-  </li>
-  <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="../salt/salt-ssh.html">SSH Integration</a>
+    <a class="nav-link" href="../salt/salt-ssh.html">Salt SSH</a>
   </li>
   <li class="nav-item" data-depth="2">
     <a class="nav-link" href="../salt/salt-rate-limiting.html">Rate Limiting</a>
   </li>
   <li class="nav-item" data-depth="2">
-    <button class="nav-toggle"></button>
+    <button class="nav-item-toggle"></button>
     <a class="nav-link" href="../salt/large-scale.html">Scaling Salt Minions</a>
 <ul class="nav-list">
   <li class="nav-item" data-depth="3">
@@ -1116,14 +1117,14 @@
   <li class="nav-item" data-depth="0">
 <ul class="nav-list">
   <li class="nav-item" data-depth="1">
-    <button class="nav-toggle"></button>
+    <button class="nav-item-toggle"></button>
     <a class="nav-link" href="../retail/retail-introduction.html">Retail Guide</a>
 <ul class="nav-list">
   <li class="nav-item" data-depth="2">
     <a class="nav-link" href="../retail/retail-components.html">Components</a>
   </li>
   <li class="nav-item" data-depth="2">
-    <button class="nav-toggle"></button>
+    <button class="nav-item-toggle"></button>
     <a class="nav-link" href="../retail/retail-install.html">Installing</a>
 <ul class="nav-list">
   <li class="nav-item" data-depth="3">
@@ -1141,7 +1142,7 @@
 </ul>
   </li>
   <li class="nav-item" data-depth="2">
-    <button class="nav-toggle"></button>
+    <button class="nav-item-toggle"></button>
     <a class="nav-link" href="../retail/retail-formulas-intro.html">Formulas</a>
 <ul class="nav-list">
   <li class="nav-item" data-depth="3">
@@ -1171,7 +1172,7 @@
 </ul>
   </li>
   <li class="nav-item" data-depth="2">
-    <button class="nav-toggle"></button>
+    <button class="nav-item-toggle"></button>
     <a class="nav-link" href="../retail/retail-admin.html">Administration</a>
 <ul class="nav-list">
   <li class="nav-item" data-depth="3">
@@ -1184,12 +1185,18 @@
     <a class="nav-link" href="../retail/retail-mass-config.html">Mass Configuration</a>
   </li>
   <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../retail/retail-mass-config-yaml.html">Mass Config YAML Example</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../retail/retail-offline.html">Offline Use</a>
+  </li>
+  <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../retail/retail-terminal-ratelimiting.html">Rate Limiting Terminals</a>
   </li>
 </ul>
   </li>
   <li class="nav-item" data-depth="2">
-    <button class="nav-toggle"></button>
+    <button class="nav-item-toggle"></button>
     <a class="nav-link" href="../retail/retail-migration-intro.html">Retail Upgrade</a>
 <ul class="nav-list">
   <li class="nav-item" data-depth="3">
@@ -1213,7 +1220,7 @@
 </ul>
   </nav>
 </div>
-<div class="navigation-explore" data-panel="explore">
+<div class="nav-panel-explore" data-panel="explore">
   <div class="context">
     <span class="title">SUSE Manager</span>
     <span class="version">master</span>
@@ -1232,26 +1239,27 @@
     </div>
   </aside>
 </div>
-  <main class="main">
+<main role="main">
 <div class="toolbar" role="navigation">
-  <button class="navigation-toggle"></button>
+<button class="nav-toggle"></button>
+
   <a href="../index-suma.html" class="home-link"></a>
-<nav class="crumbs" aria-label="breadcrumbs">
+<nav class="breadcrumbs" aria-label="breadcrumbs">
   <ul>
-    <li class="crumb"><a href="../index-suma.html">SUSE Manager</a></li>
-    <li class="crumb"><a href="intro.html">Administration Guide</a></li>
-    <li class="crumb"><a href="public-cloud.html">Public Cloud</a></li>
+    <li><a href="../index-suma.html">SUSE Manager</a></li>
+    <li><a href="intro.html">Administration Guide</a></li>
+    <li><a href="public-cloud.html">Public Cloud</a></li>
   </ul>
 </nav>
-  <div class="edit-this-page"><a href="https://github.com/SUSE/doc-susemanager/edit/master/modules/administration/pages/public-cloud.adoc"><i class="fas fa-user-edit" ></i>&nbsp;Contribute to this Page</a></div>
+  <div class="edit-this-page"><a href="https://github.com/SUSE/doc-susemanager/edit/master/modules/administration/pages/public-cloud.adoc">Edit this Page</a></div>
 </div>
-<article class="doc">
-<h1>Public Cloud</h1>
+<article class="doc"><a name="section-top"></a>
+<h1 class="page">Public Cloud</h1>
 <div id="preamble">
 <div class="sectionbody">
 <div class="paragraph">
 <p>Some public cloud environments provide images for SUSE Manager Server and Proxy.
-This section discusses what you will require to run SUSE Manager in a public cloud, and how to set up your installation.</p>
+This section discusses what you will need for running SUSE Manager in a public cloud, and how to set up your installation.</p>
 </div>
 <div class="admonitionblock note">
 <table>
@@ -1272,6 +1280,9 @@ For more information about registering SUSE Manager with SUSE Customer Center, s
 <div class="paragraph">
 <p>Depending on the public cloud network you are using, you can locate the SUSE Manager installation images by searching for the  keywords <code class="package">suse</code>, <code class="package">manager</code>, <code class="package">proxy</code>, or <code class="package">BYOS</code>.</p>
 </div>
+<div class="paragraph">
+<p>For <code>SUSE Manager Server in Azure</code>, see <a href="public-cloud-azure.html" class="page">administration:public-cloud-azure.adoc</a>.</p>
+</div>
 </div>
 </div>
 <div class="sect1">
@@ -1291,7 +1302,7 @@ This must succeed in order for the setup procedure to complete successfully and 
 Therefore, it is important to perform hostname and IP configuration prior to running the SUSE Manager setup procedure.</p>
 </li>
 <li>
-<p>SUSE Manager server and proxy instances are expected to run in a network configuration that provides you control over DNS entries, but cannot access the wider internet.
+<p>SUSE Manager Server and Proxy instances are expected to run in a network configuration that provides you control over DNS entries, but cannot access the wider internet.
 Within this network configuration DNS resolution must be provided: <code>hostname -f</code> must return the fully-qualified domain name (FQDN).
 DNS resolution is also important for connecting clients.
 DNS is dependent on the cloud framework you choose, refer to the cloud service provider documentation for detailed instructions.</p>
@@ -1369,15 +1380,8 @@ For example, if the FQDN is <code class="path">system_name.example.com</code>, t
 </div>
 </li>
 <li>
-<p>Create a DNS entry in your network environment for domain name resolution, or force correct resolution by editing the <code class="path">/etc/hosts</code> file:</p>
-<div class="listingblock">
-<div class="content">
-<pre># echo "${local_address} suma.cloud.net suma" &gt;&gt; /etc/hosts</pre>
-</div>
-</div>
-<div class="paragraph">
-<p>You can find the local address by checking your public cloud web console, or from the command line:</p>
-</div>
+<p>Create a DNS entry in your network environment for domain name resolution, or force correct resolution by editing the <code class="path">/etc/hosts</code> file.
+You can find the IP address by checking your public cloud web console, or from the command line:</p>
 <div class="ulist">
 <ul>
 <li>
@@ -1403,6 +1407,14 @@ For example, if the FQDN is <code class="path">system_name.example.com</code>, t
 <pre># azuremetadata --internal-ip</pre>
 </div>
 </div>
+<div class="paragraph">
+<p>In the following command, replace <code class="literal">&lt;ip_address&gt;</code> with IP address you retrieve from the command line above:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre># echo "&lt;ip_address&gt; suma.cloud.net suma" &gt;&gt; /etc/hosts</pre>
+</div>
+</div>
 </li>
 </ul>
 </div>
@@ -1414,10 +1426,20 @@ For example, if the FQDN is <code class="path">system_name.example.com</code>, t
 <h3 id="_set_up_dns_resolution"><a class="anchor" href="#_set_up_dns_resolution"></a><a class="link" href="#_set_up_dns_resolution">Set up DNS Resolution</a></h3>
 <div class="paragraph">
 <p>You will need to update the DNS records for the instance within the DNS service of your network environment.
-Refer to the cloud service provider documentation for detailed instructions:
-* <a href="http://docs.aws.amazon.com/AmazonVPC/latest/UserGuide/vpc-dns.html">DNS setup on Amazon EC2</a>
-* <a href="https://cloud.google.com/compute/docs/networking">DNS setup on Google Compute Engine</a>
-* <a href="https://azure.microsoft.com/en-us/documentation/articles/dns-operations-recordsets">DNS setup on Microsoft Azure</a></p>
+Refer to the cloud service provider documentation for detailed instructions:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="http://docs.aws.amazon.com/AmazonVPC/latest/UserGuide/vpc-dns.html">DNS setup on Amazon EC2</a></p>
+</li>
+<li>
+<p><a href="https://cloud.google.com/compute/docs/networking">DNS setup on Google Compute Engine</a></p>
+</li>
+<li>
+<p><a href="https://azure.microsoft.com/en-us/documentation/articles/dns-operations-recordsets">DNS setup on Microsoft Azure</a></p>
+</li>
+</ul>
 </div>
 <div class="paragraph">
 <p>If you run a SUSE Manager Server instance,  ensure the external storage is attached and prepared correctly, and that DNS resolution is set up as described.
@@ -1435,20 +1457,7 @@ These methods are likely to result in a faulty SUSE Manager installation.
 If you experience errors during setup, start a new instance, and begin the setup procedure again on a clean system.</p>
 </div>
 <div class="paragraph">
-<p>If you receive a message that there is not enough space available for setup, ensure that your root volume is at least 20GB and double check that the instructions in <a href="#using-separate-storage-volume">Using Separate Storage Volume</a> have been completed correctly.</p>
-</div>
-<div class="paragraph">
-<p>SUSE Manager Server for the public cloud comes with a bootstrap data module pre-installed.
-The bootstrap module contains optimized package lists for bootstrapping instances started from SUSE Linux Enterprise images published by SUSE.
-If you intend to register such an instance, when you creatr the bootstrap repository run the <code class="command">mgr-create-bootstrap-repo</code> script using this command, to create a bootstrap repository suitable for SUSE Linux Enterprise 12 SP1 instances.</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre>$ mgr-create-bootstrap-repo --datamodule=mgr_pubcloud_bootstrap_data -c SLE-12-SP1-x86_64</pre>
-</div>
-</div>
-<div class="paragraph">
-<p>See <a href="https://www.suse.com/documentation/suse-manager-3/book.suma.getting-started/data/create_tools_repository.html">Creating the SUSE Manager Tools Repository</a> for more information on bootstrapping.</p>
+<p>If you receive a message that there is not enough space available for setup, ensure that your root volume is at least 20 GB and double check that the instructions in <a href="#using-separate-storage-volume">Using Separate Storage Volume</a> have been completed correctly.</p>
 </div>
 <div class="paragraph">
 <p>Prior to registering instances started from on demand images remove the following packages from the instance to be registered:
@@ -1499,10 +1508,10 @@ file that contains the <strong>susecloud.net</strong> reference.
 <p>+
 Launch the instance, optionally with external storage configured.
 If you use external storage (recommended), prepare it according to <a href="#using-separate-storage-volume">Using Separate Storage Volume</a>.
-It is recommended but not required to prepare the storage before configuring SUSE Manager proxy, as the suma-webui-storage script will migrate any existing cached data to the external storage.
+It is recommended but not required to prepare the storage before configuring SUSE Manager proxy, as the suma-storage script will migrate any existing cached data to the external storage.
 After preparing the instance, register the system with the parent SUSE Manager, which could be a SUSE Manager Server or another SUSE Manager Proxy.
-See the <a href="https://www.suse.com/documentation/suse-manager-3/singlehtml/suse_manager21/book_susemanager_proxyquick/book_susemanager_proxyquick.html"> SUSE Manager Proxy Setup guide</a> for details.
-Once registered, run</p>
+See the <a href="../installation/proxy-setup.html" class="page">installation:proxy-setup.adoc</a> for details.
+When registered, run</p>
 </div>
 <div class="paragraph">
 <p>+</p>
@@ -1542,7 +1551,7 @@ to configure your SUSE Manager Proxy instance.
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code class="replaceable">Instance-ID</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code class="replaceable">Instance-ID</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code class="replaceable">Instance-Name</code><strong>-suma-webui</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code class="replaceable">Instance-Name</code><strong>-suma</strong></p></td>
 </tr>
 </tbody>
 </table>
@@ -1609,10 +1618,10 @@ For sizing information refer to <a href="https://www.suse.com/support/kb/doc.php
 </div>
 </li>
 <li>
-<p>With the device name at hand the process of re-linking the directories in the filesystem SUSE Manager uses to store data is handled by the suma-webui-storage script. In the following example we use <code class="path">/dev/sdb</code> as the device name.</p>
+<p>With the device name at hand the process of re-linking the directories in the filesystem SUSE Manager uses to store data is handled by the suma-storage script. In the following example we use <code class="path">/dev/sdb</code> as the device name.</p>
 <div class="listingblock">
 <div class="content">
-<pre>$ /usr/bin/suma-webui-storage /dev/sdb</pre>
+<pre>$ /usr/bin/suma-storage /dev/sdb</pre>
 </div>
 </div>
 <div class="paragraph">
@@ -1751,17 +1760,35 @@ Each operating system type stores this file in a slightly different location, ch
 </tbody>
 </table>
 <div class="paragraph">
-<p>Once you have deleted the minion ID file, re-run the bootstrap script, and restart the client to see the cloned system in SUSE Manager with the new ID.</p>
+<p>When you have deleted the minion ID file, re-run the bootstrap script, and restart the client to see the cloned system in SUSE Manager with the new ID.</p>
 </div>
 </div>
+</div>
+
+<div class="cedents" role="navigation">
+  <div class="prev openblock content drivers">
+      <a href="kubernetes.html" title="Kubernetes">
+        <span class="label"><strong>Previous</strong></span>
+        <span class="label title"><strong>:</strong></span>
+        <span class="title">Kubernetes</span>
+      </a>
+  </div>
+  <div class="next openblock content drivers">
+      <a href="iss.html" title="Inter-Server Synchronization">
+        <span class="label"><strong>Next</strong></span>
+        <span class="label title"><strong>:</strong></span>
+        <span class="title">Inter-Server Synchronization</span>
+      </a>
+  </div>
 </div>
 </article>
-  </main>
+<aside class="article-aside hidden" role="navigation">
+  <h3 class="toc-title">On This Page</h3>
+  <div id="article-toc"></div>
+</aside>
+
+</main>
 </div>
-<footer class="footer">
-  <p>This page was built using the Antora default UI.</p>
-  <p>The source code for this UI is licensed under the terms of the MPL-2.0 license.</p>
-</footer>
 <script type="text/javascript">
   window.antora = window.antora || {}
   window.antora.basePath = '../..'
@@ -1773,5 +1800,20 @@ Each operating system type stores this file in a slightly different location, ch
 <script async src="../../_/../search-index.js"></script>
 <script src="../../_/js/vendor/highlight.js"></script>
 <script>hljs.initHighlighting()</script>
+<script src="../../_/js/vendor/tocbot.min.js"></script>
+<script>
+    tocbot.init( {
+        tocSelector: '#article-toc',
+        contentSelector: 'article',
+        headingSelector: 'h2, h3, h4, h5, h6',
+        collapseDepth: 6,
+        positionFixedSelector: '#article-toc',
+        scrollSmooth: false
+    } );
+    var tocList = document.getElementById( 'article-toc' ).getElementsByClassName( 'toc-list' );
+    if ( tocList && tocList.length > 0 && tocList[0].childNodes.length > 0 ) {
+        document.getElementById( 'article-toc' ).parentNode.classList.remove( 'hidden' );
+    }
+</script>
   </body>
 </html>

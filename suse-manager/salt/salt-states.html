@@ -2,11 +2,12 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>Salt States :: SUSE Manager Documentation</title>
     <link rel="canonical" href="https://opensource.suse.com/doc-susemanager/suse-manager/salt/salt-states.html">
     <meta name="generator" content="Antora 2.0.0">
     <link rel="stylesheet" href="../../_/css/site.css">
+
 <link rel="stylesheet" href="../../_/css/search.css">
 <link rel="icon" href="../../_/img/favicon.ico" type="image/x-icon">
 <link rel="stylesheet" href="../../_/css/font-styles.css">
@@ -63,11 +64,11 @@
     </div>
   </nav>
 </header>
-<div class="main-wrapper">
-<div class="navigation-container" data-component="suse-manager" data-version="master">
-  <aside class="navigation">
+<div class="body">
+<div class="nav-container" data-component="suse-manager" data-version="master">
+  <aside class="nav">
     <div class="panels">
-<div class="navigation-menu is-active" data-panel="menu">
+<div class="nav-panel-menu is-active" data-panel="menu">
   <nav class="nav-menu">
     <h3 class="title"><a href="../index-suma.html">SUSE Manager</a></h3>
 <ul class="nav-list">
@@ -84,14 +85,14 @@
   <li class="nav-item" data-depth="0">
 <ul class="nav-list">
   <li class="nav-item" data-depth="1">
-    <button class="nav-toggle"></button>
+    <button class="nav-item-toggle"></button>
     <span class="nav-text">Installation Guide</span>
 <ul class="nav-list">
   <li class="nav-item" data-depth="2">
     <a class="nav-link" href="../installation/install-intro.html">Introduction</a>
   </li>
   <li class="nav-item" data-depth="2">
-    <button class="nav-toggle"></button>
+    <button class="nav-item-toggle"></button>
     <span class="nav-text">Requirements</span>
 <ul class="nav-list">
   <li class="nav-item" data-depth="3">
@@ -109,7 +110,7 @@
 </ul>
   </li>
   <li class="nav-item" data-depth="2">
-    <button class="nav-toggle"></button>
+    <button class="nav-item-toggle"></button>
     <span class="nav-text">Installation</span>
 <ul class="nav-list">
   <li class="nav-item" data-depth="3">
@@ -127,7 +128,7 @@
 </ul>
   </li>
   <li class="nav-item" data-depth="2">
-    <button class="nav-toggle"></button>
+    <button class="nav-item-toggle"></button>
     <span class="nav-text">Setting Up</span>
 <ul class="nav-list">
   <li class="nav-item" data-depth="3">
@@ -148,12 +149,12 @@
   <li class="nav-item" data-depth="0">
 <ul class="nav-list">
   <li class="nav-item" data-depth="1">
-    <button class="nav-toggle"></button>
+    <button class="nav-item-toggle"></button>
     <a class="nav-link" href="../client-configuration/client-config-overview.html">Client Configuration Guide</a>
 <ul class="nav-list">
   <li class="nav-item" data-depth="2">
-    <button class="nav-toggle"></button>
-    <a class="nav-link" href="../client-configuration/manual-registration-overview.html">Registration Overview</a>
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../client-configuration/registration-overview.html">Registration Overview</a>
 <ul class="nav-list">
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../client-configuration/registration-webui.html">Registering with the Web UI</a>
@@ -161,10 +162,13 @@
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../client-configuration/registration-bootstrap.html">Registering with Bootstrap</a>
   </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../client-configuration/clients-and-activation-keys.html">Activation Keys</a>
+  </li>
 </ul>
   </li>
   <li class="nav-item" data-depth="2">
-    <button class="nav-toggle"></button>
+    <button class="nav-item-toggle"></button>
     <a class="nav-link" href="../client-configuration/client-proxy.html">Registering Clients on a Proxy</a>
 <ul class="nav-list">
   <li class="nav-item" data-depth="3">
@@ -176,7 +180,7 @@
 </ul>
   </li>
   <li class="nav-item" data-depth="2">
-    <button class="nav-toggle"></button>
+    <button class="nav-item-toggle"></button>
     <a class="nav-link" href="../client-configuration/autoinstallation-methods.html">Automating Client Installation</a>
 <ul class="nav-list">
   <li class="nav-item" data-depth="3">
@@ -194,7 +198,7 @@
 </ul>
   </li>
   <li class="nav-item" data-depth="2">
-    <button class="nav-toggle"></button>
+    <button class="nav-item-toggle"></button>
     <a class="nav-link" href="../client-configuration/non-suse-clients.html">Other Clients</a>
 <ul class="nav-list">
   <li class="nav-item" data-depth="3">
@@ -209,7 +213,7 @@
 </ul>
   </li>
   <li class="nav-item" data-depth="2">
-    <button class="nav-toggle"></button>
+    <button class="nav-item-toggle"></button>
     <a class="nav-link" href="../client-configuration/virtualization.html">Virtualization</a>
 <ul class="nav-list">
   <li class="nav-item" data-depth="3">
@@ -222,9 +226,6 @@
     <a class="nav-link" href="../client-configuration/virt-file.html">Virtualization with Other Hosts</a>
   </li>
 </ul>
-  </li>
-  <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="../client-configuration/clients-and-activation-keys.html">Activation Keys</a>
   </li>
   <li class="nav-item" data-depth="2">
     <a class="nav-link" href="../client-configuration/channels.html">Channels</a>
@@ -248,14 +249,11 @@
   <li class="nav-item" data-depth="0">
 <ul class="nav-list">
   <li class="nav-item" data-depth="1">
-    <button class="nav-toggle"></button>
+    <button class="nav-item-toggle"></button>
     <a class="nav-link" href="../upgrade/upgrade-overview.html">Upgrade Guide</a>
 <ul class="nav-list">
   <li class="nav-item" data-depth="2">
     <a class="nav-link" href="../upgrade/server-upgrade.html">Server Update</a>
-  </li>
-  <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="../upgrade/migrate-3x-3x.html">Server Upgrade 3.x &#8594; 3.x</a>
   </li>
   <li class="nav-item" data-depth="2">
     <a class="nav-link" href="../upgrade/migrate-3x-4x.html">Server Upgrade 3.x &#8594; 4.x</a>
@@ -282,15 +280,15 @@
   <li class="nav-item" data-depth="0">
 <ul class="nav-list">
   <li class="nav-item" data-depth="1">
-    <button class="nav-toggle"></button>
+    <button class="nav-item-toggle"></button>
     <a class="nav-link" href="../reference/intro.html">Reference Manual</a>
 <ul class="nav-list">
   <li class="nav-item" data-depth="2">
-    <button class="nav-toggle"></button>
+    <button class="nav-item-toggle"></button>
     <span class="nav-text">WebUI Reference</span>
 <ul class="nav-list">
   <li class="nav-item" data-depth="3">
-    <button class="nav-toggle"></button>
+    <button class="nav-item-toggle"></button>
     <a class="nav-link" href="../reference/navigation/navigation-menu.html">Navigation</a>
 <ul class="nav-list">
   <li class="nav-item" data-depth="4">
@@ -323,7 +321,7 @@
 </ul>
   </li>
   <li class="nav-item" data-depth="3">
-    <button class="nav-toggle"></button>
+    <button class="nav-item-toggle"></button>
     <a class="nav-link" href="../reference/home/home-menu.html">Home</a>
 <ul class="nav-list">
   <li class="nav-item" data-depth="4">
@@ -333,7 +331,7 @@
     <a class="nav-link" href="../reference/home/home-notification-messages.html">Notification Messages</a>
   </li>
   <li class="nav-item" data-depth="4">
-    <button class="nav-toggle"></button>
+    <button class="nav-item-toggle"></button>
     <a class="nav-link" href="../reference/home/user-account-menu.html">User Account Menu</a>
 <ul class="nav-list">
   <li class="nav-item" data-depth="5">
@@ -354,7 +352,7 @@
     <a class="nav-link" href="../reference/home/home-my-preferences.html">My Preferences</a>
   </li>
   <li class="nav-item" data-depth="4">
-    <button class="nav-toggle"></button>
+    <button class="nav-item-toggle"></button>
     <a class="nav-link" href="../reference/home/my-organization-menu.html">My Organization</a>
 <ul class="nav-list">
   <li class="nav-item" data-depth="5">
@@ -371,14 +369,14 @@
 </ul>
   </li>
   <li class="nav-item" data-depth="3">
-    <button class="nav-toggle"></button>
+    <button class="nav-item-toggle"></button>
     <a class="nav-link" href="../reference/systems/systems-menu.html">Systems</a>
 <ul class="nav-list">
   <li class="nav-item" data-depth="4">
     <a class="nav-link" href="../reference/systems/systems-overview.html">Systems Overview</a>
   </li>
   <li class="nav-item" data-depth="4">
-    <button class="nav-toggle"></button>
+    <button class="nav-item-toggle"></button>
     <a class="nav-link" href="../reference/systems/system-details.html">System Details</a>
 <ul class="nav-list">
   <li class="nav-item" data-depth="5">
@@ -453,7 +451,7 @@
     <a class="nav-link" href="../reference/systems/system-groups.html">System Groups</a>
   </li>
   <li class="nav-item" data-depth="4">
-    <button class="nav-toggle"></button>
+    <button class="nav-item-toggle"></button>
     <a class="nav-link" href="../reference/systems/ssm-menu.html">System Set Manager</a>
 <ul class="nav-list">
   <li class="nav-item" data-depth="5">
@@ -468,7 +466,7 @@
     <a class="nav-link" href="../reference/systems/bootstrapping.html">Bootstrapping</a>
   </li>
   <li class="nav-item" data-depth="4">
-    <button class="nav-toggle"></button>
+    <button class="nav-item-toggle"></button>
     <a class="nav-link" href="../reference/systems/visualization-menu.html">Visualization</a>
 <ul class="nav-list">
   <li class="nav-item" data-depth="5">
@@ -495,7 +493,7 @@
     <a class="nav-link" href="../reference/systems/custom-system-info.html">Custom System Info</a>
   </li>
   <li class="nav-item" data-depth="4">
-    <button class="nav-toggle"></button>
+    <button class="nav-item-toggle"></button>
     <a class="nav-link" href="../reference/systems/autoinst-menu.html">Autoinstallation</a>
 <ul class="nav-list">
   <li class="nav-item" data-depth="5">
@@ -530,7 +528,7 @@
 </ul>
   </li>
   <li class="nav-item" data-depth="3">
-    <button class="nav-toggle"></button>
+    <button class="nav-item-toggle"></button>
     <a class="nav-link" href="../reference/salt/salt-menu.html">Salt</a>
 <ul class="nav-list">
   <li class="nav-item" data-depth="4">
@@ -545,7 +543,7 @@
 </ul>
   </li>
   <li class="nav-item" data-depth="3">
-    <button class="nav-toggle"></button>
+    <button class="nav-item-toggle"></button>
     <a class="nav-link" href="../reference/images/images-menu.html">Images</a>
 <ul class="nav-list">
   <li class="nav-item" data-depth="4">
@@ -563,7 +561,7 @@
 </ul>
   </li>
   <li class="nav-item" data-depth="3">
-    <button class="nav-toggle"></button>
+    <button class="nav-item-toggle"></button>
     <a class="nav-link" href="../reference/patches/patches-menu.html">Patches</a>
 <ul class="nav-list">
   <li class="nav-item" data-depth="4">
@@ -573,7 +571,7 @@
     <a class="nav-link" href="../reference/patches/patch-details.html">Patch Details</a>
   </li>
   <li class="nav-item" data-depth="4">
-    <button class="nav-toggle"></button>
+    <button class="nav-item-toggle"></button>
     <span class="nav-text">Patch List</span>
 <ul class="nav-list">
   <li class="nav-item" data-depth="5">
@@ -588,7 +586,7 @@
     <a class="nav-link" href="../reference/patches/patches-advanced-search.html">Advanced Search</a>
   </li>
   <li class="nav-item" data-depth="4">
-    <button class="nav-toggle"></button>
+    <button class="nav-item-toggle"></button>
     <a class="nav-link" href="../reference/patches/manage-patches.html">Manage Patches</a>
 <ul class="nav-list">
   <li class="nav-item" data-depth="5">
@@ -608,14 +606,14 @@
 </ul>
   </li>
   <li class="nav-item" data-depth="3">
-    <button class="nav-toggle"></button>
+    <button class="nav-item-toggle"></button>
     <a class="nav-link" href="../reference/software/software-menu.html">Software</a>
 <ul class="nav-list">
   <li class="nav-item" data-depth="4">
     <a class="nav-link" href="../reference/software/channel-details.html">Channel Details</a>
   </li>
   <li class="nav-item" data-depth="4">
-    <button class="nav-toggle"></button>
+    <button class="nav-item-toggle"></button>
     <a class="nav-link" href="../reference/software/software-channel-list-menu.html">Channel List</a>
 <ul class="nav-list">
   <li class="nav-item" data-depth="5">
@@ -627,7 +625,7 @@
     <a class="nav-link" href="../reference/software/software-package-search.html">Package Search</a>
   </li>
   <li class="nav-item" data-depth="4">
-    <button class="nav-toggle"></button>
+    <button class="nav-item-toggle"></button>
     <a class="nav-link" href="../reference/software/software-manage-menu.html">Manage</a>
 <ul class="nav-list">
   <li class="nav-item" data-depth="5">
@@ -647,7 +645,7 @@
 </ul>
   </li>
   <li class="nav-item" data-depth="3">
-    <button class="nav-toggle"></button>
+    <button class="nav-item-toggle"></button>
     <a class="nav-link" href="../reference/clm/clm-menu.html">Content Lifecycle Management</a>
 <ul class="nav-list">
   <li class="nav-item" data-depth="4">
@@ -659,7 +657,7 @@
 </ul>
   </li>
   <li class="nav-item" data-depth="3">
-    <button class="nav-toggle"></button>
+    <button class="nav-item-toggle"></button>
     <a class="nav-link" href="../reference/audit/audit-menu.html">Audit</a>
 <ul class="nav-list">
   <li class="nav-item" data-depth="4">
@@ -672,7 +670,7 @@
     <a class="nav-link" href="../reference/audit/audit-subscription-matching.html">Subscription Matching</a>
   </li>
   <li class="nav-item" data-depth="4">
-    <button class="nav-toggle"></button>
+    <button class="nav-item-toggle"></button>
     <a class="nav-link" href="../reference/audit/openscap-menu.html">OpenSCAP</a>
 <ul class="nav-list">
   <li class="nav-item" data-depth="5">
@@ -692,7 +690,7 @@
 </ul>
   </li>
   <li class="nav-item" data-depth="3">
-    <button class="nav-toggle"></button>
+    <button class="nav-item-toggle"></button>
     <a class="nav-link" href="../reference/configuration/config-menu.html">Configuration</a>
 <ul class="nav-list">
   <li class="nav-item" data-depth="4">
@@ -702,7 +700,7 @@
     <a class="nav-link" href="../reference/configuration/config-channels.html">Channels</a>
   </li>
   <li class="nav-item" data-depth="4">
-    <button class="nav-toggle"></button>
+    <button class="nav-item-toggle"></button>
     <a class="nav-link" href="../reference/configuration/config-files-menu.html">Files</a>
 <ul class="nav-list">
   <li class="nav-item" data-depth="5">
@@ -714,7 +712,7 @@
 </ul>
   </li>
   <li class="nav-item" data-depth="4">
-    <button class="nav-toggle"></button>
+    <button class="nav-item-toggle"></button>
     <a class="nav-link" href="../reference/configuration/config-systems-menu.html">Systems</a>
 <ul class="nav-list">
   <li class="nav-item" data-depth="5">
@@ -728,7 +726,7 @@
 </ul>
   </li>
   <li class="nav-item" data-depth="3">
-    <button class="nav-toggle"></button>
+    <button class="nav-item-toggle"></button>
     <a class="nav-link" href="../reference/schedule/schedule-menu.html">Schedule</a>
 <ul class="nav-list">
   <li class="nav-item" data-depth="4">
@@ -746,14 +744,14 @@
 </ul>
   </li>
   <li class="nav-item" data-depth="3">
-    <button class="nav-toggle"></button>
+    <button class="nav-item-toggle"></button>
     <a class="nav-link" href="../reference/users/users-menu.html">Users</a>
 <ul class="nav-list">
   <li class="nav-item" data-depth="4">
     <a class="nav-link" href="../reference/users/user-details.html">User Details</a>
   </li>
   <li class="nav-item" data-depth="4">
-    <button class="nav-toggle"></button>
+    <button class="nav-item-toggle"></button>
     <a class="nav-link" href="../reference/users/users-list.html">Users List</a>
 <ul class="nav-list">
   <li class="nav-item" data-depth="5">
@@ -773,7 +771,7 @@
 </ul>
   </li>
   <li class="nav-item" data-depth="3">
-    <button class="nav-toggle"></button>
+    <button class="nav-item-toggle"></button>
     <a class="nav-link" href="../reference/admin/admin-menu.html">Admin</a>
 <ul class="nav-list">
   <li class="nav-item" data-depth="4">
@@ -786,7 +784,7 @@
     <a class="nav-link" href="../reference/admin/users.html">Users</a>
   </li>
   <li class="nav-item" data-depth="4">
-    <button class="nav-toggle"></button>
+    <button class="nav-item-toggle"></button>
     <a class="nav-link" href="../reference/admin/manager-configuration.html">Manager Configuration</a>
 <ul class="nav-list">
   <li class="nav-item" data-depth="5">
@@ -810,7 +808,7 @@
 </ul>
   </li>
   <li class="nav-item" data-depth="4">
-    <button class="nav-toggle"></button>
+    <button class="nav-item-toggle"></button>
     <a class="nav-link" href="../reference/admin/iss-configuration.html">ISS Configuration</a>
 <ul class="nav-list">
   <li class="nav-item" data-depth="5">
@@ -833,7 +831,7 @@
 </ul>
   </li>
   <li class="nav-item" data-depth="3">
-    <button class="nav-toggle"></button>
+    <button class="nav-item-toggle"></button>
     <a class="nav-link" href="../reference/help/help-menu.html">Help</a>
 <ul class="nav-list">
   <li class="nav-item" data-depth="4">
@@ -843,7 +841,7 @@
     <a class="nav-link" href="../reference/help/release-notes.html">Release Notes</a>
   </li>
   <li class="nav-item" data-depth="4">
-    <button class="nav-toggle"></button>
+    <button class="nav-item-toggle"></button>
     <a class="nav-link" href="../reference/help/api-menu.html">API</a>
 <ul class="nav-list">
   <li class="nav-item" data-depth="5">
@@ -862,7 +860,7 @@
 </ul>
   </li>
   <li class="nav-item" data-depth="2">
-    <button class="nav-toggle"></button>
+    <button class="nav-item-toggle"></button>
     <a class="nav-link" href="../reference/spacecmd-intro.html">spacecmd Reference</a>
 <ul class="nav-list">
   <li class="nav-item" data-depth="3">
@@ -878,7 +876,7 @@
     <a class="nav-link" href="../reference/spacecmd/troubleshooting-spacecmd.html">Troubleshooting</a>
   </li>
   <li class="nav-item" data-depth="3">
-    <button class="nav-toggle"></button>
+    <button class="nav-item-toggle"></button>
     <a class="nav-link" href="../reference/spacecmd/spacecmd-functions.html">spacecmd Functions</a>
 <ul class="nav-list">
   <li class="nav-item" data-depth="4">
@@ -940,7 +938,7 @@
 </ul>
   </li>
   <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="../reference/command-line-tools.html">command-line-tools.adoc</a>
+    <a class="nav-link" href="../reference/command-line-tools.html">Command Line Tools</a>
   </li>
 </ul>
   </li>
@@ -949,7 +947,7 @@
   <li class="nav-item" data-depth="0">
 <ul class="nav-list">
   <li class="nav-item" data-depth="1">
-    <button class="nav-toggle"></button>
+    <button class="nav-item-toggle"></button>
     <a class="nav-link" href="../administration/intro.html">Administration Guide</a>
 <ul class="nav-list">
   <li class="nav-item" data-depth="2">
@@ -959,7 +957,7 @@
     <a class="nav-link" href="../administration/channel-management.html">Channel Management</a>
   </li>
   <li class="nav-item" data-depth="2">
-    <button class="nav-toggle"></button>
+    <button class="nav-item-toggle"></button>
     <a class="nav-link" href="../administration/live-patching.html">Live Patching</a>
 <ul class="nav-list">
   <li class="nav-item" data-depth="3">
@@ -983,7 +981,7 @@
     <a class="nav-link" href="../administration/iss.html">Inter-Server Synchronization</a>
   </li>
   <li class="nav-item" data-depth="2">
-    <button class="nav-toggle"></button>
+    <button class="nav-item-toggle"></button>
     <span class="nav-text">Security</span>
 <ul class="nav-list">
   <li class="nav-item" data-depth="3">
@@ -1007,7 +1005,7 @@
     <a class="nav-link" href="../administration/backup-restore.html">Backing Up and Restoring</a>
   </li>
   <li class="nav-item" data-depth="2">
-    <button class="nav-toggle"></button>
+    <button class="nav-item-toggle"></button>
     <span class="nav-text">Tuning</span>
 <ul class="nav-list">
   <li class="nav-item" data-depth="3">
@@ -1016,7 +1014,7 @@
 </ul>
   </li>
   <li class="nav-item" data-depth="2">
-    <button class="nav-toggle"></button>
+    <button class="nav-item-toggle"></button>
     <span class="nav-text">Maintenance Window</span>
 <ul class="nav-list">
   <li class="nav-item" data-depth="3">
@@ -1025,7 +1023,7 @@
 </ul>
   </li>
   <li class="nav-item" data-depth="2">
-    <button class="nav-toggle"></button>
+    <button class="nav-item-toggle"></button>
     <a class="nav-link" href="../administration/tshoot-intro.html">Troubleshooting</a>
 <ul class="nav-list">
   <li class="nav-item" data-depth="3">
@@ -1064,7 +1062,7 @@
   <li class="nav-item" data-depth="0">
 <ul class="nav-list">
   <li class="nav-item" data-depth="1">
-    <button class="nav-toggle"></button>
+    <button class="nav-item-toggle"></button>
     <span class="nav-text">Salt Guide</span>
 <ul class="nav-list">
   <li class="nav-item" data-depth="2">
@@ -1086,22 +1084,25 @@
     <a class="nav-link" href="salt-file-locations.html">File Locations</a>
   </li>
   <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="salt-config-management.html">Configuration Management</a>
-  </li>
-  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
     <a class="nav-link" href="salt-formulas.html">Salt Formulas</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="salt-formulas-standard.html">Standard Formulas</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="salt-formulas-custom.html">Custom Formulas</a>
+  </li>
+</ul>
   </li>
   <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="salt-example-formula.html">Example Formula</a>
-  </li>
-  <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="salt-ssh.html">SSH Integration</a>
+    <a class="nav-link" href="salt-ssh.html">Salt SSH</a>
   </li>
   <li class="nav-item" data-depth="2">
     <a class="nav-link" href="salt-rate-limiting.html">Rate Limiting</a>
   </li>
   <li class="nav-item" data-depth="2">
-    <button class="nav-toggle"></button>
+    <button class="nav-item-toggle"></button>
     <a class="nav-link" href="large-scale.html">Scaling Salt Minions</a>
 <ul class="nav-list">
   <li class="nav-item" data-depth="3">
@@ -1116,14 +1117,14 @@
   <li class="nav-item" data-depth="0">
 <ul class="nav-list">
   <li class="nav-item" data-depth="1">
-    <button class="nav-toggle"></button>
+    <button class="nav-item-toggle"></button>
     <a class="nav-link" href="../retail/retail-introduction.html">Retail Guide</a>
 <ul class="nav-list">
   <li class="nav-item" data-depth="2">
     <a class="nav-link" href="../retail/retail-components.html">Components</a>
   </li>
   <li class="nav-item" data-depth="2">
-    <button class="nav-toggle"></button>
+    <button class="nav-item-toggle"></button>
     <a class="nav-link" href="../retail/retail-install.html">Installing</a>
 <ul class="nav-list">
   <li class="nav-item" data-depth="3">
@@ -1141,7 +1142,7 @@
 </ul>
   </li>
   <li class="nav-item" data-depth="2">
-    <button class="nav-toggle"></button>
+    <button class="nav-item-toggle"></button>
     <a class="nav-link" href="../retail/retail-formulas-intro.html">Formulas</a>
 <ul class="nav-list">
   <li class="nav-item" data-depth="3">
@@ -1171,7 +1172,7 @@
 </ul>
   </li>
   <li class="nav-item" data-depth="2">
-    <button class="nav-toggle"></button>
+    <button class="nav-item-toggle"></button>
     <a class="nav-link" href="../retail/retail-admin.html">Administration</a>
 <ul class="nav-list">
   <li class="nav-item" data-depth="3">
@@ -1184,12 +1185,18 @@
     <a class="nav-link" href="../retail/retail-mass-config.html">Mass Configuration</a>
   </li>
   <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../retail/retail-mass-config-yaml.html">Mass Config YAML Example</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../retail/retail-offline.html">Offline Use</a>
+  </li>
+  <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../retail/retail-terminal-ratelimiting.html">Rate Limiting Terminals</a>
   </li>
 </ul>
   </li>
   <li class="nav-item" data-depth="2">
-    <button class="nav-toggle"></button>
+    <button class="nav-item-toggle"></button>
     <a class="nav-link" href="../retail/retail-migration-intro.html">Retail Upgrade</a>
 <ul class="nav-list">
   <li class="nav-item" data-depth="3">
@@ -1213,7 +1220,7 @@
 </ul>
   </nav>
 </div>
-<div class="navigation-explore" data-panel="explore">
+<div class="nav-panel-explore" data-panel="explore">
   <div class="context">
     <span class="title">SUSE Manager</span>
     <span class="version">master</span>
@@ -1232,52 +1239,39 @@
     </div>
   </aside>
 </div>
-  <main class="main">
+<main role="main">
 <div class="toolbar" role="navigation">
-  <button class="navigation-toggle"></button>
+<button class="nav-toggle"></button>
+
   <a href="../index-suma.html" class="home-link"></a>
-<nav class="crumbs" aria-label="breadcrumbs">
+<nav class="breadcrumbs" aria-label="breadcrumbs">
   <ul>
-    <li class="crumb"><a href="../index-suma.html">SUSE Manager</a></li>
-    <li class="crumb">Salt Guide</li>
-    <li class="crumb"><a href="salt-states.html">Salt States</a></li>
+    <li><a href="../index-suma.html">SUSE Manager</a></li>
+    <li>Salt Guide</li>
+    <li><a href="salt-states.html">Salt States</a></li>
   </ul>
 </nav>
-  <div class="edit-this-page"><a href="https://github.com/SUSE/doc-susemanager/edit/master/modules/salt/pages/salt-states.adoc"><i class="fas fa-user-edit" ></i>&nbsp;Contribute to this Page</a></div>
+  <div class="edit-this-page"><a href="https://github.com/SUSE/doc-susemanager/edit/master/modules/salt/pages/salt-states.adoc">Edit this Page</a></div>
 </div>
-<article class="doc">
-<h1>Salt States</h1>
+<article class="doc"><a name="section-top"></a>
+<h1 class="page">Salt States</h1>
 <div id="preamble">
 <div class="sectionbody">
 <div class="paragraph">
-<p>Salt is capable of applying states by matching clients with relevant state data.
-This data comes from SUSE Manager in the form of package and custom states.</p>
+<p>States are configuration templates.
+They allow you to describe what each of your systems should look like, including the applications and services that are installed and running.
+Salt state files are referred to as SLS (SaLt State) files.</p>
 </div>
 <div class="paragraph">
-<p>State data comes from SUSE Manager in the form of package and custom states and targets clients at three specific levels of hierarchy.
-The state hierarchy is defined by the following order or priority: individual clients have priority on packages and custom states over groups; next a group has priority over the organization.</p>
+<p>States are applied to the target systems by matching relevant state data to clients.
+The state data comes from SUSE Manager in the form of package and custom states.</p>
 </div>
-<div class="ulist">
-<ul>
-<li>
-<p>Client Level</p>
 <div class="paragraph">
-<p><span class="menuseq"><b class="menu">Systems</b>&#160;<i class="fa fa-angle-right caret"></i> <b class="submenu">Specific Minion</b>&#160;<i class="fa fa-angle-right caret"></i> <b class="menuitem">States</b></span></p>
+<p>For more information on states, see <a href="https://docs.saltstack.com/en/latest/topics/tutorials/starting_states.html" class="bare">https://docs.saltstack.com/en/latest/topics/tutorials/starting_states.html</a>.</p>
 </div>
-</li>
-<li>
-<p>Group Level</p>
 <div class="paragraph">
-<p><span class="menuseq"><b class="menu">Systems</b>&#160;<i class="fa fa-angle-right caret"></i> <b class="menuitem">System Groups</b></span></p>
-</div>
-</li>
-<li>
-<p>Organization Level</p>
-<div class="paragraph">
-<p><span class="menuseq"><b class="menu">Systems</b>&#160;<i class="fa fa-angle-right caret"></i> <b class="submenu">Manage System Types:</b>&#160;<i class="fa fa-angle-right caret"></i> <b class="menuitem">My Organization</b></span></p>
-</div>
-</li>
-</ul>
+<p>You can target clients at three specific levels of hierarchy and priority: individual clients, system groups, and organization.
+Individual clients have priority over groups, and groups have priority over the organization.</p>
 </div>
 <div class="paragraph">
 <p>For example:</p>
@@ -1285,95 +1279,75 @@ The state hierarchy is defined by the following order or priority: individual cl
 <div class="ulist">
 <ul>
 <li>
-<p>Org1 requires that vim version 1 is installed</p>
+<p>The Organization requires that version 1 is installed.
+All clients are part of the same Organization.</p>
 </li>
 <li>
-<p>Group1 requires that vim version 2 is installed</p>
+<p>Group A requires that version 2 is installed.
+Client1, Client2, and Client3 are part of Group A.</p>
 </li>
 <li>
-<p>Group2 requires any version installed</p>
+<p>Group B requires any version installed.
+Client4 is part of Group B.</p>
 </li>
 </ul>
 </div>
 <div class="paragraph">
-<p>This would lead to the following order of hierarchy:</p>
+<p>Leading to these possible scenarios:</p>
 </div>
 <div class="ulist">
 <ul>
 <li>
-<p>Client1 part of [Org1, Group1] wants vim removed, vim is removed (Client Level)</p>
+<p>Client1 wants package removed, package is removed (Client Level)</p>
 </li>
 <li>
-<p>Client2 part of [Org1, Group1] wants vim version 2 gets version 2 (Group Level)</p>
+<p>Client2 wants version 2, gets version 2 (Client Level)</p>
 </li>
 <li>
-<p>Client3 part of [Org1, Group1] wants any version, gets version 2 (Org Level)</p>
+<p>Client3 wants any version, gets version 2 (Group Level)</p>
 </li>
 <li>
-<p>Client4 part of[Org1, Group2] wants any version, gets vim version 1 (Org Level)</p>
+<p>Client4 wants any version, gets version 1 (Organization Level)</p>
 </li>
 </ul>
 </div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="bp.chapt.config.mgr.salt.states.storage.locations"><a class="anchor" href="#bp.chapt.config.mgr.salt.states.storage.locations"></a><a class="link" href="#bp.chapt.config.mgr.salt.states.storage.locations">Salt States Storage Locations</a></h2>
-<div class="sectionbody">
 <div class="paragraph">
-<p>The SUSE Manager salt-master reads its state data from three file root locations.</p>
-</div>
-<div class="paragraph">
-<p>The directory <code class="path">/usr/share/susemanager/salt</code>
-It is shipped and updated together with SUSE Manager and includes certificate setup and common state logic to be applied to packages and channels.</p>
-</div>
-<div class="paragraph">
-<p>The directory <code class="path">/srv/susemanager/salt</code> is generated by SUSE Manager and based on assigned channels and packages for clients, groups and organizations.
-This file will be overwritten and regenerated.
-This could be thought of as the SUSE Manager database translated into salt directives.</p>
-</div>
-<div class="paragraph">
-<p>The third directory <code class="path">/srv/salt</code> is for custom state data, modules, etc.
-SUSE Manager does not operate within or utilize this directory.
-However, the state data placed here affects the Highstate of clients and is merged with the total state result generated by SUSE Manager.</p>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="bp.chapt.config.mgr.susemgr.states"><a class="anchor" href="#bp.chapt.config.mgr.susemgr.states"></a><a class="link" href="#bp.chapt.config.mgr.susemgr.states">SUSE Manager States</a></h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p>All user created SLS files will be saved to disk on the salt-master server.
-These files will be placed in <code class="path">/srv/susemanager/salt/</code>
- and each organization will be placed within its own directory.
-Although these states are custom, these states are created using SUSE Manager
-.
-The following provides an overview of the directory structure:</p>
+<p>Custom user-created states can be made with SUSE Manager.
+All user-created Salt state (SLS) files are saved on the SUSE Manager Server, in the <code class="path">/srv/susemanager/salt/</code> directory.
+Within that directory, each organization has a sub-directory.</p>
 </div>
 <div class="listingblock">
+<div class="title">Example: SLS File Directory Structure</div>
 <div class="content">
 <pre>├── manager_org_DEVEL
 │   ├── files
 │   │    ... files needed by states (uploaded by users)...
 │   └── state.sls
-         ... other sls files (created by users)...
-E.g.:
+         ... other SLS files (created by users)...
+For example:
 ├── manager_org_TESTING
 │   ├── files
 │   │   └── motd     # user created
 │   │    ... other files needed by states ...
 │   └── motd.sls     # user created
-            ... other sls files ...</pre>
+            ... other SLS files ...</pre>
 </div>
 </div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="bp.chapt.config.mgr.pillar.data"><a class="anchor" href="#bp.chapt.config.mgr.pillar.data"></a><a class="link" href="#bp.chapt.config.mgr.pillar.data">Pillar Data</a></h2>
+<h2 id="_salt_pillars"><a class="anchor" href="#_salt_pillars"></a><a class="link" href="#_salt_pillars">Salt Pillars</a></h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>SUSE Manager exposes a small amount of internal data as Pillars which can be used with custom states.
-Data that is exposed includes group membership, organization membership, and file roots.
-These are managed either automatically by SUSE Manager, or manually by the user.</p>
+<p>SUSE Manager exposes a small amount of internal data as pillars which can be used with custom states.
+Pillars are created on the SUSE Manager Server, and contain information about a client or group of clients.
+Pillars are useful for sensitive data, configuration of clients, variables, and any arbitrary data.</p>
+</div>
+<div class="paragraph">
+<p>Pillars are managed either automatically by SUSE Manager, or manually by the user.</p>
+</div>
+<div class="paragraph">
+<p>For more information on pillars, see <a href="https://docs.saltstack.com/en/latest/topics/tutorials/pillar.html" class="bare">https://docs.saltstack.com/en/latest/topics/tutorials/pillar.html</a>.</p>
 </div>
 <div class="paragraph">
 <p>To avoid hard-coding organization IDs within SUSE Linux Enterprise Server files, a pillar entry is added for each organization:</p>
@@ -1401,14 +1375,14 @@ These are managed either automatically by SUSE Manager, or manually by the user.
 </div>
 </div>
 <div class="sect1">
-<h2 id="bp.sect.groupstates"><a class="anchor" href="#bp.sect.groupstates"></a><a class="link" href="#bp.sect.groupstates">Group States</a></h2>
+<h2 id="_group_states"><a class="anchor" href="#_group_states"></a><a class="link" href="#_group_states">Group States</a></h2>
 <div class="sectionbody">
 <div class="paragraph">
 <p>Pillar data can be used to perform bulk actions, like applying all assigned states to clients within the group.
-This section contains some example of bulk actions that you can take using group states.</p>
+This section contains some examples of bulk actions that you can take using group states.</p>
 </div>
 <div class="paragraph">
-<p>In order to perform these actions, you will need to determine the ID of the group that you want to manipulate.
+<p>To perform these actions, you will need to determine the ID of the group that you want to manipulate.
 You can determine the Group ID by using the <code class="command">spacecmd</code> command:</p>
 </div>
 <div class="listingblock">
@@ -1451,13 +1425,8 @@ You can determine the Group ID by using the <code class="command">spacecmd</code
 <pre>salt -I 'group_ids:GID' state.apply</pre>
 </div>
 </div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="salt.pillars.setpackageendpoint"><a class="anchor" href="#salt.pillars.setpackageendpoint"></a><a class="link" href="#salt.pillars.setpackageendpoint">Use Pillars to Set the Package Download Endpoint</a></h2>
-<div class="sectionbody">
 <div class="paragraph">
-<p>By default, SUSE Manager assumes that the download endpoint to use is the FQDN of the SUSE Manager server, or the SUSE Manager Proxy.
+<p>By default, SUSE Manager assumes that the download endpoint to use is the FQDN of the SUSE Manager Server or Proxy.
 However, there are some cases where you might like to use a different FQDN as the download endpoint.
 The most common example is if you need to use load balancing, caching proxies, or in environments with complicated networking requirements.</p>
 </div>
@@ -1471,7 +1440,7 @@ The most common example is if you need to use load balancing, caching proxies, o
 <p>If you do not adjust these pillars directly, SUSE Manager will fall back to the default values.</p>
 </div>
 <div class="olist arabic">
-<div class="title">Procedure: Changing the package download endpoint pillar</div>
+<div class="title">Procedure: Changing the Package Download Endpoint Pillar</div>
 <ol class="arabic">
 <li>
 <p>Navigate to <code class="path">/srv/pillar/</code> and create a file called <code class="filename">top.sls</code>  with these contents:</p>
@@ -1479,38 +1448,38 @@ The most common example is if you need to use load balancing, caching proxies, o
 <div class="content">
 <pre>base:
   '*':
-    - rpm_download_points</pre>
+    - pkg_download_points</pre>
 </div>
 </div>
 <div class="paragraph">
-<p>This example directs Salt to look at the <code class="filename">rpm_download_points.sls</code> file to determine the base URL to use.
+<p>This example directs Salt to look at the <code class="filename">pkg_download_points.sls</code> file to determine the base URL to use.
 You can adjust this file to target different clients or groups, depending on your environment.</p>
 </div>
 </li>
 <li>
-<p>Remain in <code class="path">/srv/pillar/</code> and create a file called <code class="filename">rpm_download_points.sls</code> with the base URLs you want to use.
+<p>Remain in <code class="path">/srv/pillar/</code> and create a file called <code class="filename">pkg_download_points.sls</code> with the base URLs you want to use.
 For example:</p>
 <div class="listingblock">
 <div class="content">
-<pre>rpm_download_point_protocol: http
-rpm_download_point_host: example.com
-rpm_download_point_port: 444</pre>
+<pre>pkg_download_point_protocol: http
+pkg_download_point_host: example.com
+pkg_download_point_port: 444</pre>
 </div>
 </div>
 </li>
 <li>
 <p>OPTIONAL: If you want to use external pillars, for example Group IDs, open the master configuration file and set the <code class="systemitem">ext_pillar_first</code> parameter to <code class="systemitem">true</code>.
-You can then Group IDs to set conditional values, for example:</p>
+You can then use Group IDs to set conditional values, for example:</p>
 <div class="listingblock">
 <div class="content">
 <pre>{% if pillar['group_ids'] is defined and 8 in pillar['group_ids'] %}
-  rpm_download_point_protocol: http
-  rpm_download_point_host: example.com
-  rpm_download_point_port: 444
+  pkg_download_point_protocol: http
+  pkg_download_point_host: example.com
+  pkg_download_point_port: 444
 {%else%}
-  rpm_download_point_protocol: ftp
-  rpm_download_point_host: example.com
-  rpm_download_point_port: 445
+  pkg_download_point_protocol: ftp
+  pkg_download_point_host: example.com
+  pkg_download_point_port: 445
 {%- endif %}</pre>
 </div>
 </div>
@@ -1523,23 +1492,41 @@ You can then Group IDs to set conditional values, for example:</p>
 <div class="listingblock">
 <div class="content">
 <pre>{% if grains['fqdn'] == 'client1.example.com' %}
-    rpm_download_point: example1.com
+    pkg_download_point: example1.com
 {% elif grains['fqdn'] == 'client2.example.com'' %}
-    rpm_download_point: example2.com
+    pkg_download_point: example2.com
 {%else%}
-    rpm_download_point: example.com
+    pkg_download_point: example.com
 {% endif %}</pre>
 </div>
 </div>
 </div>
 </div>
-</article>
-  </main>
+
+<div class="cedents" role="navigation">
+  <div class="prev openblock content drivers">
+      <a href="salt-commands.html" title="Salt Commands">
+        <span class="label"><strong>Previous</strong></span>
+        <span class="label title"><strong>:</strong></span>
+        <span class="title">Salt Commands</span>
+      </a>
+  </div>
+  <div class="next openblock content drivers">
+      <a href="salt-file-locations.html" title="File Locations">
+        <span class="label"><strong>Next</strong></span>
+        <span class="label title"><strong>:</strong></span>
+        <span class="title">File Locations</span>
+      </a>
+  </div>
 </div>
-<footer class="footer">
-  <p>This page was built using the Antora default UI.</p>
-  <p>The source code for this UI is licensed under the terms of the MPL-2.0 license.</p>
-</footer>
+</article>
+<aside class="article-aside hidden" role="navigation">
+  <h3 class="toc-title">On This Page</h3>
+  <div id="article-toc"></div>
+</aside>
+
+</main>
+</div>
 <script type="text/javascript">
   window.antora = window.antora || {}
   window.antora.basePath = '../..'
@@ -1551,5 +1538,20 @@ You can then Group IDs to set conditional values, for example:</p>
 <script async src="../../_/../search-index.js"></script>
 <script src="../../_/js/vendor/highlight.js"></script>
 <script>hljs.initHighlighting()</script>
+<script src="../../_/js/vendor/tocbot.min.js"></script>
+<script>
+    tocbot.init( {
+        tocSelector: '#article-toc',
+        contentSelector: 'article',
+        headingSelector: 'h2, h3, h4, h5, h6',
+        collapseDepth: 6,
+        positionFixedSelector: '#article-toc',
+        scrollSmooth: false
+    } );
+    var tocList = document.getElementById( 'article-toc' ).getElementsByClassName( 'toc-list' );
+    if ( tocList && tocList.length > 0 && tocList[0].childNodes.length > 0 ) {
+        document.getElementById( 'article-toc' ).parentNode.classList.remove( 'hidden' );
+    }
+</script>
   </body>
 </html>

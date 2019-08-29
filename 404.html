@@ -2,9 +2,11 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>Page Not Found :: SUSE Manager Documentation</title>
+    <meta name="generator" content="Antora 2.0.0">
     <link rel="stylesheet" href="/_/css/site.css">
+
 <link rel="stylesheet" href="/_/css/search.css">
 <link rel="icon" href="/_/img/favicon.ico" type="image/x-icon">
 <link rel="stylesheet" href="/_/css/font-styles.css">
@@ -61,11 +63,11 @@
     </div>
   </nav>
 </header>
-<div class="main-wrapper">
-<div class="navigation-container">
-  <aside class="navigation">
+<div class="body">
+<div class="nav-container">
+  <aside class="nav">
     <div class="panels">
-<div class="navigation-explore is-active" data-panel="explore">
+<div class="nav-panel-explore is-active" data-panel="explore">
   <ul class="components">
     <li class="component">
       <span class="title">SUSE Manager</span>
@@ -80,29 +82,37 @@
     </div>
   </aside>
 </div>
-  <main class="main">
+<main role="main">
 <div class="toolbar" role="navigation">
-  <button class="navigation-toggle"></button>
+<button class="nav-toggle"></button>
+
   <a href="/suse-manager/index-suma.html" class="home-link"></a>
-<nav class="crumbs" aria-label="breadcrumbs">
+<nav class="breadcrumbs" aria-label="breadcrumbs">
 </nav>
 </div>
-<article class="doc">
-<h1>Page Not Found</h1>
+<article class="doc"><a name="section-top"></a>
+<h1 class="page">Page Not Found</h1>
 <div class="paragraph">
-<p>The page you're looking for does not exist. It may have been moved.</p>
+<p>The page you&#8217;re looking for does not exist. It may have been moved.</p>
 </div>
 <div class="paragraph">
 <p>If you arrived on this page by clicking on a link, please notify the owner of the site that the link is broken.
 If you typed the URL of this page manually, please double check that you entered the address correctly.</p>
 </div>
-</article>
-  </main>
+<div class="cedents" role="navigation">
+  <div class="prev openblock content drivers">
+  </div>
+  <div class="next openblock content drivers">
+  </div>
 </div>
-<footer class="footer">
-  <p>This page was built using the Antora default UI.</p>
-  <p>The source code for this UI is licensed under the terms of the MPL-2.0 license.</p>
-</footer>
+</article>
+<aside class="article-aside hidden" role="navigation">
+  <h3 class="toc-title">On This Page</h3>
+  <div id="article-toc"></div>
+</aside>
+
+</main>
+</div>
 <script type="text/javascript">
   window.antora = window.antora || {}
   window.antora.basePath = 'https://opensource.suse.com/doc-susemanager'
@@ -114,5 +124,20 @@ If you typed the URL of this page manually, please double check that you entered
 <script async src="/_/../search-index.js"></script>
 <script src="/_/js/vendor/highlight.js"></script>
 <script>hljs.initHighlighting()</script>
+<script src="/_/js/vendor/tocbot.min.js"></script>
+<script>
+    tocbot.init( {
+        tocSelector: '#article-toc',
+        contentSelector: 'article',
+        headingSelector: 'h2, h3, h4, h5, h6',
+        collapseDepth: 6,
+        positionFixedSelector: '#article-toc',
+        scrollSmooth: false
+    } );
+    var tocList = document.getElementById( 'article-toc' ).getElementsByClassName( 'toc-list' );
+    if ( tocList && tocList.length > 0 && tocList[0].childNodes.length > 0 ) {
+        document.getElementById( 'article-toc' ).parentNode.classList.remove( 'hidden' );
+    }
+</script>
   </body>
 </html>
