@@ -1007,6 +1007,9 @@
     <a class="nav-link" href="../administration/backup-restore.html">Backing Up and Restoring</a>
   </li>
   <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../administration/content-lifecycle.html">Content Lifecycle Management</a>
+  </li>
+  <li class="nav-item" data-depth="2">
     <button class="nav-item-toggle"></button>
     <span class="nav-text">Tuning</span>
 <ul class="nav-list">
@@ -1020,7 +1023,7 @@
     <span class="nav-text">Maintenance Window</span>
 <ul class="nav-list">
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../administration/content-lifecycle.html">Content Lifecycle Management</a>
+    <a class="nav-link" href="../administration/maintenance-window.html">Maintenance Window</a>
   </li>
 </ul>
   </li>
@@ -1260,27 +1263,23 @@
 <div id="preamble">
 <div class="sectionbody">
 <div class="paragraph">
-<p>When you installed SUSE Manager Server 3.1 or earlier on SUSE Linux Enterprise Server&#160;12&#160;SP2 or earlier, it was based on a PostgreSQL&#160;9.4 database.
-PostgreSQL&#160;9.4 can be upgraded to PostgreSQL&#160;9.6.</p>
+<p>This is about PostgreSQL database migration.</p>
 </div>
 <div class="paragraph">
-<p>SUSE Manager&#160;3 uses PostgreSQL&#160;9.4 by default.
-SUSE Linux Enterprise Server&#160;12&#160;SP3 uses PostgreSQL&#160;9.6 by default.</p>
-</div>
-<div class="paragraph">
-<p>This chapter provides information on managing your PostgreSQL database, and provides instructions for upgrading your database to PostgreSQL&#160;9.6.</p>
-</div>
-<div class="paragraph">
-<p>SUSE Manager&#160;3.1 on SUSE Linux Enterprise Server&#160;12&#160;SP3 and SUSE Manager&#160;3.2 use PostgreSQL&#160;9.6 by default.
-If you use one of those you can skip this section.</p>
+<p>If you want to upgrade SUSE Manager 3.2 to SUSE Manager 4 you must check whether SUSE Manager 3.2 is already based on PostgreSQL version 10.
+If you are already using PostreSQL version 10, skip this section.
+If you are using an older version, such as version 9.6, you must migrate PostgreSQL to version 10 before you begin the database migration.
+For more information about migrating PostgreSQL 9.6 to version 10, see <a href="#db-migration-prepare">Prepare to Upgrade</a>.
+If you run PostgreSQL&#160;9.4 on SUSE Manager 3.2, see the 3.2 product documentation: <a href="https://www.suse.com/documentation/suse-manager-3/3.2/susemanager-best-practices/html/book.suma.best.practices/bp.sp.migration.html#sp.migration.postgresql" class="bare">https://www.suse.com/documentation/suse-manager-3/3.2/susemanager-best-practices/html/book.suma.best.practices/bp.sp.migration.html#sp.migration.postgresql</a>.
+You cannot migrate directly from PostgreSQL&#160;9.4 to version 10.</p>
 </div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="_prepare_to_upgrade"><a class="anchor" href="#_prepare_to_upgrade"></a><a class="link" href="#_prepare_to_upgrade">Prepare to Upgrade</a></h2>
+<h2 id="db-migration-prepare"><a class="anchor" href="#db-migration-prepare"></a><a class="link" href="#db-migration-prepare">Prepare to Upgrade</a></h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>Before you begin the upgrade, prepare your existing system and create a database backup.</p>
+<p>Before you begin the upgrade, prepare your existing 3.2 system and create a database backup.</p>
 </div>
 <div class="paragraph">
 <p>PostgreSQL stores data at <code class="path">/var/lib/pgsql/data/</code>, and logs to <code class="path">/var/lib/pgsql/data/pg_xlog/</code>.</p>
@@ -1296,7 +1295,7 @@ If you use one of those you can skip this section.</p>
 </div>
 </div>
 <div class="paragraph">
-<p>If you are using PostgreSQL&#160;9.4, you can upgrade to PostgreSQL&#160;9.6.</p>
+<p>If you are using PostgreSQL&#160;9.6, you can upgrade to PostgreSQL&#160;10.</p>
 </div>
 </li>
 <li>
@@ -1307,7 +1306,7 @@ If you use one of those you can skip this section.</p>
 </div>
 </div>
 <div class="paragraph">
-<p>PostgreSQL&#160;9.6 requires smdba version 1.5.8 or later.</p>
+<p>PostgreSQL&#160;10 requires <code>smdba</code> version 1.6.2 or later.</p>
 </div>
 </li>
 <li>
@@ -1316,6 +1315,11 @@ For more information on backing up, see <a href="../administration/backup-restor
 </li>
 </ol>
 </div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_upgrade_postgresql"><a class="anchor" href="#_upgrade_postgresql"></a><a class="link" href="#_upgrade_postgresql">Upgrade PostgreSQL</a></h2>
+<div class="sectionbody">
 <div class="admonitionblock warning">
 <table>
 <tr>
@@ -1324,26 +1328,29 @@ For more information on backing up, see <a href="../administration/backup-restor
 </td>
 <td class="content">
 <div class="paragraph">
-<p>Always create a database backup before performing a migration.</p>
+<p>Always create a database backup before performing a migration.
+For more information about a database backup, see <a href="#db-migration-prepare">Prepare to Upgrade</a>.</p>
 </div>
 </td>
 </tr>
 </table>
 </div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_upgrade_postgresql"><a class="anchor" href="#_upgrade_postgresql"></a><a class="link" href="#_upgrade_postgresql">Upgrade PostgreSQL</a></h2>
-<div class="sectionbody">
 <div class="paragraph">
-<p>PostgreSQL upgrades can be performed in two ways: a regular upgrade, or a fast upgrade.
-A regular upgrade will create a complete copy of the database, so you will need double the existing database size of space available.
+<p>PostgreSQL upgrades can be performed in two ways: a regular upgrade, or a fast upgrade:</p>
+</div>
+<div class="paragraph">
+<p>A regular upgrade will create a complete copy of the database, so you will need double the existing database size of space available.
 Regular upgrades can take a considerable amount of time, depending on the size of the database and the speed of the storage system.
 Regular upgrades also require database downtime, your database will not be accessible while the upgrade is running.</p>
 </div>
 <div class="paragraph">
 <p>A fast upgrade only takes a few minutes, and uses no additional disk space.
-However, fast upgrades are more likely to fail, and if this occurs you will need to restore the database from backup.</p>
+However, if a fast upgrade fails, you must restore the database from the backup.
+With the fast upgrade the risk to run out of disk space is smaller.</p>
+</div>
+<div class="paragraph">
+<p>In case of failure you do not have the implicit backup that you get when doing a regular upgrade.
+The regular upgrade will copy the database files instead of hardlinking them.</p>
 </div>
 <div class="olist arabic">
 <div class="title">Procedure: Performing a Regular Upgrade</div>
@@ -1356,18 +1363,18 @@ For more information on backing up, see <a href="../administration/backup-restor
 <p>Begin the upgrade:</p>
 <div class="listingblock">
 <div class="content">
-<pre>/usr/lib/susemanager/bin/pg-migrate.sh</pre>
+<pre>/usr/lib/susemanager/bin/pg-migrate-96-to-10.sh</pre>
 </div>
 </div>
 </li>
 <li>
 <p>When the upgrade has successfully completed, you can safely delete the old database directory and reclaim lost disk space.
-The old directory is renamed to <code class="path">/var/lib/pgsql/data-pg94</code>.</p>
+The old directory is renamed to <code class="path">/var/lib/pgsql/data-pg96</code>.</p>
 </li>
 </ol>
 </div>
 <div class="paragraph">
-<p>The <code class="path">pg-migrate.sh</code> script performs these operations:</p>
+<p>The <code class="path">pg-migrate-96-to-10.sh</code> script performs these operations:</p>
 </div>
 <div class="ulist">
 <ul>
@@ -1378,10 +1385,10 @@ The old directory is renamed to <code class="path">/var/lib/pgsql/data-pg94</cod
 <p>Shut down the running database</p>
 </li>
 <li>
-<p>Check if PostgreSQL&#160;9.6 is installed and install it if necessary</p>
+<p>Check if PostgreSQL&#160;10 is installed and install it if necessary</p>
 </li>
 <li>
-<p>Switch from PostgreSQL&#160;9.4 to PostgreSQL&#160;9.6 as the new default</p>
+<p>Switch from PostgreSQL&#160;9.6 to PostgreSQL&#160;10 as the new default</p>
 </li>
 <li>
 <p>Initiate the database migration</p>
@@ -1413,38 +1420,49 @@ The old directory is renamed to <code class="path">/var/lib/pgsql/data-pg94</cod
 <ol class="arabic">
 <li>
 <p>Perform a database backup.
+Without a verified database backup, you must not initiate a fast upgrade.
 For more information on backing up, see <a href="../administration/backup-restore.html" class="page">administration:backup-restore.adoc</a>.</p>
 </li>
 <li>
 <p>Begin the upgrade:</p>
 <div class="listingblock">
 <div class="content">
-<pre>/usr/lib/susemanager/bin/pg-migrate.sh fast</pre>
+<pre>/usr/lib/susemanager/bin/pg-migrate-96-to-10.sh fast</pre>
 </div>
 </div>
 </li>
 <li>
 <p>When the upgrade has successfully completed, you can safely delete the old database directory and reclaim lost disk space.
-The old directory is renamed to <code class="path">/var/lib/pgsql/data-pg94</code>.</p>
+The old directory is renamed to <code class="path">/var/lib/pgsql/data-pg96</code>.</p>
 </li>
 </ol>
 </div>
 </div>
 </div>
 
-<div class="cedents" role="navigation">
-  <div class="prev openblock content drivers">
+<div class="cedents grid" role="navigation">
+
+  <div class="prev">
       <a href="sp-migration.html" title="Service Pack Migration">
-        <span class="label"><strong>Previous</strong></span>
-        <span class="label title"><strong>:</strong></span>
+        <div class="change-page">
+          <div class="arrow-prev"><i class="fas fa-arrow-left"></i></div>
+        <span class="label">Previous</span>
+        <br/>
+        <!-- <span class="label title"><strong>:</strong></span> -->
         <span class="title">Service Pack Migration</span>
+        </div>
       </a>
   </div>
-  <div class="next openblock content drivers">
+
+  <div class="next">
       <a href="upgrade-script-example.html" title="Example Script for Automated Upgrades">
-        <span class="label"><strong>Next</strong></span>
-        <span class="label title"><strong>:</strong></span>
+        <div class="change-page">
+          <div class="arrow-next"><i class="fas fa-arrow-right"></i></div>
+        <span class="label">Next</span>
+        <br/>
+       <!-- <span class="label title"><strong>:</strong></span> -->
         <span class="title">Example Script for Automated Upgrades</span>
+        </div>
       </a>
   </div>
 </div>

@@ -1007,6 +1007,9 @@
     <a class="nav-link" href="../administration/backup-restore.html">Backing Up and Restoring</a>
   </li>
   <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../administration/content-lifecycle.html">Content Lifecycle Management</a>
+  </li>
+  <li class="nav-item" data-depth="2">
     <button class="nav-item-toggle"></button>
     <span class="nav-text">Tuning</span>
 <ul class="nav-list">
@@ -1020,7 +1023,7 @@
     <span class="nav-text">Maintenance Window</span>
 <ul class="nav-list">
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../administration/content-lifecycle.html">Content Lifecycle Management</a>
+    <a class="nav-link" href="../administration/maintenance-window.html">Maintenance Window</a>
   </li>
 </ul>
   </li>
@@ -1297,8 +1300,23 @@ We strongly recommend that you contact SUSE Consulting to assist with this proce
 <h2 id="_prepare_to_migrate"><a class="anchor" href="#_prepare_to_migrate"></a><a class="link" href="#_prepare_to_migrate">Prepare to Migrate</a></h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>The source system must be running SUSE Manager 3.2 with all the latest updates applied.
+<p>The source system must be running SUSE Manager 3.2 with all the latest updates applied.
 Before you start, ensure that the system is up to date and all updates have been installed successfully.</p>
+</div>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-important" title="Important"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>It is important that PostgreSQL 10 is already running on your SUSE Manager 3.2 system.
+For more information, see <a href="db-migration.html" class="page">db-migration.adoc</a>.</p>
+</div>
+</td>
+</tr>
+</table>
 </div>
 <div class="paragraph">
 <p>During migration, the database on the source system needs to get exported, or dumped.
@@ -1596,19 +1614,29 @@ Ensure there is no extra text in the file at the point that the script starts th
 </div>
 </div>
 
-<div class="cedents" role="navigation">
-  <div class="prev openblock content drivers">
+<div class="cedents grid" role="navigation">
+
+  <div class="prev">
       <a href="server-upgrade.html" title="Server Update">
-        <span class="label"><strong>Previous</strong></span>
-        <span class="label title"><strong>:</strong></span>
+        <div class="change-page">
+          <div class="arrow-prev"><i class="fas fa-arrow-left"></i></div>
+        <span class="label">Previous</span>
+        <br/>
+        <!-- <span class="label title"><strong>:</strong></span> -->
         <span class="title">Server Update</span>
+        </div>
       </a>
   </div>
-  <div class="next openblock content drivers">
+
+  <div class="next">
       <a href="proxy-migration.html" title="Proxy Upgrade 3.x &#8594; 4.x">
-        <span class="label"><strong>Next</strong></span>
-        <span class="label title"><strong>:</strong></span>
+        <div class="change-page">
+          <div class="arrow-next"><i class="fas fa-arrow-right"></i></div>
+        <span class="label">Next</span>
+        <br/>
+       <!-- <span class="label title"><strong>:</strong></span> -->
         <span class="title">Proxy Upgrade 3.x &#8594; 4.x</span>
+        </div>
       </a>
   </div>
 </div>
