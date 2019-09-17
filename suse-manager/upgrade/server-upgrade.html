@@ -14,6 +14,9 @@
 <link rel="stylesheet" href="../../_/fonts/css/all.css">
 <link rel="stylesheet" href="../../_/css/site-extra.css">
 <link href="https://fonts.googleapis.com/css?family=Montserrat|Roboto&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../_/css/vendor/light.css">
+
+
   </head>
   <body class="article">
 <header class="header" role="banner">
@@ -27,7 +30,7 @@
         </div> -->
         <div class="navbar-item">
            <!-- <i class="fas fa-search"></i>&nbsp; -->
-          <input id="search-input" type="text" placeholder="Search">
+          <input id="search-input" type="text" placeholder="Search...">
         </div>
       <button class="navbar-burger" data-target="topbar-nav">
         <span></span>
@@ -46,8 +49,8 @@
                       <a class="navbar-item" href="https://github.com/SUSE/doc-susemanager/issues"><i
                               class="fab fa-github"></i>&nbsp;Report Issue</a>
                       <a class="navbar-item"
-                         href="https://github.com/SUSE/doc-susemanager/wiki/Asciidoc-getting-started"><i
-                              class="fas fa-user-edit"></i>&nbsp;Contribute</a>
+                         href="https://github.com/SUSE/doc-susemanager/wiki#contributing"><i
+                              class="fas fa-user-edit"></i>&nbsp;Contributing</a>
                   </div>
               </div>
 
@@ -72,7 +75,7 @@
     <div class="panels">
 <div class="nav-panel-menu is-active" data-panel="menu">
   <nav class="nav-menu">
-    <h3 class="title"><a href="../index-suma.html">SUSE Manager</a></h3>
+    <h3 class="title"><a href="../index.html">SUSE Manager</a></h3>
 <ul class="nav-list">
   <li class="nav-item" data-depth="0">
 <ul class="nav-list">
@@ -258,7 +261,7 @@
     <a class="nav-link" href="server-upgrade.html">Server Update</a>
   </li>
   <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="migrate-3x-4x.html">Server Upgrade 3.x &#8594; 4.x</a>
+    <a class="nav-link" href="migrate-4x-4x.html">migrate-4x-4x.adoc</a>
   </li>
   <li class="nav-item" data-depth="2">
     <a class="nav-link" href="proxy-migration.html">Proxy Upgrade 3.x &#8594; 4.x</a>
@@ -267,10 +270,10 @@
     <a class="nav-link" href="client-migration.html">Client Migration</a>
   </li>
   <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="sp-migration.html">Service Pack Migration</a>
+    <a class="nav-link" href="db-migration.html">Database Migration</a>
   </li>
   <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="db-migration.html">Database Migration</a>
+    <a class="nav-link" href="troubleshooting.html">Troubleshooting</a>
   </li>
   <li class="nav-item" data-depth="2">
     <a class="nav-link" href="upgrade-script-example.html">Example Script for Automated Upgrades</a>
@@ -1007,7 +1010,13 @@
     <a class="nav-link" href="../administration/backup-restore.html">Backing Up and Restoring</a>
   </li>
   <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
     <a class="nav-link" href="../administration/content-lifecycle.html">Content Lifecycle Management</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../administration/content-lifecycle-examples.html">Content Lifecycle Management Examples</a>
+  </li>
+</ul>
   </li>
   <li class="nav-item" data-depth="2">
     <button class="nav-item-toggle"></button>
@@ -1090,13 +1099,34 @@
   </li>
   <li class="nav-item" data-depth="2">
     <button class="nav-item-toggle"></button>
-    <a class="nav-link" href="../salt/salt-formulas.html">Salt Formulas</a>
+    <a class="nav-link" href="../salt/formulas-intro.html">Salt Formulas</a>
 <ul class="nav-list">
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../salt/salt-formulas-standard.html">Standard Formulas</a>
+    <a class="nav-link" href="../salt/formula-bind.html">Bind Formula</a>
   </li>
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../salt/salt-formulas-custom.html">Custom Formulas</a>
+    <a class="nav-link" href="../salt/formula-branchnetwork.html">Branch Network Formula</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../salt/formula-dhcpd.html">DHCPd Formula</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../salt/formula-imagesync.html">Image Sync Formula</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../salt/formula-pxe.html">PXE Formula</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../salt/formula-saltboot.html">Saltboot Formula</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../salt/formula-tftpd.html">TFTPd Formula</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../salt/formula-vsftpd.html">VsFTPd Formula</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../salt/formulas-custom.html">Custom Formulas</a>
   </li>
 </ul>
   </li>
@@ -1147,34 +1177,7 @@
 </ul>
   </li>
   <li class="nav-item" data-depth="2">
-    <button class="nav-item-toggle"></button>
     <a class="nav-link" href="../retail/retail-formulas-intro.html">Formulas</a>
-<ul class="nav-list">
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../retail/retail-formula-bind.html">Bind Formula</a>
-  </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../retail/retail-formula-branchnetwork.html">Branch Network Formula</a>
-  </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../retail/retail-formula-dhcpd.html">DHCPd Formula</a>
-  </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../retail/retail-formula-imagesync.html">Image Sync Formula</a>
-  </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../retail/retail-formula-pxe.html">PXE Formula</a>
-  </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../retail/retail-formula-saltboot.html">Saltboot Formula</a>
-  </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../retail/retail-formula-tftpd.html">TFTPd Formula</a>
-  </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../retail/retail-formula-vsftpd.html">VsFTPd Formula</a>
-  </li>
-</ul>
   </li>
   <li class="nav-item" data-depth="2">
     <button class="nav-item-toggle"></button>
@@ -1235,7 +1238,7 @@
       <span class="title">SUSE Manager</span>
       <ul class="versions">
         <li class="version is-current is-latest">
-          <a href="../index-suma.html">master</a>
+          <a href="../index.html">master</a>
         </li>
       </ul>
     </li>
@@ -1248,15 +1251,29 @@
 <div class="toolbar" role="navigation">
 <button class="nav-toggle"></button>
 
-  <a href="../index-suma.html" class="home-link"></a>
+  <a href="../index.html" class="home-link"></a>
 <nav class="breadcrumbs" aria-label="breadcrumbs">
   <ul>
-    <li><a href="../index-suma.html">SUSE Manager</a></li>
+    <li><a href="../index.html">SUSE Manager</a></li>
     <li><a href="upgrade-overview.html">Upgrade Guide</a></li>
     <li><a href="server-upgrade.html">Server Update</a></li>
   </ul>
 </nav>
-  <div class="edit-this-page"><a href="https://github.com/SUSE/doc-susemanager/edit/master/modules/upgrade/pages/server-upgrade.adoc">Edit this Page</a></div>
+
+
+
+  <div class="edit-this-page">
+    <span class="prev-caret">
+      <a href="upgrade-overview.html">
+        <i class="fas fa-arrow-left custom-color" data-tippy="Previous page" id="previousPage"></i></a></span>
+&nbsp;
+<span class="next-caret">
+      <a href="migrate-4x-4x.html">
+        <i class="fas fa-arrow-right custom-color" data-tippy="Next Page" id="nextPage"></i></a></span>
+    &nbsp;
+    <a href="https://github.com/SUSE/doc-susemanager/issues"><i class="fas fa-bug custom-color" data-tippy="Create an Issue" id="createIssue"></i>&nbsp;</a>
+  <a href="https://github.com/SUSE/doc-susemanager/edit/master/modules/upgrade/pages/server-upgrade.adoc"><i class="fas fa-edit custom-color" data-tippy="Edit this page and submit a pull request" id="submitPR"></i></a>
+</div>
 </div>
 <article class="doc"><a name="section-top"></a>
 <h1 class="page">Package Updates</h1>
@@ -1357,13 +1374,13 @@ Use <code class="command">zypper ps</code> to check for applications that are us
   </div>
 
   <div class="next">
-      <a href="migrate-3x-4x.html" title="Server Upgrade 3.x &#8594; 4.x">
+      <a href="migrate-4x-4x.html" title="migrate-4x-4x.adoc">
         <div class="change-page">
           <div class="arrow-next"><i class="fas fa-arrow-right"></i></div>
         <span class="label">Next</span>
         <br/>
        <!-- <span class="label title"><strong>:</strong></span> -->
-        <span class="title">Server Upgrade 3.x &#8594; 4.x</span>
+        <span class="title">migrate-4x-4x.adoc</span>
         </div>
       </a>
   </div>
@@ -1376,6 +1393,47 @@ Use <code class="command">zypper ps</code> to check for applications that are us
 
 </main>
 </div>
+<script>tippy('#previousPage', {
+placement: 'bottom', // or 'left', 'right', ...
+})
+
+tippy('#nextPage', {
+  placement: 'bottom', // or 'left', 'right', ...
+})
+tippy('#createIssue', {
+  placement: 'bottom', // or 'left', 'right', ...
+})
+tippy('#submitPR', {
+  placement: 'bottom', // or 'left', 'right', ...
+})
+</script>
+<script src="https://unpkg.com/popper.js@1"></script>
+<script src="https://unpkg.com/tippy.js@4"></script>
+<script>
+    tippy.setDefaults({
+        placement: 'bottom',
+        arrow: true,
+        arrowType: 'sharp',
+        delay: 0,
+        theme: 'light',
+    });
+
+    tippy('#previousPage', {
+        content: "Previous Page",
+    });
+
+    tippy('#nextPage', {
+        content: "Next Page",
+    });
+
+    tippy('#createIssue', {
+        content: "Create Issue",
+    });
+
+    tippy('#submitPR', {
+        content: "Edit this page and submit a pull request",
+    });
+</script>
 <script type="text/javascript">
   window.antora = window.antora || {}
   window.antora.basePath = '../..'
@@ -1402,5 +1460,6 @@ Use <code class="command">zypper ps</code> to check for applications that are us
         document.getElementById( 'article-toc' ).parentNode.classList.remove( 'hidden' );
     }
 </script>
+
   </body>
 </html>

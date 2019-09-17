@@ -3,8 +3,8 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>Service Pack Migration :: SUSE Manager Documentation</title>
-    <link rel="canonical" href="https://opensource.suse.com/doc-susemanager/suse-manager/upgrade/sp-migration.html">
+    <title>VsFTPd Formula :: SUSE Manager Documentation</title>
+    <link rel="canonical" href="https://opensource.suse.com/doc-susemanager/suse-manager/salt/formula-vsftpd.html">
     <meta name="generator" content="Antora 2.0.0">
     <link rel="stylesheet" href="../../_/css/site.css">
    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.css" integrity="sha256-piqEf7Ap7CMps8krDQsSOTZgF+MU/0MPyPW2enj5I40=" crossorigin="anonymous" /> -->
@@ -14,6 +14,9 @@
 <link rel="stylesheet" href="../../_/fonts/css/all.css">
 <link rel="stylesheet" href="../../_/css/site-extra.css">
 <link href="https://fonts.googleapis.com/css?family=Montserrat|Roboto&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../_/css/vendor/light.css">
+
+
   </head>
   <body class="article">
 <header class="header" role="banner">
@@ -27,7 +30,7 @@
         </div> -->
         <div class="navbar-item">
            <!-- <i class="fas fa-search"></i>&nbsp; -->
-          <input id="search-input" type="text" placeholder="Search">
+          <input id="search-input" type="text" placeholder="Search...">
         </div>
       <button class="navbar-burger" data-target="topbar-nav">
         <span></span>
@@ -46,8 +49,8 @@
                       <a class="navbar-item" href="https://github.com/SUSE/doc-susemanager/issues"><i
                               class="fab fa-github"></i>&nbsp;Report Issue</a>
                       <a class="navbar-item"
-                         href="https://github.com/SUSE/doc-susemanager/wiki/Asciidoc-getting-started"><i
-                              class="fas fa-user-edit"></i>&nbsp;Contribute</a>
+                         href="https://github.com/SUSE/doc-susemanager/wiki#contributing"><i
+                              class="fas fa-user-edit"></i>&nbsp;Contributing</a>
                   </div>
               </div>
 
@@ -72,7 +75,7 @@
     <div class="panels">
 <div class="nav-panel-menu is-active" data-panel="menu">
   <nav class="nav-menu">
-    <h3 class="title"><a href="../index-suma.html">SUSE Manager</a></h3>
+    <h3 class="title"><a href="../index.html">SUSE Manager</a></h3>
 <ul class="nav-list">
   <li class="nav-item" data-depth="0">
 <ul class="nav-list">
@@ -252,28 +255,28 @@
 <ul class="nav-list">
   <li class="nav-item" data-depth="1">
     <button class="nav-item-toggle"></button>
-    <a class="nav-link" href="upgrade-overview.html">Upgrade Guide</a>
+    <a class="nav-link" href="../upgrade/upgrade-overview.html">Upgrade Guide</a>
 <ul class="nav-list">
   <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="server-upgrade.html">Server Update</a>
+    <a class="nav-link" href="../upgrade/server-upgrade.html">Server Update</a>
   </li>
   <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="migrate-3x-4x.html">Server Upgrade 3.x &#8594; 4.x</a>
+    <a class="nav-link" href="../upgrade/migrate-4x-4x.html">migrate-4x-4x.adoc</a>
   </li>
   <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="proxy-migration.html">Proxy Upgrade 3.x &#8594; 4.x</a>
+    <a class="nav-link" href="../upgrade/proxy-migration.html">Proxy Upgrade 3.x &#8594; 4.x</a>
   </li>
   <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="client-migration.html">Client Migration</a>
-  </li>
-  <li class="nav-item is-current-page" data-depth="2">
-    <a class="nav-link" href="sp-migration.html">Service Pack Migration</a>
+    <a class="nav-link" href="../upgrade/client-migration.html">Client Migration</a>
   </li>
   <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="db-migration.html">Database Migration</a>
+    <a class="nav-link" href="../upgrade/db-migration.html">Database Migration</a>
   </li>
   <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="upgrade-script-example.html">Example Script for Automated Upgrades</a>
+    <a class="nav-link" href="../upgrade/troubleshooting.html">Troubleshooting</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../upgrade/upgrade-script-example.html">Example Script for Automated Upgrades</a>
   </li>
 </ul>
   </li>
@@ -1007,7 +1010,13 @@
     <a class="nav-link" href="../administration/backup-restore.html">Backing Up and Restoring</a>
   </li>
   <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
     <a class="nav-link" href="../administration/content-lifecycle.html">Content Lifecycle Management</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../administration/content-lifecycle-examples.html">Content Lifecycle Management Examples</a>
+  </li>
+</ul>
   </li>
   <li class="nav-item" data-depth="2">
     <button class="nav-item-toggle"></button>
@@ -1071,47 +1080,68 @@
     <span class="nav-text">Salt Guide</span>
 <ul class="nav-list">
   <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="../salt/salt-intro.html">Introduction</a>
+    <a class="nav-link" href="salt-intro.html">Introduction</a>
   </li>
   <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="../salt/salt-terminology.html">Terminology</a>
+    <a class="nav-link" href="salt-terminology.html">Terminology</a>
   </li>
   <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="../salt/salt-calls.html">Salt Calls</a>
+    <a class="nav-link" href="salt-calls.html">Salt Calls</a>
   </li>
   <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="../salt/salt-commands.html">Salt Commands</a>
+    <a class="nav-link" href="salt-commands.html">Salt Commands</a>
   </li>
   <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="../salt/salt-states.html">Salt States</a>
+    <a class="nav-link" href="salt-states.html">Salt States</a>
   </li>
   <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="../salt/salt-file-locations.html">File Locations</a>
+    <a class="nav-link" href="salt-file-locations.html">File Locations</a>
   </li>
   <li class="nav-item" data-depth="2">
     <button class="nav-item-toggle"></button>
-    <a class="nav-link" href="../salt/salt-formulas.html">Salt Formulas</a>
+    <a class="nav-link" href="formulas-intro.html">Salt Formulas</a>
 <ul class="nav-list">
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../salt/salt-formulas-standard.html">Standard Formulas</a>
+    <a class="nav-link" href="formula-bind.html">Bind Formula</a>
   </li>
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../salt/salt-formulas-custom.html">Custom Formulas</a>
+    <a class="nav-link" href="formula-branchnetwork.html">Branch Network Formula</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="formula-dhcpd.html">DHCPd Formula</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="formula-imagesync.html">Image Sync Formula</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="formula-pxe.html">PXE Formula</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="formula-saltboot.html">Saltboot Formula</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="formula-tftpd.html">TFTPd Formula</a>
+  </li>
+  <li class="nav-item is-current-page" data-depth="3">
+    <a class="nav-link" href="formula-vsftpd.html">VsFTPd Formula</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="formulas-custom.html">Custom Formulas</a>
   </li>
 </ul>
   </li>
   <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="../salt/salt-ssh.html">Salt SSH</a>
+    <a class="nav-link" href="salt-ssh.html">Salt SSH</a>
   </li>
   <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="../salt/salt-rate-limiting.html">Rate Limiting</a>
+    <a class="nav-link" href="salt-rate-limiting.html">Rate Limiting</a>
   </li>
   <li class="nav-item" data-depth="2">
     <button class="nav-item-toggle"></button>
-    <a class="nav-link" href="../salt/large-scale.html">Scaling Salt Minions</a>
+    <a class="nav-link" href="large-scale.html">Scaling Salt Minions</a>
 <ul class="nav-list">
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../salt/large-scale-tuning.html">Tuning Large Scale Installations</a>
+    <a class="nav-link" href="large-scale-tuning.html">Tuning Large Scale Installations</a>
   </li>
 </ul>
   </li>
@@ -1147,34 +1177,7 @@
 </ul>
   </li>
   <li class="nav-item" data-depth="2">
-    <button class="nav-item-toggle"></button>
     <a class="nav-link" href="../retail/retail-formulas-intro.html">Formulas</a>
-<ul class="nav-list">
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../retail/retail-formula-bind.html">Bind Formula</a>
-  </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../retail/retail-formula-branchnetwork.html">Branch Network Formula</a>
-  </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../retail/retail-formula-dhcpd.html">DHCPd Formula</a>
-  </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../retail/retail-formula-imagesync.html">Image Sync Formula</a>
-  </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../retail/retail-formula-pxe.html">PXE Formula</a>
-  </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../retail/retail-formula-saltboot.html">Saltboot Formula</a>
-  </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../retail/retail-formula-tftpd.html">TFTPd Formula</a>
-  </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../retail/retail-formula-vsftpd.html">VsFTPd Formula</a>
-  </li>
-</ul>
   </li>
   <li class="nav-item" data-depth="2">
     <button class="nav-item-toggle"></button>
@@ -1235,7 +1238,7 @@
       <span class="title">SUSE Manager</span>
       <ul class="versions">
         <li class="version is-current is-latest">
-          <a href="../index-suma.html">master</a>
+          <a href="../index.html">master</a>
         </li>
       </ul>
     </li>
@@ -1248,66 +1251,92 @@
 <div class="toolbar" role="navigation">
 <button class="nav-toggle"></button>
 
-  <a href="../index-suma.html" class="home-link"></a>
+  <a href="../index.html" class="home-link"></a>
 <nav class="breadcrumbs" aria-label="breadcrumbs">
   <ul>
-    <li><a href="../index-suma.html">SUSE Manager</a></li>
-    <li><a href="upgrade-overview.html">Upgrade Guide</a></li>
-    <li><a href="sp-migration.html">Service Pack Migration</a></li>
+    <li><a href="../index.html">SUSE Manager</a></li>
+    <li>Salt Guide</li>
+    <li><a href="formulas-intro.html">Salt Formulas</a></li>
+    <li><a href="formula-vsftpd.html">VsFTPd Formula</a></li>
   </ul>
 </nav>
-  <div class="edit-this-page"><a href="https://github.com/SUSE/doc-susemanager/edit/master/modules/upgrade/pages/sp-migration.adoc">Edit this Page</a></div>
+
+
+
+  <div class="edit-this-page">
+    <span class="prev-caret">
+      <a href="formula-tftpd.html">
+        <i class="fas fa-arrow-left custom-color" data-tippy="Previous page" id="previousPage"></i></a></span>
+&nbsp;
+<span class="next-caret">
+      <a href="formulas-custom.html">
+        <i class="fas fa-arrow-right custom-color" data-tippy="Next Page" id="nextPage"></i></a></span>
+    &nbsp;
+    <a href="https://github.com/SUSE/doc-susemanager/issues"><i class="fas fa-bug custom-color" data-tippy="Create an Issue" id="createIssue"></i>&nbsp;</a>
+  <a href="https://github.com/SUSE/doc-susemanager/edit/master/modules/salt/pages/formula-vsftpd.adoc"><i class="fas fa-edit custom-color" data-tippy="Edit this page and submit a pull request" id="submitPR"></i></a>
+</div>
 </div>
 <article class="doc"><a name="section-top"></a>
-<h1 class="page">Service Pack Migration</h1>
+<h1 class="page">VsFTPd Formula</h1>
 <div class="paragraph">
-<p>Upgrading within a major SUSE Linux Enterprise Server version is fully automated.
-For example, upgrading from SLE&#160;12&#160;SP1 to SLE&#160;12&#160;SP4.</p>
+<p>The VsFTPd formula is used to configure the FTP service on the branch server.</p>
 </div>
-<div class="admonitionblock warning">
-<table>
-<tr>
-<td class="icon">
-<i class="fa icon-warning" title="Warning"></i>
-</td>
-<td class="content">
-<div class="paragraph">
-<p>Before migrating to SLE&#160;12&#160;SP3 or later, check which PostgreSQL versions you have installed.
-The migration needs PostgreSQL 9.4 and 9.6 installed in parallel.
-PostgreSQL 9.4 is only available in SUSE Linux Enterprise 12 SP2.
-For more on upgrading the database, see <a href="db-migration.html" class="page">upgrade:db-migration.adoc</a>.</p>
+<div class="olist arabic">
+<div class="title">Procedure: Configuring VsFTPd</div>
+<ol class="arabic">
+<li>
+<p>In the SUSE Manager Web UI, open the details page for the branch server, and navigate to the <code class="guimenu">Formulas</code> tab.</p>
+</li>
+<li>
+<p>Select the <code class="systemitem">Vsftpd</code> formula, and click <b class="button">Save</b>.</p>
+</li>
+<li>
+<p>Navigate to the <span class="menuseq"><b class="menu">Formulas</b>&#160;<i class="fa fa-angle-right caret"></i> <b class="menuitem">Vsftpd</b></span> tab, and set these parameters:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>In the <code class="guimenu">FTP server directory</code> field, enter <code class="systemitem">/srv/saltboot</code>.</p>
+</li>
+<li>
+<p>In the <code class="guimenu">Internal Network Address</code> field, enter the IP address of the branch server (for example: <code class="literal">192.168.1.5</code>).</p>
+</li>
+<li>
+<p>All other fields can retain their default values.</p>
+</li>
+</ul>
 </div>
-</td>
-</tr>
-</table>
-</div>
-<div class="paragraph">
-<p>SUSE offers a graphical and command line tool for upgrading to a new service pack.
-For instructions on how to complete this upgrade, see <a href="https://www.suse.com/documentation/sles-12/book_sle_deployment/data/cha_update_sle.html" class="bare">https://www.suse.com/documentation/sles-12/book_sle_deployment/data/cha_update_sle.html</a>.</p>
+</li>
+<li>
+<p>Click <b class="button">Save Formula</b> to save your configuration.</p>
+</li>
+<li>
+<p>Apply the highstate.</p>
+</li>
+</ol>
 </div>
 
 <div class="cedents grid" role="navigation">
 
   <div class="prev">
-      <a href="client-migration.html" title="Client Migration">
+      <a href="formula-tftpd.html" title="TFTPd Formula">
         <div class="change-page">
           <div class="arrow-prev"><i class="fas fa-arrow-left"></i></div>
         <span class="label">Previous</span>
         <br/>
         <!-- <span class="label title"><strong>:</strong></span> -->
-        <span class="title">Client Migration</span>
+        <span class="title">TFTPd Formula</span>
         </div>
       </a>
   </div>
 
   <div class="next">
-      <a href="db-migration.html" title="Database Migration">
+      <a href="formulas-custom.html" title="Custom Formulas">
         <div class="change-page">
           <div class="arrow-next"><i class="fas fa-arrow-right"></i></div>
         <span class="label">Next</span>
         <br/>
        <!-- <span class="label title"><strong>:</strong></span> -->
-        <span class="title">Database Migration</span>
+        <span class="title">Custom Formulas</span>
         </div>
       </a>
   </div>
@@ -1320,10 +1349,51 @@ For instructions on how to complete this upgrade, see <a href="https://www.suse.
 
 </main>
 </div>
+<script>tippy('#previousPage', {
+placement: 'bottom', // or 'left', 'right', ...
+})
+
+tippy('#nextPage', {
+  placement: 'bottom', // or 'left', 'right', ...
+})
+tippy('#createIssue', {
+  placement: 'bottom', // or 'left', 'right', ...
+})
+tippy('#submitPR', {
+  placement: 'bottom', // or 'left', 'right', ...
+})
+</script>
+<script src="https://unpkg.com/popper.js@1"></script>
+<script src="https://unpkg.com/tippy.js@4"></script>
+<script>
+    tippy.setDefaults({
+        placement: 'bottom',
+        arrow: true,
+        arrowType: 'sharp',
+        delay: 0,
+        theme: 'light',
+    });
+
+    tippy('#previousPage', {
+        content: "Previous Page",
+    });
+
+    tippy('#nextPage', {
+        content: "Next Page",
+    });
+
+    tippy('#createIssue', {
+        content: "Create Issue",
+    });
+
+    tippy('#submitPR', {
+        content: "Edit this page and submit a pull request",
+    });
+</script>
 <script type="text/javascript">
   window.antora = window.antora || {}
   window.antora.basePath = '../..'
-  window.antora.pagePath = '/suse-manager/upgrade/sp-migration.html'
+  window.antora.pagePath = '/suse-manager/salt/formula-vsftpd.html'
 </script>
 <script src="../../_/js/site.js"></script>
 <script src="../../_/js/vendor/lunr.js"></script>
@@ -1346,5 +1416,6 @@ For instructions on how to complete this upgrade, see <a href="https://www.suse.
         document.getElementById( 'article-toc' ).parentNode.classList.remove( 'hidden' );
     }
 </script>
+
   </body>
 </html>

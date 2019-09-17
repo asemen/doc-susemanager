@@ -14,6 +14,9 @@
 <link rel="stylesheet" href="../../_/fonts/css/all.css">
 <link rel="stylesheet" href="../../_/css/site-extra.css">
 <link href="https://fonts.googleapis.com/css?family=Montserrat|Roboto&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../_/css/vendor/light.css">
+
+
   </head>
   <body class="article">
 <header class="header" role="banner">
@@ -27,7 +30,7 @@
         </div> -->
         <div class="navbar-item">
            <!-- <i class="fas fa-search"></i>&nbsp; -->
-          <input id="search-input" type="text" placeholder="Search">
+          <input id="search-input" type="text" placeholder="Search...">
         </div>
       <button class="navbar-burger" data-target="topbar-nav">
         <span></span>
@@ -46,8 +49,8 @@
                       <a class="navbar-item" href="https://github.com/SUSE/doc-susemanager/issues"><i
                               class="fab fa-github"></i>&nbsp;Report Issue</a>
                       <a class="navbar-item"
-                         href="https://github.com/SUSE/doc-susemanager/wiki/Asciidoc-getting-started"><i
-                              class="fas fa-user-edit"></i>&nbsp;Contribute</a>
+                         href="https://github.com/SUSE/doc-susemanager/wiki#contributing"><i
+                              class="fas fa-user-edit"></i>&nbsp;Contributing</a>
                   </div>
               </div>
 
@@ -72,7 +75,7 @@
     <div class="panels">
 <div class="nav-panel-menu is-active" data-panel="menu">
   <nav class="nav-menu">
-    <h3 class="title"><a href="../index-suma.html">SUSE Manager</a></h3>
+    <h3 class="title"><a href="../index.html">SUSE Manager</a></h3>
 <ul class="nav-list">
   <li class="nav-item" data-depth="0">
 <ul class="nav-list">
@@ -258,7 +261,7 @@
     <a class="nav-link" href="../upgrade/server-upgrade.html">Server Update</a>
   </li>
   <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="../upgrade/migrate-3x-4x.html">Server Upgrade 3.x &#8594; 4.x</a>
+    <a class="nav-link" href="../upgrade/migrate-4x-4x.html">migrate-4x-4x.adoc</a>
   </li>
   <li class="nav-item" data-depth="2">
     <a class="nav-link" href="../upgrade/proxy-migration.html">Proxy Upgrade 3.x &#8594; 4.x</a>
@@ -267,10 +270,10 @@
     <a class="nav-link" href="../upgrade/client-migration.html">Client Migration</a>
   </li>
   <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="../upgrade/sp-migration.html">Service Pack Migration</a>
+    <a class="nav-link" href="../upgrade/db-migration.html">Database Migration</a>
   </li>
   <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="../upgrade/db-migration.html">Database Migration</a>
+    <a class="nav-link" href="../upgrade/troubleshooting.html">Troubleshooting</a>
   </li>
   <li class="nav-item" data-depth="2">
     <a class="nav-link" href="../upgrade/upgrade-script-example.html">Example Script for Automated Upgrades</a>
@@ -1007,7 +1010,13 @@
     <a class="nav-link" href="backup-restore.html">Backing Up and Restoring</a>
   </li>
   <li class="nav-item is-current-page" data-depth="2">
+    <button class="nav-item-toggle"></button>
     <a class="nav-link" href="content-lifecycle.html">Content Lifecycle Management</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="content-lifecycle-examples.html">Content Lifecycle Management Examples</a>
+  </li>
+</ul>
   </li>
   <li class="nav-item" data-depth="2">
     <button class="nav-item-toggle"></button>
@@ -1090,13 +1099,34 @@
   </li>
   <li class="nav-item" data-depth="2">
     <button class="nav-item-toggle"></button>
-    <a class="nav-link" href="../salt/salt-formulas.html">Salt Formulas</a>
+    <a class="nav-link" href="../salt/formulas-intro.html">Salt Formulas</a>
 <ul class="nav-list">
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../salt/salt-formulas-standard.html">Standard Formulas</a>
+    <a class="nav-link" href="../salt/formula-bind.html">Bind Formula</a>
   </li>
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../salt/salt-formulas-custom.html">Custom Formulas</a>
+    <a class="nav-link" href="../salt/formula-branchnetwork.html">Branch Network Formula</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../salt/formula-dhcpd.html">DHCPd Formula</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../salt/formula-imagesync.html">Image Sync Formula</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../salt/formula-pxe.html">PXE Formula</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../salt/formula-saltboot.html">Saltboot Formula</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../salt/formula-tftpd.html">TFTPd Formula</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../salt/formula-vsftpd.html">VsFTPd Formula</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../salt/formulas-custom.html">Custom Formulas</a>
   </li>
 </ul>
   </li>
@@ -1147,34 +1177,7 @@
 </ul>
   </li>
   <li class="nav-item" data-depth="2">
-    <button class="nav-item-toggle"></button>
     <a class="nav-link" href="../retail/retail-formulas-intro.html">Formulas</a>
-<ul class="nav-list">
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../retail/retail-formula-bind.html">Bind Formula</a>
-  </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../retail/retail-formula-branchnetwork.html">Branch Network Formula</a>
-  </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../retail/retail-formula-dhcpd.html">DHCPd Formula</a>
-  </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../retail/retail-formula-imagesync.html">Image Sync Formula</a>
-  </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../retail/retail-formula-pxe.html">PXE Formula</a>
-  </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../retail/retail-formula-saltboot.html">Saltboot Formula</a>
-  </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../retail/retail-formula-tftpd.html">TFTPd Formula</a>
-  </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../retail/retail-formula-vsftpd.html">VsFTPd Formula</a>
-  </li>
-</ul>
   </li>
   <li class="nav-item" data-depth="2">
     <button class="nav-item-toggle"></button>
@@ -1235,7 +1238,7 @@
       <span class="title">SUSE Manager</span>
       <ul class="versions">
         <li class="version is-current is-latest">
-          <a href="../index-suma.html">master</a>
+          <a href="../index.html">master</a>
         </li>
       </ul>
     </li>
@@ -1248,15 +1251,29 @@
 <div class="toolbar" role="navigation">
 <button class="nav-toggle"></button>
 
-  <a href="../index-suma.html" class="home-link"></a>
+  <a href="../index.html" class="home-link"></a>
 <nav class="breadcrumbs" aria-label="breadcrumbs">
   <ul>
-    <li><a href="../index-suma.html">SUSE Manager</a></li>
+    <li><a href="../index.html">SUSE Manager</a></li>
     <li><a href="intro.html">Administration Guide</a></li>
     <li><a href="content-lifecycle.html">Content Lifecycle Management</a></li>
   </ul>
 </nav>
-  <div class="edit-this-page"><a href="https://github.com/SUSE/doc-susemanager/edit/master/modules/administration/pages/content-lifecycle.adoc">Edit this Page</a></div>
+
+
+
+  <div class="edit-this-page">
+    <span class="prev-caret">
+      <a href="backup-restore.html">
+        <i class="fas fa-arrow-left custom-color" data-tippy="Previous page" id="previousPage"></i></a></span>
+&nbsp;
+<span class="next-caret">
+      <a href="content-lifecycle-examples.html">
+        <i class="fas fa-arrow-right custom-color" data-tippy="Next Page" id="nextPage"></i></a></span>
+    &nbsp;
+    <a href="https://github.com/SUSE/doc-susemanager/issues"><i class="fas fa-bug custom-color" data-tippy="Create an Issue" id="createIssue"></i>&nbsp;</a>
+  <a href="https://github.com/SUSE/doc-susemanager/edit/master/modules/administration/pages/content-lifecycle.adoc"><i class="fas fa-edit custom-color" data-tippy="Edit this page and submit a pull request" id="submitPR"></i></a>
+</div>
 </div>
 <article class="doc"><a name="section-top"></a>
 <h1 class="page">Content Lifecycle Management</h1>
@@ -1276,6 +1293,10 @@ You can then assign these cloned channels to test systems to ensure they work as
 <div class="paragraph">
 <p>This is achieved through a series of environments that your software channels can move through on their lifecycle.
 Most environment lifecycles include at least test and production environments, but you can have as many environments as you require.</p>
+</div>
+<div class="paragraph">
+<p>This section covers the basic content lifecycle procedures, and the filters available.
+For more specific examples, see <a href="content-lifecycle-examples.html" class="page">administration:content-lifecycle-examples.adoc</a>.</p>
 </div>
 </div>
 </div>
@@ -1331,7 +1352,7 @@ You can select the order of the environments in the lifecycle by selecting an en
 </div>
 </div>
 <div class="sect1">
-<h2 id="_advanced_filter_types"><a class="anchor" href="#_advanced_filter_types"></a><a class="link" href="#_advanced_filter_types">Advanced: Filter Types</a></h2>
+<h2 id="_filter_types"><a class="anchor" href="#_filter_types"></a><a class="link" href="#_filter_types">Filter Types</a></h2>
 <div class="sectionbody">
 <div class="paragraph">
 <p>SUSE Manager allows you to create various types of filters to control the content on project build.
@@ -1384,19 +1405,57 @@ This is the list of supported filters:</p>
 </td>
 <td class="content">
 <div class="paragraph">
-<p>No package dependency solving is done on content filtering.</p>
+<p>Package dependencies are not resolved during content filtering.</p>
 </div>
 </td>
 </tr>
 </table>
 </div>
+<div class="paragraph">
+<p>There are multiple matchers you can use with the filter.
+Which ones are available will depend on the filter type you choose.
+The full list is:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>contains</p>
+</li>
+<li>
+<p>matches (must take the form of a regular expression)</p>
+</li>
+<li>
+<p>equals</p>
+</li>
+<li>
+<p>greater</p>
+</li>
+<li>
+<p>greater or equal</p>
+</li>
+<li>
+<p>lower or equal</p>
+</li>
+<li>
+<p>lower</p>
+</li>
+</ul>
+</div>
 <div class="sect2">
 <h3 id="_filter_rule_parameter"><a class="anchor" href="#_filter_rule_parameter"></a><a class="link" href="#_filter_rule_parameter">Filter <code>rule</code> Parameter</a></h3>
 <div class="paragraph">
 <p>Moreover, each filter has a <code>rule</code> parameter set to either <code>Allow</code> or <code>Deny</code>.
-The filters are processed:
-- if a package or patch satisfies a <code>Deny</code> filter, it will be excluded from the result,
-* If a package or patch satisfies an <code>Allow</code> filter, it will be included in the result (even if it was excluded by a <code>Deny</code> filter).</p>
+The filters are processed:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>If a package or patch satisfies a <code>Deny</code> filter, it will be excluded from the result.</p>
+</li>
+<li>
+<p>If a package or patch satisfies an <code>Allow</code> filter, it will be included in the result (even if it was excluded by a <code>Deny</code> filter).</p>
+</li>
+</ul>
 </div>
 <div class="paragraph">
 <p>This behavior is useful when you want to exclude large number of packages or patches using a general <code>Deny</code> filter and "cherry-pick" specific packages or patches with specific <code>Allow</code> filters.</p>
@@ -1527,13 +1586,13 @@ If you add or promote sources you will need to manually check and update your ch
   </div>
 
   <div class="next">
-      <a href="tuning-changelogs.html" title="Tuning Changelogs">
+      <a href="content-lifecycle-examples.html" title="Content Lifecycle Management Examples">
         <div class="change-page">
           <div class="arrow-next"><i class="fas fa-arrow-right"></i></div>
         <span class="label">Next</span>
         <br/>
        <!-- <span class="label title"><strong>:</strong></span> -->
-        <span class="title">Tuning Changelogs</span>
+        <span class="title">Content Lifecycle Management Examples</span>
         </div>
       </a>
   </div>
@@ -1546,6 +1605,47 @@ If you add or promote sources you will need to manually check and update your ch
 
 </main>
 </div>
+<script>tippy('#previousPage', {
+placement: 'bottom', // or 'left', 'right', ...
+})
+
+tippy('#nextPage', {
+  placement: 'bottom', // or 'left', 'right', ...
+})
+tippy('#createIssue', {
+  placement: 'bottom', // or 'left', 'right', ...
+})
+tippy('#submitPR', {
+  placement: 'bottom', // or 'left', 'right', ...
+})
+</script>
+<script src="https://unpkg.com/popper.js@1"></script>
+<script src="https://unpkg.com/tippy.js@4"></script>
+<script>
+    tippy.setDefaults({
+        placement: 'bottom',
+        arrow: true,
+        arrowType: 'sharp',
+        delay: 0,
+        theme: 'light',
+    });
+
+    tippy('#previousPage', {
+        content: "Previous Page",
+    });
+
+    tippy('#nextPage', {
+        content: "Next Page",
+    });
+
+    tippy('#createIssue', {
+        content: "Create Issue",
+    });
+
+    tippy('#submitPR', {
+        content: "Edit this page and submit a pull request",
+    });
+</script>
 <script type="text/javascript">
   window.antora = window.antora || {}
   window.antora.basePath = '../..'
@@ -1572,5 +1672,6 @@ If you add or promote sources you will need to manually check and update your ch
         document.getElementById( 'article-toc' ).parentNode.classList.remove( 'hidden' );
     }
 </script>
+
   </body>
 </html>

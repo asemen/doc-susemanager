@@ -3,8 +3,8 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>Troubleshooting Upgrades and Migrations :: SUSE Manager Documentation</title>
-    <link rel="canonical" href="https://opensource.suse.com/doc-susemanager/suse-manager/upgrade/troubleshooting-upgrades-and-migrations.html">
+    <title>Content Lifecycle Management Examples :: SUSE Manager Documentation</title>
+    <link rel="canonical" href="https://opensource.suse.com/doc-susemanager/suse-manager/administration/content-lifecycle-examples.html">
     <meta name="generator" content="Antora 2.0.0">
     <link rel="stylesheet" href="../../_/css/site.css">
    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.css" integrity="sha256-piqEf7Ap7CMps8krDQsSOTZgF+MU/0MPyPW2enj5I40=" crossorigin="anonymous" /> -->
@@ -14,6 +14,9 @@
 <link rel="stylesheet" href="../../_/fonts/css/all.css">
 <link rel="stylesheet" href="../../_/css/site-extra.css">
 <link href="https://fonts.googleapis.com/css?family=Montserrat|Roboto&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../_/css/vendor/light.css">
+
+
   </head>
   <body class="article">
 <header class="header" role="banner">
@@ -27,7 +30,7 @@
         </div> -->
         <div class="navbar-item">
            <!-- <i class="fas fa-search"></i>&nbsp; -->
-          <input id="search-input" type="text" placeholder="Search">
+          <input id="search-input" type="text" placeholder="Search...">
         </div>
       <button class="navbar-burger" data-target="topbar-nav">
         <span></span>
@@ -46,8 +49,8 @@
                       <a class="navbar-item" href="https://github.com/SUSE/doc-susemanager/issues"><i
                               class="fab fa-github"></i>&nbsp;Report Issue</a>
                       <a class="navbar-item"
-                         href="https://github.com/SUSE/doc-susemanager/wiki/Asciidoc-getting-started"><i
-                              class="fas fa-user-edit"></i>&nbsp;Contribute</a>
+                         href="https://github.com/SUSE/doc-susemanager/wiki#contributing"><i
+                              class="fas fa-user-edit"></i>&nbsp;Contributing</a>
                   </div>
               </div>
 
@@ -72,7 +75,7 @@
     <div class="panels">
 <div class="nav-panel-menu is-active" data-panel="menu">
   <nav class="nav-menu">
-    <h3 class="title"><a href="../index-suma.html">SUSE Manager</a></h3>
+    <h3 class="title"><a href="../index.html">SUSE Manager</a></h3>
 <ul class="nav-list">
   <li class="nav-item" data-depth="0">
 <ul class="nav-list">
@@ -252,28 +255,28 @@
 <ul class="nav-list">
   <li class="nav-item" data-depth="1">
     <button class="nav-item-toggle"></button>
-    <a class="nav-link" href="upgrade-overview.html">Upgrade Guide</a>
+    <a class="nav-link" href="../upgrade/upgrade-overview.html">Upgrade Guide</a>
 <ul class="nav-list">
   <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="server-upgrade.html">Server Update</a>
+    <a class="nav-link" href="../upgrade/server-upgrade.html">Server Update</a>
   </li>
   <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="migrate-3x-4x.html">Server Upgrade 3.x &#8594; 4.x</a>
+    <a class="nav-link" href="../upgrade/migrate-4x-4x.html">migrate-4x-4x.adoc</a>
   </li>
   <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="proxy-migration.html">Proxy Upgrade 3.x &#8594; 4.x</a>
+    <a class="nav-link" href="../upgrade/proxy-migration.html">Proxy Upgrade 3.x &#8594; 4.x</a>
   </li>
   <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="client-migration.html">Client Migration</a>
+    <a class="nav-link" href="../upgrade/client-migration.html">Client Migration</a>
   </li>
   <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="sp-migration.html">Service Pack Migration</a>
+    <a class="nav-link" href="../upgrade/db-migration.html">Database Migration</a>
   </li>
   <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="db-migration.html">Database Migration</a>
+    <a class="nav-link" href="../upgrade/troubleshooting.html">Troubleshooting</a>
   </li>
   <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="upgrade-script-example.html">Example Script for Automated Upgrades</a>
+    <a class="nav-link" href="../upgrade/upgrade-script-example.html">Example Script for Automated Upgrades</a>
   </li>
 </ul>
   </li>
@@ -950,71 +953,77 @@
 <ul class="nav-list">
   <li class="nav-item" data-depth="1">
     <button class="nav-item-toggle"></button>
-    <a class="nav-link" href="../administration/intro.html">Administration Guide</a>
+    <a class="nav-link" href="intro.html">Administration Guide</a>
 <ul class="nav-list">
   <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="../administration/image-management.html">Image Management</a>
+    <a class="nav-link" href="image-management.html">Image Management</a>
   </li>
   <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="../administration/channel-management.html">Channel Management</a>
+    <a class="nav-link" href="channel-management.html">Channel Management</a>
   </li>
   <li class="nav-item" data-depth="2">
     <button class="nav-item-toggle"></button>
-    <a class="nav-link" href="../administration/live-patching.html">Live Patching</a>
+    <a class="nav-link" href="live-patching.html">Live Patching</a>
 <ul class="nav-list">
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../administration/live-patching-sles15.html">Live Patching on SLES 15</a>
+    <a class="nav-link" href="live-patching-sles15.html">Live Patching on SLES 15</a>
   </li>
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../administration/live-patching-sles12.html">Live Patching on SLES 12</a>
+    <a class="nav-link" href="live-patching-sles12.html">Live Patching on SLES 12</a>
   </li>
 </ul>
   </li>
   <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="../administration/monitoring.html">Monitoring</a>
+    <a class="nav-link" href="monitoring.html">Monitoring</a>
   </li>
   <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="../administration/kubernetes.html">Kubernetes</a>
+    <a class="nav-link" href="kubernetes.html">Kubernetes</a>
   </li>
   <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="../administration/public-cloud.html">Public Cloud</a>
+    <a class="nav-link" href="public-cloud.html">Public Cloud</a>
   </li>
   <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="../administration/iss.html">Inter-Server Synchronization</a>
+    <a class="nav-link" href="iss.html">Inter-Server Synchronization</a>
   </li>
   <li class="nav-item" data-depth="2">
     <button class="nav-item-toggle"></button>
     <span class="nav-text">Security</span>
 <ul class="nav-list">
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../administration/master-fingerprint.html">Master Fingerprint</a>
+    <a class="nav-link" href="master-fingerprint.html">Master Fingerprint</a>
   </li>
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../administration/repo-metadata.html">Repository Metadata</a>
+    <a class="nav-link" href="repo-metadata.html">Repository Metadata</a>
   </li>
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../administration/mirror-sources.html">Mirror Sources</a>
+    <a class="nav-link" href="mirror-sources.html">Mirror Sources</a>
   </li>
 </ul>
   </li>
   <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="../administration/auth-methods.html">Authentication Methods</a>
+    <a class="nav-link" href="auth-methods.html">Authentication Methods</a>
   </li>
   <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="../administration/custom-ssl.html">Custom SSL Certificates</a>
+    <a class="nav-link" href="custom-ssl.html">Custom SSL Certificates</a>
   </li>
   <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="../administration/backup-restore.html">Backing Up and Restoring</a>
+    <a class="nav-link" href="backup-restore.html">Backing Up and Restoring</a>
   </li>
   <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="../administration/content-lifecycle.html">Content Lifecycle Management</a>
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="content-lifecycle.html">Content Lifecycle Management</a>
+<ul class="nav-list">
+  <li class="nav-item is-current-page" data-depth="3">
+    <a class="nav-link" href="content-lifecycle-examples.html">Content Lifecycle Management Examples</a>
+  </li>
+</ul>
   </li>
   <li class="nav-item" data-depth="2">
     <button class="nav-item-toggle"></button>
     <span class="nav-text">Tuning</span>
 <ul class="nav-list">
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../administration/tuning-changelogs.html">Tuning Changelogs</a>
+    <a class="nav-link" href="tuning-changelogs.html">Tuning Changelogs</a>
   </li>
 </ul>
   </li>
@@ -1023,42 +1032,42 @@
     <span class="nav-text">Maintenance Window</span>
 <ul class="nav-list">
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../administration/maintenance-window.html">Maintenance Window</a>
+    <a class="nav-link" href="maintenance-window.html">Maintenance Window</a>
   </li>
 </ul>
   </li>
   <li class="nav-item" data-depth="2">
     <button class="nav-item-toggle"></button>
-    <a class="nav-link" href="../administration/tshoot-intro.html">Troubleshooting</a>
+    <a class="nav-link" href="tshoot-intro.html">Troubleshooting</a>
 <ul class="nav-list">
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../administration/tshoot-corruptrepo.html">Troubleshooting Corrupt Repositories</a>
+    <a class="nav-link" href="tshoot-corruptrepo.html">Troubleshooting Corrupt Repositories</a>
   </li>
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../administration/tshoot-diskspace.html">Troubleshooting Disk Space</a>
+    <a class="nav-link" href="tshoot-diskspace.html">Troubleshooting Disk Space</a>
   </li>
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../administration/tshoot-localcert.html">Troubleshooting Local Certificates</a>
+    <a class="nav-link" href="tshoot-localcert.html">Troubleshooting Local Certificates</a>
   </li>
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../administration/tshoot-osadjabberd.html">Troubleshooting OSAD and jabberd</a>
+    <a class="nav-link" href="tshoot-osadjabberd.html">Troubleshooting OSAD and jabberd</a>
   </li>
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../administration/tshoot-packages.html">Troubleshooting Packages</a>
+    <a class="nav-link" href="tshoot-packages.html">Troubleshooting Packages</a>
   </li>
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../administration/tshoot-registerclones.html">Troubleshooting Registering Cloned Clients</a>
+    <a class="nav-link" href="tshoot-registerclones.html">Troubleshooting Registering Cloned Clients</a>
   </li>
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../administration/tshoot-rpctimeout.html">Troubleshooting RPC Timeouts</a>
+    <a class="nav-link" href="tshoot-rpctimeout.html">Troubleshooting RPC Timeouts</a>
   </li>
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../administration/tshoot-saltboot.html">Troubleshooting Saltboot</a>
+    <a class="nav-link" href="tshoot-saltboot.html">Troubleshooting Saltboot</a>
   </li>
 </ul>
   </li>
   <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="../administration/autoyast-example.html">AutoYaST Example</a>
+    <a class="nav-link" href="autoyast-example.html">AutoYaST Example</a>
   </li>
 </ul>
   </li>
@@ -1090,13 +1099,34 @@
   </li>
   <li class="nav-item" data-depth="2">
     <button class="nav-item-toggle"></button>
-    <a class="nav-link" href="../salt/salt-formulas.html">Salt Formulas</a>
+    <a class="nav-link" href="../salt/formulas-intro.html">Salt Formulas</a>
 <ul class="nav-list">
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../salt/salt-formulas-standard.html">Standard Formulas</a>
+    <a class="nav-link" href="../salt/formula-bind.html">Bind Formula</a>
   </li>
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../salt/salt-formulas-custom.html">Custom Formulas</a>
+    <a class="nav-link" href="../salt/formula-branchnetwork.html">Branch Network Formula</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../salt/formula-dhcpd.html">DHCPd Formula</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../salt/formula-imagesync.html">Image Sync Formula</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../salt/formula-pxe.html">PXE Formula</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../salt/formula-saltboot.html">Saltboot Formula</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../salt/formula-tftpd.html">TFTPd Formula</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../salt/formula-vsftpd.html">VsFTPd Formula</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../salt/formulas-custom.html">Custom Formulas</a>
   </li>
 </ul>
   </li>
@@ -1147,34 +1177,7 @@
 </ul>
   </li>
   <li class="nav-item" data-depth="2">
-    <button class="nav-item-toggle"></button>
     <a class="nav-link" href="../retail/retail-formulas-intro.html">Formulas</a>
-<ul class="nav-list">
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../retail/retail-formula-bind.html">Bind Formula</a>
-  </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../retail/retail-formula-branchnetwork.html">Branch Network Formula</a>
-  </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../retail/retail-formula-dhcpd.html">DHCPd Formula</a>
-  </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../retail/retail-formula-imagesync.html">Image Sync Formula</a>
-  </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../retail/retail-formula-pxe.html">PXE Formula</a>
-  </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../retail/retail-formula-saltboot.html">Saltboot Formula</a>
-  </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../retail/retail-formula-tftpd.html">TFTPd Formula</a>
-  </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../retail/retail-formula-vsftpd.html">VsFTPd Formula</a>
-  </li>
-</ul>
   </li>
   <li class="nav-item" data-depth="2">
     <button class="nav-item-toggle"></button>
@@ -1235,7 +1238,7 @@
       <span class="title">SUSE Manager</span>
       <ul class="versions">
         <li class="version is-current is-latest">
-          <a href="../index-suma.html">master</a>
+          <a href="../index.html">master</a>
         </li>
       </ul>
     </li>
@@ -1248,25 +1251,467 @@
 <div class="toolbar" role="navigation">
 <button class="nav-toggle"></button>
 
-  <a href="../index-suma.html" class="home-link"></a>
+  <a href="../index.html" class="home-link"></a>
 <nav class="breadcrumbs" aria-label="breadcrumbs">
   <ul>
-    <li><a href="../index-suma.html">SUSE Manager</a></li>
-    <li><a href="troubleshooting-upgrades-and-migrations.html">Troubleshooting Upgrades and Migrations</a></li>
+    <li><a href="../index.html">SUSE Manager</a></li>
+    <li><a href="intro.html">Administration Guide</a></li>
+    <li><a href="content-lifecycle.html">Content Lifecycle Management</a></li>
+    <li><a href="content-lifecycle-examples.html">Content Lifecycle Management Examples</a></li>
   </ul>
 </nav>
-  <div class="edit-this-page"><a href="https://github.com/SUSE/doc-susemanager/edit/master/modules/upgrade/pages/troubleshooting-upgrades-and-migrations.adoc">Edit this Page</a></div>
+
+
+
+  <div class="edit-this-page">
+    <span class="prev-caret">
+      <a href="content-lifecycle.html">
+        <i class="fas fa-arrow-left custom-color" data-tippy="Previous page" id="previousPage"></i></a></span>
+&nbsp;
+<span class="next-caret">
+      <a href="tuning-changelogs.html">
+        <i class="fas fa-arrow-right custom-color" data-tippy="Next Page" id="nextPage"></i></a></span>
+    &nbsp;
+    <a href="https://github.com/SUSE/doc-susemanager/issues"><i class="fas fa-bug custom-color" data-tippy="Create an Issue" id="createIssue"></i>&nbsp;</a>
+  <a href="https://github.com/SUSE/doc-susemanager/edit/master/modules/administration/pages/content-lifecycle-examples.adoc"><i class="fas fa-edit custom-color" data-tippy="Edit this page and submit a pull request" id="submitPR"></i></a>
+</div>
 </div>
 <article class="doc"><a name="section-top"></a>
-<h1 class="page">Troubleshooting Upgrades and Migrations</h1>
+<h1 class="page">Content Lifecycle Management Examples</h1>
+<div id="preamble">
+<div class="sectionbody">
 <div class="paragraph">
-<p>Coming soon&#8230;&#8203;</p>
+<p>This section contains some common examples of how you can use content lifecycle management.
+Use these examples to build your own personalized implementation.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="create-proj-for-patch-cycle"><a class="anchor" href="#create-proj-for-patch-cycle"></a><a class="link" href="#create-proj-for-patch-cycle">Creating a Project for a Monthly Patch Cycle</a></h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>A project for a monthly patch cycle consists of:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Creating a filter for a project</p>
+</li>
+<li>
+<p>Adding a filter to a project</p>
+</li>
+<li>
+<p>Applying the filter to a new build environment</p>
+</li>
+<li>
+<p>Excluding a patch from a project</p>
+</li>
+<li>
+<p>Including a patch in a project</p>
+</li>
+</ul>
+</div>
+<div class="sect2">
+<h3 id="create-a-filter"><a class="anchor" href="#create-a-filter"></a><a class="link" href="#create-a-filter">Creating a Filter for the Project</a></h3>
+<div class="paragraph">
+<p>The <code>By Date</code> filter excludes all patches released after a specified date.
+This filter is useful for your CLM projects that follow a monthly patch cycle.</p>
+</div>
+<div class="olist arabic">
+<div class="title">Procedure: Creating the <code>By Date</code> Filter</div>
+<ol class="arabic">
+<li>
+<p>In the SUSE Manager Web UI, navigate to <span class="menuseq"><b class="menu">Content Lifecycle</b>&#160;<i class="fa fa-angle-right caret"></i> <b class="menuitem">Filters</b></span> and click <b class="button">Create Filter</b>.</p>
+</li>
+<li>
+<p>In the <code class="guimenu">Filter Name</code> field, type a name for your filter.
+For example, <code class="systemitem">Exclude patches by date</code>.</p>
+</li>
+<li>
+<p>In the <code class="guimenu">Filter Type</code> field, select <code class="guimenu">Patch (issued after)</code>.</p>
+</li>
+<li>
+<p>Select the date and time.</p>
+</li>
+<li>
+<p>Click <b class="button">Save</b>.</p>
+</li>
+</ol>
+</div>
+</div>
+<div class="sect2">
+<h3 id="add-filter-to-proj"><a class="anchor" href="#add-filter-to-proj"></a><a class="link" href="#add-filter-to-proj">Adding the Filter to the Project</a></h3>
+<div class="olist arabic">
+<div class="title">Procedure: Adding a Filter to a Project</div>
+<ol class="arabic">
+<li>
+<p>In the SUSE Manager Web UI, navigate to <span class="menuseq"><b class="menu">Content Lifecycle</b>&#160;<i class="fa fa-angle-right caret"></i> <b class="menuitem">Projects</b></span> and select a project from the list.</p>
+</li>
+<li>
+<p>Click <b class="button">Attach/Detach Filters</b> link to see all available filters</p>
+</li>
+<li>
+<p>Select the new <code class="guimenu">Exclude patches by date</code> filter.</p>
+</li>
+<li>
+<p>Click <b class="button">Save</b>.</p>
+</li>
+</ol>
+</div>
+</div>
+<div class="sect2">
+<h3 id="apply-filter-to-env"><a class="anchor" href="#apply-filter-to-env"></a><a class="link" href="#apply-filter-to-env">Applying the Filter to the Environment</a></h3>
+<div class="paragraph">
+<p>The new filter is added to your filter list, but it still needs to be applied to the project.
+To apply the filter you need to build the first environment.</p>
+</div>
+<div class="paragraph">
+<div class="title">Procedure: Using the Filter</div>
+<p>Click <b class="button">Build</b> to build the first environment.</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>OPTIONAL: Add a message.
+You can use messages to help track the build history.</p>
+</li>
+<li>
+<p>Check that the filter has worked correctly by using the new channels on a test server.</p>
+</li>
+<li>
+<p>Click <b class="button">Promote</b> to move the content to the next environment.
+The build will take longer if you have a large number of filters, or they are very complex.</p>
+</li>
+</ol>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>When you promote content from one environment to the next, a copy of the metadata is created.
+Filters determine which metadata will be used to define your channels, as well the packages within those channels.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="sect2">
+<h3 id="exclude-a-patch"><a class="anchor" href="#exclude-a-patch"></a><a class="link" href="#exclude-a-patch">Excluding a Patch from the Project</a></h3>
+<div class="paragraph">
+<p>Tests may help you discover issues.
+When an issue is found, exclude the problem patch released before the <strong>by date</strong> filter.</p>
+</div>
+<div class="olist arabic">
+<div class="title">Procedure: Excluding a Patch</div>
+<ol class="arabic">
+<li>
+<p>In the SUSE Manager Web UI, navigate to <span class="menuseq"><b class="menu">Content Lifecycle</b>&#160;<i class="fa fa-angle-right caret"></i> <b class="menuitem">Filters</b></span> and click <b class="button">Create Filter</b>.</p>
+</li>
+<li>
+<p>In the <code class="guimenu">Filter Name</code> field, enter a name for the filter.
+For example, <code class="systemitem">Exclude openjdk patch</code>.</p>
+</li>
+<li>
+<p>In the <code class="guimenu">Filter Type</code> field, select <code class="guimenu">Patch (matches Advisory Name)</code>.</p>
+</li>
+<li>
+<p>In the <code class="guimenu">Advisory Name</code> field, type a name for the advisory.
+For example, <code class="systemitem">SUSE-15-2019-1807</code>.</p>
+</li>
+<li>
+<p>Click <b class="button">Save</b>.</p>
+</li>
+<li>
+<p>Navigate to <span class="menuseq"><b class="menu">Content Lifecycle</b>&#160;<i class="fa fa-angle-right caret"></i> <b class="menuitem">Projects</b></span> and select your project.</p>
+</li>
+<li>
+<p>Click <b class="button">Attach/Detach Filters</b> link, select <code class="guimenu">Exclude openjdk patch</code>, and click <b class="button">Save</b>.</p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>When you rebuild a previous environment with the <b class="button">Build</b> button, the new exclude filter uses the previous <code class="guimenu">by date</code> filter.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="include-a-patch"><a class="anchor" href="#include-a-patch"></a><a class="link" href="#include-a-patch">Including a Patch in the Project</a></h3>
+<div class="paragraph">
+<p>In this example, you have received a security alert.
+An important security patch was released several days after your last release on 1 August.
+The name of the new patch is <code>SUSE-15-2019-2071</code>.
+You need to include this new patch into your next patch cycle.</p>
+</div>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-important" title="Important"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>Use the <code class="guimenu">Allow</code> filters rule to select patches from a full source and add them to a previous environment.
+The <code class="guimenu">Allow</code> filters rule overrides the exclude function of the <code class="guimenu">Deny</code> filter rule.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="olist arabic">
+<div class="title">Procedure: Including a Patch in a Project</div>
+<ol class="arabic">
+<li>
+<p>In the SUSE Manager Web UI, navigate to <span class="menuseq"><b class="menu">Content Lifecycle</b>&#160;<i class="fa fa-angle-right caret"></i> <b class="menuitem">Filters</b></span> and click <b class="button">Create Filter</b>.</p>
+</li>
+<li>
+<p>In the <code class="guimenu">Filter Name</code> field, type a name for the filter.
+For example, <code class="systemitem">Include kernel security fix</code>.</p>
+</li>
+<li>
+<p>In the <code class="guimenu">Filter Type</code> field, select <code class="guimenu">Patch (Advisory Name)</code>.</p>
+</li>
+<li>
+<p>In the <code class="guimenu">Matcher</code> field, select either <code class="guimenu">equals</code> or <code class="guimenu">matches</code>.</p>
+</li>
+<li>
+<p>In the <code class="guimenu">Advisory Name</code> field, type <code class="guimenu">SUSE-15-2019-2071</code>, and check <code class="guimenu">Allow</code>.</p>
+</li>
+<li>
+<p>Click <b class="button">Save</b> to store the filter.</p>
+</li>
+<li>
+<p>Navigate to <span class="menuseq"><b class="menu">Content Lifecycle</b>&#160;<i class="fa fa-angle-right caret"></i> <b class="menuitem">Projects</b></span> and select your project from the list.</p>
+</li>
+<li>
+<p>Click <b class="button">Attach/Detach Filters</b>, and select <code class="guimenu">Include kernel security patch</code>.</p>
+</li>
+<li>
+<p>Click <b class="button">Save</b>.</p>
+</li>
+<li>
+<p>Click <b class="button">Build</b> to rebuild the environment.</p>
+</li>
+</ol>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="update-a-patch-cycle"><a class="anchor" href="#update-a-patch-cycle"></a><a class="link" href="#update-a-patch-cycle">Update an Existing Monthly Patch Cycle</a></h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>When a monthly patch cycle is complete, you can update the patch cycle for the next month.</p>
+</div>
+<div class="olist arabic">
+<div class="title">Procedure: Updating a Monthly Patch Cycle</div>
+<ol class="arabic">
+<li>
+<p>In the <code class="guimenu">by date</code> field, change the date of the filter to the next month.
+Alternatively, create a new filter and change the assignment to the project.</p>
+</li>
+<li>
+<p>Check if the exclude filter for <code>SUSE-15-2019-1807</code> can be detached from the project.
+There may be a new patch available to fix this issue.</p>
+</li>
+<li>
+<p>Detach the <code>include</code> filter.
+The filter is included by default.</p>
+</li>
+<li>
+<p>Complete updating your filters.</p>
+</li>
+<li>
+<p>Rebuild the project to create a new environment with patches for 1 September.</p>
+</li>
+</ol>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="enhance-project-with-livepatching"><a class="anchor" href="#enhance-project-with-livepatching"></a><a class="link" href="#enhance-project-with-livepatching">Enhance a Project with Live Patching</a></h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>This section covers setting up filters to create environments for live patching.</p>
+</div>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-important" title="Important"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>When you are preparing to use live patching, there are some important considerations</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Only ever use one kernel version on your systems.
+The live patching packages are installed with a specific kernel.</p>
+</li>
+<li>
+<p>Live patching updates are shipped as one patch.</p>
+</li>
+<li>
+<p>Each kernel patch that begins a new series of live patching kernels will display the <code>required reboot</code> flag.
+These kernel patches come with live patching tools.
+When you have installed them, you will need to reboot the system at least once before the next year.</p>
+</li>
+<li>
+<p>Only install live patch updates that match the installed kernel version.</p>
+</li>
+<li>
+<p>Live patches are provided as stand-alone patches.
+You must exclude all regular kernel patches with higher kernel version than the currently installed one.</p>
+</li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="sect2">
+<h3 id="exclude-higher-kernel-version"><a class="anchor" href="#exclude-higher-kernel-version"></a><a class="link" href="#exclude-higher-kernel-version">Exclude Packages with a Higher Kernel Version</a></h3>
+<div class="paragraph">
+<p>In this example you update your systems with the <code>SUSE-15-2019-1244</code> patch.
+This patch contains <code>kernel-default-4.12.14-150.17.1-x86_64</code>.</p>
+</div>
+<div class="paragraph">
+<p>You need to exclude all patches which contain a higher version of <code>kernel-default</code>.</p>
+</div>
+<div class="paragraph">
+<p>Procedure: Excluding Packages with a Higher Kernel Version</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>In the SUSE Manager Web UI, navigate to <span class="menuseq"><b class="menu">Content Lifecycle</b>&#160;<i class="fa fa-angle-right caret"></i> <b class="menuitem">Filters</b></span>, and click <b class="button">Create Filter</b>.</p>
+</li>
+<li>
+<p>In the <code class="guimenu">Filter Name</code> field, type a name for your filter.
+For example, <code class="systemitem">Exclude kernel greater than 4.12.14-150.17.1</code>.</p>
+</li>
+<li>
+<p>In the <code class="guimenu">Filter Type</code> field, select <code class="guimenu">Patch contains package with version greater than</code>.</p>
+</li>
+<li>
+<p>In the <code class="guimenu">Package Name</code> field, type <code class="systemitem">kernel-default</code>.</p>
+</li>
+<li>
+<p>Leave the the <code class="guimenu">Epoch</code> field empty.</p>
+</li>
+<li>
+<p>In the <code class="guimenu">Version</code> field, type <code class="systemitem">4.12.14</code>.</p>
+</li>
+<li>
+<p>In the <code class="guimenu">Release</code> field, type <code class="systemitem">150.17.1</code>.</p>
+</li>
+<li>
+<p>Click <b class="button">Save</b> to store the filter.</p>
+</li>
+<li>
+<p>Navigate to <span class="menuseq"><b class="menu">Content Lifecycle</b>&#160;<i class="fa fa-angle-right caret"></i> <b class="menuitem">Projects</b></span> and select your project.</p>
+</li>
+<li>
+<p>Click <b class="button">Attach/Detach Filters</b>.</p>
+</li>
+<li>
+<p>Select <code class="guimenu">Exclude kernel greater than 4.12.14-150.17.1</code>, and click <b class="button">Save</b>.</p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>When you click <b class="button">Build</b>, a new environment is created.
+The new environment contains all the kernel patches up to the version you installed.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+All kernel patches with higher kernel versions are removed. Live patching kernels
+will stay available as long as they are not the first in a series.
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="update-project-for-next-patch-month"><a class="anchor" href="#update-project-for-next-patch-month"></a><a class="link" href="#update-project-for-next-patch-month">Update the Project for Next Patch Month</a></h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>To update the project to the next patch month you operate similar to the case before.
+Important is, that you do not change the "Exclude kernel greater than 4.12.14-150.17.1: &#8230;&#8203;"
+Filter. With it you keep normal kernel-updates away, but take the latest live patches
+up to the selected month.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="switch-kernel-version-for-live-patching"><a class="anchor" href="#switch-kernel-version-for-live-patching"></a><a class="link" href="#switch-kernel-version-for-live-patching">Switch to a New Kernel Version for Live Patching</a></h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Live Patching for a specific kernel version is only available for one year. After one year
+you must update the kernel on your systems. The following changes of the environment
+should be executed:</p>
+</div>
+<div class="olist arabic">
+<div class="title">Procedure: Switch to a New Kernel Version</div>
+<ol class="arabic">
+<li>
+<p>Decide which kernel version you will upgrade to. For example: <code>4.12.14-150.32.1</code></p>
+</li>
+<li>
+<p>Create a new kernel version Filter.</p>
+</li>
+<li>
+<p>Detach the previous filter <strong>Exclude kernel greater than 4.12.14-150.17.1</strong> and attach the new filter.</p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>Click <b class="button">Build</b> to rebuild the environment.
+The new environment contains all kernel patches up to the new kernel version you selected.
+Systems using these channels will have the kernel update available for installation.
+You will need to reboot systems after they have performed the upgrade.
+The new kernel will remain valid for one year.
+All packages installed during the year will match the current live patching kernel filter.</p>
+</div>
+</div>
 </div>
 
 <div class="cedents grid" role="navigation">
 
+  <div class="prev">
+      <a href="content-lifecycle.html" title="Content Lifecycle Management">
+        <div class="change-page">
+          <div class="arrow-prev"><i class="fas fa-arrow-left"></i></div>
+        <span class="label">Previous</span>
+        <br/>
+        <!-- <span class="label title"><strong>:</strong></span> -->
+        <span class="title">Content Lifecycle Management</span>
+        </div>
+      </a>
   </div>
 
+  <div class="next">
+      <a href="tuning-changelogs.html" title="Tuning Changelogs">
+        <div class="change-page">
+          <div class="arrow-next"><i class="fas fa-arrow-right"></i></div>
+        <span class="label">Next</span>
+        <br/>
+       <!-- <span class="label title"><strong>:</strong></span> -->
+        <span class="title">Tuning Changelogs</span>
+        </div>
+      </a>
   </div>
 </div>
 </article>
@@ -1277,10 +1722,51 @@
 
 </main>
 </div>
+<script>tippy('#previousPage', {
+placement: 'bottom', // or 'left', 'right', ...
+})
+
+tippy('#nextPage', {
+  placement: 'bottom', // or 'left', 'right', ...
+})
+tippy('#createIssue', {
+  placement: 'bottom', // or 'left', 'right', ...
+})
+tippy('#submitPR', {
+  placement: 'bottom', // or 'left', 'right', ...
+})
+</script>
+<script src="https://unpkg.com/popper.js@1"></script>
+<script src="https://unpkg.com/tippy.js@4"></script>
+<script>
+    tippy.setDefaults({
+        placement: 'bottom',
+        arrow: true,
+        arrowType: 'sharp',
+        delay: 0,
+        theme: 'light',
+    });
+
+    tippy('#previousPage', {
+        content: "Previous Page",
+    });
+
+    tippy('#nextPage', {
+        content: "Next Page",
+    });
+
+    tippy('#createIssue', {
+        content: "Create Issue",
+    });
+
+    tippy('#submitPR', {
+        content: "Edit this page and submit a pull request",
+    });
+</script>
 <script type="text/javascript">
   window.antora = window.antora || {}
   window.antora.basePath = '../..'
-  window.antora.pagePath = '/suse-manager/upgrade/troubleshooting-upgrades-and-migrations.html'
+  window.antora.pagePath = '/suse-manager/administration/content-lifecycle-examples.html'
 </script>
 <script src="../../_/js/site.js"></script>
 <script src="../../_/js/vendor/lunr.js"></script>
@@ -1303,5 +1789,6 @@
         document.getElementById( 'article-toc' ).parentNode.classList.remove( 'hidden' );
     }
 </script>
+
   </body>
 </html>

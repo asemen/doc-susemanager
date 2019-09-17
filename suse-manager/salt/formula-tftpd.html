@@ -3,8 +3,8 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>Migrating from Version 3.1 to 3.2 :: SUSE Manager Documentation</title>
-    <link rel="canonical" href="https://opensource.suse.com/doc-susemanager/suse-manager/upgrade/migrate-3x-3x.html">
+    <title>TFTPd Formula :: SUSE Manager Documentation</title>
+    <link rel="canonical" href="https://opensource.suse.com/doc-susemanager/suse-manager/salt/formula-tftpd.html">
     <meta name="generator" content="Antora 2.0.0">
     <link rel="stylesheet" href="../../_/css/site.css">
    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.css" integrity="sha256-piqEf7Ap7CMps8krDQsSOTZgF+MU/0MPyPW2enj5I40=" crossorigin="anonymous" /> -->
@@ -14,6 +14,9 @@
 <link rel="stylesheet" href="../../_/fonts/css/all.css">
 <link rel="stylesheet" href="../../_/css/site-extra.css">
 <link href="https://fonts.googleapis.com/css?family=Montserrat|Roboto&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../_/css/vendor/light.css">
+
+
   </head>
   <body class="article">
 <header class="header" role="banner">
@@ -27,7 +30,7 @@
         </div> -->
         <div class="navbar-item">
            <!-- <i class="fas fa-search"></i>&nbsp; -->
-          <input id="search-input" type="text" placeholder="Search">
+          <input id="search-input" type="text" placeholder="Search...">
         </div>
       <button class="navbar-burger" data-target="topbar-nav">
         <span></span>
@@ -46,8 +49,8 @@
                       <a class="navbar-item" href="https://github.com/SUSE/doc-susemanager/issues"><i
                               class="fab fa-github"></i>&nbsp;Report Issue</a>
                       <a class="navbar-item"
-                         href="https://github.com/SUSE/doc-susemanager/wiki/Asciidoc-getting-started"><i
-                              class="fas fa-user-edit"></i>&nbsp;Contribute</a>
+                         href="https://github.com/SUSE/doc-susemanager/wiki#contributing"><i
+                              class="fas fa-user-edit"></i>&nbsp;Contributing</a>
                   </div>
               </div>
 
@@ -72,7 +75,7 @@
     <div class="panels">
 <div class="nav-panel-menu is-active" data-panel="menu">
   <nav class="nav-menu">
-    <h3 class="title"><a href="../index-suma.html">SUSE Manager</a></h3>
+    <h3 class="title"><a href="../index.html">SUSE Manager</a></h3>
 <ul class="nav-list">
   <li class="nav-item" data-depth="0">
 <ul class="nav-list">
@@ -252,28 +255,28 @@
 <ul class="nav-list">
   <li class="nav-item" data-depth="1">
     <button class="nav-item-toggle"></button>
-    <a class="nav-link" href="upgrade-overview.html">Upgrade Guide</a>
+    <a class="nav-link" href="../upgrade/upgrade-overview.html">Upgrade Guide</a>
 <ul class="nav-list">
   <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="server-upgrade.html">Server Update</a>
+    <a class="nav-link" href="../upgrade/server-upgrade.html">Server Update</a>
   </li>
   <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="migrate-3x-4x.html">Server Upgrade 3.x &#8594; 4.x</a>
+    <a class="nav-link" href="../upgrade/migrate-4x-4x.html">migrate-4x-4x.adoc</a>
   </li>
   <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="proxy-migration.html">Proxy Upgrade 3.x &#8594; 4.x</a>
+    <a class="nav-link" href="../upgrade/proxy-migration.html">Proxy Upgrade 3.x &#8594; 4.x</a>
   </li>
   <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="client-migration.html">Client Migration</a>
+    <a class="nav-link" href="../upgrade/client-migration.html">Client Migration</a>
   </li>
   <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="sp-migration.html">Service Pack Migration</a>
+    <a class="nav-link" href="../upgrade/db-migration.html">Database Migration</a>
   </li>
   <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="db-migration.html">Database Migration</a>
+    <a class="nav-link" href="../upgrade/troubleshooting.html">Troubleshooting</a>
   </li>
   <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="upgrade-script-example.html">Example Script for Automated Upgrades</a>
+    <a class="nav-link" href="../upgrade/upgrade-script-example.html">Example Script for Automated Upgrades</a>
   </li>
 </ul>
   </li>
@@ -1007,7 +1010,13 @@
     <a class="nav-link" href="../administration/backup-restore.html">Backing Up and Restoring</a>
   </li>
   <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
     <a class="nav-link" href="../administration/content-lifecycle.html">Content Lifecycle Management</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../administration/content-lifecycle-examples.html">Content Lifecycle Management Examples</a>
+  </li>
+</ul>
   </li>
   <li class="nav-item" data-depth="2">
     <button class="nav-item-toggle"></button>
@@ -1071,47 +1080,68 @@
     <span class="nav-text">Salt Guide</span>
 <ul class="nav-list">
   <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="../salt/salt-intro.html">Introduction</a>
+    <a class="nav-link" href="salt-intro.html">Introduction</a>
   </li>
   <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="../salt/salt-terminology.html">Terminology</a>
+    <a class="nav-link" href="salt-terminology.html">Terminology</a>
   </li>
   <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="../salt/salt-calls.html">Salt Calls</a>
+    <a class="nav-link" href="salt-calls.html">Salt Calls</a>
   </li>
   <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="../salt/salt-commands.html">Salt Commands</a>
+    <a class="nav-link" href="salt-commands.html">Salt Commands</a>
   </li>
   <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="../salt/salt-states.html">Salt States</a>
+    <a class="nav-link" href="salt-states.html">Salt States</a>
   </li>
   <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="../salt/salt-file-locations.html">File Locations</a>
+    <a class="nav-link" href="salt-file-locations.html">File Locations</a>
   </li>
   <li class="nav-item" data-depth="2">
     <button class="nav-item-toggle"></button>
-    <a class="nav-link" href="../salt/salt-formulas.html">Salt Formulas</a>
+    <a class="nav-link" href="formulas-intro.html">Salt Formulas</a>
 <ul class="nav-list">
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../salt/salt-formulas-standard.html">Standard Formulas</a>
+    <a class="nav-link" href="formula-bind.html">Bind Formula</a>
   </li>
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../salt/salt-formulas-custom.html">Custom Formulas</a>
+    <a class="nav-link" href="formula-branchnetwork.html">Branch Network Formula</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="formula-dhcpd.html">DHCPd Formula</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="formula-imagesync.html">Image Sync Formula</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="formula-pxe.html">PXE Formula</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="formula-saltboot.html">Saltboot Formula</a>
+  </li>
+  <li class="nav-item is-current-page" data-depth="3">
+    <a class="nav-link" href="formula-tftpd.html">TFTPd Formula</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="formula-vsftpd.html">VsFTPd Formula</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="formulas-custom.html">Custom Formulas</a>
   </li>
 </ul>
   </li>
   <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="../salt/salt-ssh.html">Salt SSH</a>
+    <a class="nav-link" href="salt-ssh.html">Salt SSH</a>
   </li>
   <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="../salt/salt-rate-limiting.html">Rate Limiting</a>
+    <a class="nav-link" href="salt-rate-limiting.html">Rate Limiting</a>
   </li>
   <li class="nav-item" data-depth="2">
     <button class="nav-item-toggle"></button>
-    <a class="nav-link" href="../salt/large-scale.html">Scaling Salt Minions</a>
+    <a class="nav-link" href="large-scale.html">Scaling Salt Minions</a>
 <ul class="nav-list">
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../salt/large-scale-tuning.html">Tuning Large Scale Installations</a>
+    <a class="nav-link" href="large-scale-tuning.html">Tuning Large Scale Installations</a>
   </li>
 </ul>
   </li>
@@ -1147,34 +1177,7 @@
 </ul>
   </li>
   <li class="nav-item" data-depth="2">
-    <button class="nav-item-toggle"></button>
     <a class="nav-link" href="../retail/retail-formulas-intro.html">Formulas</a>
-<ul class="nav-list">
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../retail/retail-formula-bind.html">Bind Formula</a>
-  </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../retail/retail-formula-branchnetwork.html">Branch Network Formula</a>
-  </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../retail/retail-formula-dhcpd.html">DHCPd Formula</a>
-  </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../retail/retail-formula-imagesync.html">Image Sync Formula</a>
-  </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../retail/retail-formula-pxe.html">PXE Formula</a>
-  </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../retail/retail-formula-saltboot.html">Saltboot Formula</a>
-  </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../retail/retail-formula-tftpd.html">TFTPd Formula</a>
-  </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../retail/retail-formula-vsftpd.html">VsFTPd Formula</a>
-  </li>
-</ul>
   </li>
   <li class="nav-item" data-depth="2">
     <button class="nav-item-toggle"></button>
@@ -1235,7 +1238,7 @@
       <span class="title">SUSE Manager</span>
       <ul class="versions">
         <li class="version is-current is-latest">
-          <a href="../index-suma.html">master</a>
+          <a href="../index.html">master</a>
         </li>
       </ul>
     </li>
@@ -1248,178 +1251,94 @@
 <div class="toolbar" role="navigation">
 <button class="nav-toggle"></button>
 
-  <a href="../index-suma.html" class="home-link"></a>
+  <a href="../index.html" class="home-link"></a>
 <nav class="breadcrumbs" aria-label="breadcrumbs">
   <ul>
-    <li><a href="../index-suma.html">SUSE Manager</a></li>
-    <li><a href="migrate-3x-3x.html">Migrating from Version 3.1 to 3.2</a></li>
+    <li><a href="../index.html">SUSE Manager</a></li>
+    <li>Salt Guide</li>
+    <li><a href="formulas-intro.html">Salt Formulas</a></li>
+    <li><a href="formula-tftpd.html">TFTPd Formula</a></li>
   </ul>
 </nav>
-  <div class="edit-this-page"><a href="https://github.com/SUSE/doc-susemanager/edit/master/modules/upgrade/pages/migrate-3x-3x.adoc">Edit this Page</a></div>
+
+
+
+  <div class="edit-this-page">
+    <span class="prev-caret">
+      <a href="formula-saltboot.html">
+        <i class="fas fa-arrow-left custom-color" data-tippy="Previous page" id="previousPage"></i></a></span>
+&nbsp;
+<span class="next-caret">
+      <a href="formula-vsftpd.html">
+        <i class="fas fa-arrow-right custom-color" data-tippy="Next Page" id="nextPage"></i></a></span>
+    &nbsp;
+    <a href="https://github.com/SUSE/doc-susemanager/issues"><i class="fas fa-bug custom-color" data-tippy="Create an Issue" id="createIssue"></i>&nbsp;</a>
+  <a href="https://github.com/SUSE/doc-susemanager/edit/master/modules/salt/pages/formula-tftpd.adoc"><i class="fas fa-edit custom-color" data-tippy="Edit this page and submit a pull request" id="submitPR"></i></a>
+</div>
 </div>
 <article class="doc"><a name="section-top"></a>
-<h1 class="page">Migrating from Version 3.1 to 3.2</h1>
-<div id="preamble">
-<div class="sectionbody">
+<h1 class="page">TFTPd Formula</h1>
 <div class="paragraph">
-<p>Migrating SUSE Manager from version 3.1 to 3.2 can be done using either the YaST Online Migration tool, or with the Zypper command line tool.</p>
-</div>
-<div class="paragraph">
-<p>SUSE Manager 4.0 requires SLES 12 SP3 or later, with PostgreSQL version 9.6.
-Check the release notes for more information about these requirements.
-If you want to upgrade from an earlier version of SUSE Manager, check the relevant product documentation.</p>
-</div>
-<div class="admonitionblock warning">
-<table>
-<tr>
-<td class="icon">
-<i class="fa icon-warning" title="Warning"></i>
-</td>
-<td class="content">
-<div class="paragraph">
-<p>Before migrating to SLES 12 SP3 or later, check whether PostgreSQL is already updated to version 9.6.
-For more information, see <a href="db-migration.html" class="page">upgrade:db-migration.adoc</a>.</p>
-</div>
-</td>
-</tr>
-</table>
-</div>
-<div class="admonitionblock important">
-<table>
-<tr>
-<td class="icon">
-<i class="fa icon-important" title="Important"></i>
-</td>
-<td class="content">
-<div class="paragraph">
-<p>Upgrades should be run from a text console, rather than a graphical interface like GNOME.
-If you are logged into a GNOME session running on the machine you are going to update, you will need to switch to a text console.
-This does not apply if you are logged in from a remote machine (unless you are running a VNC session with GNOME).</p>
-</div>
-</td>
-</tr>
-</table>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_migrate_using_yast"><a class="anchor" href="#_migrate_using_yast"></a><a class="link" href="#_migrate_using_yast">Migrate Using YaST</a></h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p>To perform the migration with YaST, use the Online Migration tool.</p>
+<p>The TFTPd formula is used to configure the TFTP service on the branch server.</p>
 </div>
 <div class="olist arabic">
-<div class="title">Procedure: Migrating with YaST</div>
+<div class="title">Procedure: Configuring TFTP</div>
 <ol class="arabic">
 <li>
-<p>From the command prompt, as root, launch the YaST online migration tool:</p>
-<div class="listingblock">
-<div class="content">
-<pre>yast2 migration</pre>
-</div>
-</div>
-<div class="paragraph">
-<p>YaST will show the possible migration targets with detailed summaries.</p>
-</div>
+<p>In the SUSE Manager Web UI, open the details page for the branch server, and navigate to the <code class="guimenu">Formulas</code> tab.</p>
 </li>
 <li>
-<p>Select the appropriate target, and follow the prompts to complete the migration.</p>
+<p>Select the <code class="systemitem">Tftpd</code> formula, and click <b class="button">Save</b>.</p>
 </li>
 <li>
-<p>Ensure the spacewalk services are running:</p>
-<div class="listingblock">
-<div class="content">
-<pre>spacewalk-service start</pre>
-</div>
-</div>
-</li>
-</ol>
-</div>
-<div class="paragraph">
-<p>If the process fails, check these issues first:</p>
-</div>
+<p>Navigate to the <span class="menuseq"><b class="menu">Formulas</b>&#160;<i class="fa fa-angle-right caret"></i> <b class="menuitem">Tftpd</b></span> tab, and set these parameters:</p>
 <div class="ulist">
 <ul>
 <li>
-<p>If YaST does not have the online migration module available, install the <code class="package">yast2-migration</code> package.
-After installing, restart YaST to ensure the module is available.</p>
+<p>In the <code class="guimenu">Internal Network Address</code> field, enter the IP address of the branch server (for example: <code class="systemitem">192.168.1.5</code>).</p>
 </li>
 <li>
-<p>If there are older updates available, YaST will notify you and ask to install them first.
-We strongly recommend you install all updates before performing the upgrade.</p>
+<p>In the <code class="guimenu">TFTP Base Directory</code> field, enter the path to the saltboot directory (for example, <code class="systemitem">/srv/saltboot</code>).</p>
+</li>
+<li>
+<p>In the <code class="guimenu">Run TFTP Under User</code> field, enter <code class="systemitem">saltboot</code>.</p>
 </li>
 </ul>
 </div>
-<div class="paragraph">
-<p>During the migration, YaST will install all recommended packages.
-This can significantly increase the installation size of the system.
-To only install required packages, open the <code class="path">/etc/zypp/zypp.conf</code> configuration file and set this variable:</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre>solver.onlyRequires = true
-installRecommends=false</pre>
-</div>
-</div>
-<div class="paragraph">
-<p>This changes the behavior of all future package operations.</p>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_migrate_using_zypper"><a class="anchor" href="#_migrate_using_zypper"></a><a class="link" href="#_migrate_using_zypper">Migrate Using Zypper</a></h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p>To perform the migration with Zypper, use the migration tool.</p>
-</div>
-<div class="olist arabic">
-<div class="title">Procedure: Migrating with Zypper</div>
-<ol class="arabic">
-<li>
-<p>From the command prompt, as root, launch the Zypper migration tool:</p>
-<div class="listingblock">
-<div class="content">
-<pre>zypper migration</pre>
-</div>
-</div>
-<div class="paragraph">
-<p>Zypper will show the possible migration targets with detailed summaries.</p>
-</div>
 </li>
 <li>
-<p>Select the appropriate target, and follow the prompts to complete the migration.</p>
+<p>Click <b class="button">Save Formula</b> to save your configuration.</p>
 </li>
 <li>
-<p>Ensure the spacewalk services are running:</p>
-<div class="listingblock">
-<div class="content">
-<pre>spacewalk-service start</pre>
-</div>
-</div>
+<p>Apply the highstate.</p>
 </li>
 </ol>
-</div>
-<div class="paragraph">
-<p>If the process fails, check these issues first:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>If Zypper  does not have the migration tool available, install the <code class="package">zypper-migration-plugin</code> package.</p>
-</li>
-<li>
-<p>If there are older updates available, Zypper will notify you and ask to install them first.
-We strongly recommend you install all updates before performing the upgrade.</p>
-</li>
-</ul>
-</div>
-</div>
 </div>
 
 <div class="cedents grid" role="navigation">
 
+  <div class="prev">
+      <a href="formula-saltboot.html" title="Saltboot Formula">
+        <div class="change-page">
+          <div class="arrow-prev"><i class="fas fa-arrow-left"></i></div>
+        <span class="label">Previous</span>
+        <br/>
+        <!-- <span class="label title"><strong>:</strong></span> -->
+        <span class="title">Saltboot Formula</span>
+        </div>
+      </a>
   </div>
 
+  <div class="next">
+      <a href="formula-vsftpd.html" title="VsFTPd Formula">
+        <div class="change-page">
+          <div class="arrow-next"><i class="fas fa-arrow-right"></i></div>
+        <span class="label">Next</span>
+        <br/>
+       <!-- <span class="label title"><strong>:</strong></span> -->
+        <span class="title">VsFTPd Formula</span>
+        </div>
+      </a>
   </div>
 </div>
 </article>
@@ -1430,10 +1349,51 @@ We strongly recommend you install all updates before performing the upgrade.</p>
 
 </main>
 </div>
+<script>tippy('#previousPage', {
+placement: 'bottom', // or 'left', 'right', ...
+})
+
+tippy('#nextPage', {
+  placement: 'bottom', // or 'left', 'right', ...
+})
+tippy('#createIssue', {
+  placement: 'bottom', // or 'left', 'right', ...
+})
+tippy('#submitPR', {
+  placement: 'bottom', // or 'left', 'right', ...
+})
+</script>
+<script src="https://unpkg.com/popper.js@1"></script>
+<script src="https://unpkg.com/tippy.js@4"></script>
+<script>
+    tippy.setDefaults({
+        placement: 'bottom',
+        arrow: true,
+        arrowType: 'sharp',
+        delay: 0,
+        theme: 'light',
+    });
+
+    tippy('#previousPage', {
+        content: "Previous Page",
+    });
+
+    tippy('#nextPage', {
+        content: "Next Page",
+    });
+
+    tippy('#createIssue', {
+        content: "Create Issue",
+    });
+
+    tippy('#submitPR', {
+        content: "Edit this page and submit a pull request",
+    });
+</script>
 <script type="text/javascript">
   window.antora = window.antora || {}
   window.antora.basePath = '../..'
-  window.antora.pagePath = '/suse-manager/upgrade/migrate-3x-3x.html'
+  window.antora.pagePath = '/suse-manager/salt/formula-tftpd.html'
 </script>
 <script src="../../_/js/site.js"></script>
 <script src="../../_/js/vendor/lunr.js"></script>
@@ -1456,5 +1416,6 @@ We strongly recommend you install all updates before performing the upgrade.</p>
         document.getElementById( 'article-toc' ).parentNode.classList.remove( 'hidden' );
     }
 </script>
+
   </body>
 </html>
