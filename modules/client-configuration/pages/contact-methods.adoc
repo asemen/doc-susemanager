@@ -136,7 +136,7 @@ For security reasons, you might want to use sudo with SSH, to access the system 
 
 .Procedure: Configuring Unprivileged SSH Access
 . Ensure you have the latest [path]``spacewalk-taskomatic`` and [path]``spacewalk-certs-tools`` packages installed on the {productname} Server.
-. On each client system, create an appropriate unprivileged user on each client system.
+. On each client system, create an appropriate unprivileged user.
 . On each client system, open the [path]``/etc/sudoers`` file and comment out these lines:
 +
 ----
@@ -166,10 +166,10 @@ ssh_push_sudo_user = <user>
 Because clients are in the DMZ and cannot reach the server, you need to use the [command]``mgr-ssh-push-init`` tool to register them with the {productname} Server.
 
 To use the tool, you will need the client hostname or IP address, and the path to a valid bootstrap script on the {productname} Server.
-For more information about bootstrapping, see xref:client-configuration:registration-bootstrap.adoc[].
+For more information about bootstrapping, see xref:client-configuration:registration-bootstrap.adoc[Registering Clients with a Bootstrap Script].
 
 The bootstrap script will need to have an activation key associated with it that is configured for Push via SSH.
-For more information on activation keys, see xref:client-configuration:clients-and-activation-keys.adoc[].
+For more information on activation keys, see xref:client-configuration:clients-and-activation-keys.adoc[Activation keys].
 
 Before you begin, you need to ensure that you have specified which ports to use for SSH tunneling.
 If you have registered clients before changing the port numbers, they will need to be registered again.
@@ -267,7 +267,7 @@ The Push via Salt SSH method creates an encrypted tunnel from the {productname} 
 After all actions and events are executed, the tunnel is closed.
 
 The server uses the [command]``salt-ssh`` tool to contact the clients at regular intervals, checking in and performing scheduled actions and events.
-For more information about Salt SSH, see xref:salt:salt-ssh.adoc[].
+For more information about Salt SSH, see xref:salt:salt-ssh.adoc[Salt SSH].
 
 This contact method works for Salt clients only.
 For traditional clients, use Push via SSH.
@@ -290,7 +290,7 @@ Additionally, Python must be available on the remote system, and be a version su
 .Procedure: Registering Clients with Push via Salt SSH
 . In the {productname} {webui}, navigate to menu:Systems[Bootstrapping] and complete the appropriate fields.
 . Select an activation key with the Push via SSH contact method configured.
-For more information about activation keys, see xref:client-configuration:clients-and-activation-keys.adoc[].
+For more information about activation keys, see xref:client-configuration:clients-and-activation-keys.adoc[Activation keys].
 . Check the [systemitem]``Manage system completely via SSH`` checkbox.
 . Click btn:[Bootstrap] to begin registration.
 . Confirm that the system has been registered correctly by navigating to menu:Systems[Overview].
@@ -409,7 +409,7 @@ jabbersoftnofile5100
 jabberhardnofile6000
 ----
 
-Calculate the limits required for your environment by adding 100 to the number of clients for the soft limit, and 1000 to the current number of clients for the soft limit.
+Calculate the limits required for your environment by adding 100 to the number of clients for the soft limit, and 1000 to the current number of clients for the hard limit.
 In the example above, we have assumed 500 current clients, so the soft limit is 5100, and the hard limit is 6000.
 
 You will also need to update the [systemitem]``max_fds`` parameter in the [path]``/etc/jabberd/c2s.xml`` file with your chosen hard limit:
