@@ -41,64 +41,18 @@ session  include        common-session
 It is below the password and password confirmation fields.
 +
 
-YaST can be used to configure the system wide PAM configuration.
-You will need to install the [package]``yast2-ldap-client`` and [package]``yast2-kerberos-client`` packages.
-For more information about configuring PAM, see the SUSE Linux Enterprise Server Security Guide https://www.suse.com/documentation/sles-15/book_security/data/part_auth.html.
-This is a generic example that will also work for other network-based authentication methods.
-+
-
 .Changing Passwords
 IMPORTANT: Changing the password on the {productname} {webui} changes only the local password on the {productname} Server.
 If PAM is enabled for that user, the password might not be used at all.
 In the above example, for instance, the Kerberos password will not be changed.
+Use the password change mechanism of your network service to change the password for these users.
 
 
-
-=== Authentication with eDirectory and PAM
-
-. First check to ensure eDirectory authentication is working with your current OS for example:
-+
-
-----
-getent passwd
-----
-. If users are returned from eDirectory then create the [filename]``/etc/pam.d/susemanager`` and add the following content:
-+
-
-----
-#%PAM-1.0
-auth     include        common-auth
-account  include        common-account
-password include        common-password
-session  include        common-session
-----
-
-. Add these lines to the {productname} configuration file at [filename]``/etc/rhn/rhn.conf``:
-+
-
-----
-pam_auth_service = susemanager
-----
-
-You can now create users with the same ID used by eDirectory, and check the [guimenu]``Use PAM`` checkbox in the {productname} {webui}.
-
-
-
-// === Example Quest VAS Active Directory Authentication Template
-
-
-// If you are using Quest VAS for active directory authentication, you can use this [path]``/etc/pam.d/susemanager`` file.
-
-.Example of Quest VAS Active Directory Authentication Template
-----
-#%PAM-1.0
-auth       required       pam_env.so
-auth       sufficient     pam_vas3.so no_user_check
-auth       requisite      pam_vas3.so echo_return
-auth       required       pam_deny.so
-account    required       pam_vas3.so no_user_check
-----
-
+To configure the system wide authentication you can use YaST.
+You will need to install the [package]``yast2-ldap-client`` and [package]``yast2-kerberos-client`` packages.
+For more information about configuring PAM, see the SUSE Linux Enterprise Server Security Guide https://www.suse.com/documentation/sles-15/book_security/data/part_auth.html.
+This is a generic example that will also work for other network-based authentication methods.
+It describes also how to configure the use of an Active Directory Service.
 
 
 == Authentication Via Single Sign-On (SSO)
